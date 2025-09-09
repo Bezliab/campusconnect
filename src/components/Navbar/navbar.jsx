@@ -3,7 +3,7 @@ import "../../styles/navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar" aria-label="Main navigation">
       <h2 className="logo">CampusConnect</h2>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
