@@ -1,12 +1,3 @@
-/* Variables */
-:root {
-    --primary-color: #003466;
-    --text-dark: #333;
-    --text-light: #d1d1d1;
-    --bg-light: #f9f9f9;
-    --white: #fff;
-}
-
 /* About Section */
 .about {
     display: flex;
@@ -97,7 +88,7 @@ h1.about-title {
 
 /* Highlight Section */
 .highlight-section {
-    background-color: var(--bg-light);
+    background-color: #f9f9f9;
     margin-top: 2rem !important;
 }
 
@@ -120,14 +111,14 @@ h1.about-title {
 }
 
 .highlight-text h3 {
-    color: var(--primary-color);
+    color: #003466;
     font-size: 1.8rem;
     line-height: 2;
     margin-bottom: 0.5rem;
 }
 
 .highlight-text p {
-    color: var(--text-dark);
+    color: #333;
     line-height: 1.8;
     font-size: 1.4rem;
 }
@@ -150,6 +141,7 @@ h1.about-title {
 .events-section {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .events-list {
@@ -169,7 +161,7 @@ h1.about-title {
 }
 
 .event-category h2 {
-    color: var(--primary-color);
+    color: #003466;
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
@@ -183,7 +175,7 @@ h1.about-title {
     position: relative;
     margin-bottom: 0.8rem;
     padding-left: 2rem;
-    color: var(--text-dark);
+    color: #333;
     font-size: 1.1rem;
 }
 
