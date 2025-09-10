@@ -15,10 +15,10 @@ const Gallery = () => {
 
   // Background slideshow images
   const backgroundImages = [
-    '/images/codingcompet.jpg',
-    '/images/cultural_1.jpg',
-    '/images/sports_1.jpg',
-    '/images/techfest_2.jpg'
+    'https://bloximages.chicago2.vip.townnews.com/chippewa.com/content/tncms/assets/v3/editorial/e/3c/e3cd5a33-eedf-5573-9280-b86bd8d46404/5a7dfdc55be10.image.jpg',
+    'https://imu.indiana.edu/images/hotel/reservations-campusevents/football-crowd.jpg',
+    'https://images.squarespace-cdn.com/content/v1/56709e74a976af4552e28f93/1560937035996-X9ENEFTORNKZYBIHWKEX/410044_00_N148_medium.jpg',
+    'https://eventsdc.com/sites/default/files/styles/webp/public/2020-09/The%20Fields%20at%20RFK_Field%202%20%281%29_0.jpg.webp?itok=TSr2yodl'
   ];
 
   useEffect(() => {
