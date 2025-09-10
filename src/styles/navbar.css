@@ -1,29 +1,206 @@
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #0056d2;
-padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  background: transparent;
+}
+
+.navbar .nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-section.left {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.navbar-section.center {
+  flex: 2;
+  justify-content: center;
+}
+
+.navbar-section.right {
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .logo {
-color: white;
-font-size: 20px;
-font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
 }
 
+/* Nav Links */
 .nav-links {
-list-style: none;
-display: flex;
-gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-color: white;
-text-decoration: none;
-font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Register Button */
+.register-btn {
+  background: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: darkorange;
+  color: whitesmoke;
+}
+
+/* When Scrolled */
+.navbar.scrolled {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.scrolled .logo {
+  color: rgba(1, 5, 54);
+}
+
+.navbar.scrolled .nav-links a {
+  color: rgba(1, 5, 54);
+}
+
+.navbar.scrolled .register-btn {
+  background: rgb(0, 5, 63);
+  color: white;
+}
+
+.navbar.scrolled .register-btn:hover {
+  background: rgba(1, 5, 30);
+  color: whitesmoke;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.navbar .logo {
+  position: absolute;
+  left: 4rem;
+}
+
+.navbar .register-btn {
+  position: absolute;
+  right: 4rem;
+}
+
+/* Responsive Navbar */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+  .navbar .logo {
+    left: 1rem;
+    font-size: 1.2rem;
+  }
+  .navbar .register-btn {
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+  .nav-links {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .logo,
+  .navbar .register-btn {
+    position: static;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+    height: auto;
+  }
+  .navbar-section {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar-section.left,
+  .navbar-section.right {
+    justify-content: center;
+    position: static;
+    margin-bottom: 0.5rem;
+  }
+  .navbar .logo,
+  .navbar .register-btn {
+    position: static;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  .navbar-section.center {
+    order: 2;
+    margin-bottom: 0.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.3rem 0.2rem;
+  }
+  .navbar .logo {
+    font-size: 1rem;
+  }
+  .navbar .register-btn {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .nav-links {
+    gap: 0.5rem;
+  }
 }

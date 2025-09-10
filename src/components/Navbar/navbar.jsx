@@ -1,18 +1,46 @@
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import "../../styles/navbar.css";
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar" aria-label="Main navigation">
-      <h2 className="logo">CampusConnect</h2>
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/events">Events</Link></li>
-        <li><Link to="/gallery">Gallery</Link></li>
-        <li><Link to="/feedback">Feedback</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
+    <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
+      <div className="navbar-section left">
+        <span className="logo">CampusConnect</span>
+      </div>
+      <div className="navbar-section center">
+        <ul className="nav-links">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/events">Events</a>
+          </li>
+          <li>
+            <a href="/gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-section right">
+        <a href="/register" className="register-btn">
+          Register
+        </a>
+      </div>
     </nav>
   );
 }
