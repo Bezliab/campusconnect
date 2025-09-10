@@ -16,6 +16,7 @@
 .about-hero {
     position: relative;
     height: 50vh;
+    max-height: 500px;
     text-align: center;
     overflow: hidden;
 }
@@ -56,6 +57,7 @@
     background-image: url("https://images.adsttc.com/media/images/5889/655b/e58e/ce61/eb00/03c6/large_jpg/05-Bekkering-Adams-architects-Schoolcampus-Peer-SB-161001-161016-exterior-agnetencollege-web.jpg?1485399374");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     z-index: 0;
     opacity: 0.5;
 }
@@ -67,7 +69,7 @@ h1.about-title {
     padding: 2rem 0;
 }
 
-/* Affiliations */
+/* Affiliations Section */
 .affiliated-schools {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
