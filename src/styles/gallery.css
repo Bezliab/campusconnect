@@ -7,7 +7,7 @@
 /* ===== Full-Width Slideshow Header ===== */
 .gallery-header-slideshow {
   width: 100%;
-  height: 50vh; /* Adjust to 100vh if you want fullscreen */
+  height: 70vh; /* Adjust to 100vh if you want fullscreen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -129,27 +129,27 @@
 /* Gallery Grid */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-  gap: 2rem; 
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 .gallery-card {
   position: relative;
   overflow: hidden;
   border-radius: 0.75rem;
-  border: 2px solid #ddd; 
+  border: 2px solid #ddd;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .gallery-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-image-container {
   position: relative;
   width: 100%;
-  height: 240px; 
+  height: 240px;
 }
 
 .card-image-container img {
@@ -162,7 +162,7 @@
 .card-image-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -183,11 +183,21 @@
   color: #fff;
 }
 
-.category-technical { background-color: #4f46e5; }
-.category-cultural { background-color: #f97316; }
-.category-sports { background-color: #16a34a; }
-.category-academic { background-color: #f43f5e; }
-.category-default { background-color: #6b7280; }
+.category-technical {
+  background-color: #4f46e5;
+}
+.category-cultural {
+  background-color: #f97316;
+}
+.category-sports {
+  background-color: #16a34a;
+}
+.category-academic {
+  background-color: #f43f5e;
+}
+.category-default {
+  background-color: #6b7280;
+}
 
 .year-badge {
   position: absolute;

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "../../styles/footer.css";
 
-
 export default function Footer() {
   return (
     <footer className="footer">
@@ -32,8 +31,10 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Contact Info</h4>
           <p>Email: info@campusconnect.edu</p>
-          <p>Phone: (555) 123-4567</p>
-          <p>Address: 123 Campus Drive</p>
+          <p>Phone: (+234) 802 593 8244</p>
+          <p>
+            Address: Idea Konsult Building, Mokola, Ibadan, Oyo State, Nigeria.
+          </p>
         </div>
 
         <div className="footer-section">

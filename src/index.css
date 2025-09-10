@@ -9,7 +9,7 @@
 html,
 body {
   font-family: "Nunito Sans", "Segoe UI", Roboto, Arial, sans-serif;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   color: #1f2937;
   line-height: 1.6;
   min-height: 100vh;
@@ -17,7 +17,7 @@ body {
 
 /* Colors (CSS Variables) */
 :root {
-  --color-primary: #1e3a8a;
+  --color-primary: #010536;
   --color-accent: #f97316;
   --color-bg: #f3f4f6;
   --color-border: #475569;
@@ -121,11 +121,14 @@ textarea:focus {
 /* ===========================
    Navbar & Footer
 =========================== */
-.navbar,
+
 .footer {
-  background-color: var(--color-primary);
+  background: linear-gradient(rgba(1, 54, 40, 0.9), rgba(1, 5, 54, 0.9)),
+    url("https://avatars.mds.yandex.net/i?id=cb70d5a7b73ea8ee960e08fe05abe471_l-5500026-images-thumbs&ref=rim&n=13&w=1920&h=1280")
+      no-repeat center center/cover;
   color: var(--color-inverse);
   padding: 1rem;
+  margin-top: auto;
 }
 .navbar a,
 .footer a {
@@ -135,4 +138,8 @@ textarea:focus {
 .navbar a:hover,
 .footer a:hover {
   color: var(--color-featured);
+}
+
+.nav-links:active {
+  color: var(--color-accent);
 }
