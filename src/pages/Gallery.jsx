@@ -75,7 +75,7 @@ const Gallery = () => {
         <div className="gallery-header-overlay"></div>
         <div className="gallery-header-content">
           <h1 className="gallery-title">
-            Event <span className="gallery-title-gradient">Gallery</span>
+            Event Gallery
           </h1>
           <p className="gallery-subtitle">
             Explore memorable moments from our campus events through our visual gallery
