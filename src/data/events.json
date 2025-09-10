@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "title": "TechFest 2025",
+    "date": "2025-09-20",
+    "time": "10:00 AM – 4:00 PM",
+    "venue": "Main Auditorium",
+    "category": "Academic",
+    "department": "Computer Science",
+    "audience": "Public",
+    "status": "upcoming",
+    "description": "An intercollegiate technical festival showcasing projects, coding contests, and workshops.",
+    "image": "https://www.cedarcollege.sa.edu.au/wp-content/uploads/2016/03/sportsday.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Cultural Week 2025",
+    "date": "2025-07-10",
+    "time": "9:00 AM – 9:00 PM",
+    "venue": "Open Grounds",
+    "category": "Cultural",
+    "department": "Cultural Committee",
+    "audience": "Public",
+    "status": "past",
+    "description": "A vibrant week-long celebration with dance, drama, music, and art exhibitions."
+  },
+  {
+    "id": 3,
+    "title": "Departmental Hackathon",
+    "date": "2025-08-12",
+    "time": "8:00 AM – 8:00 PM",
+    "venue": "Lab 302",
+    "category": "Departmental",
+    "department": "Information Technology",
+    "audience": "Internal",
+    "status": "upcoming",
+    "description": "A 12-hour coding hackathon organized by the IT department."
+  },
+  {
+    "id": 4,
+    "title": "Annual Sports Meet",
+    "date": "2025-06-05",
+    "time": "7:00 AM – 6:00 PM",
+    "venue": "College Sports Ground",
+    "category": "Sports",
+    "department": "Physical Education",
+    "audience": "Public",
+    "status": "past",
+    "description": "Athletics, football, basketball, and other intercollegiate competitions."
+  },
+  {
+    "id": 5,
+    "title": "Alumni Talk Series",
+    "date": "2025-10-15",
+    "time": "2:00 PM – 5:00 PM",
+    "venue": "Seminar Hall 1",
+    "category": "Academic",
+    "department": "Electronics",
+    "audience": "Internal",
+    "status": "upcoming",
+    "description": "Distinguished alumni share their career journeys and provide guidance to current students."
+  }
+]

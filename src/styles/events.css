@@ -1,0 +1,233 @@
+/* ================================
+   EVENTS PAGE STYLES
+   ================================ */
+
+/* Layout */
+.events {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+}
+
+/* Header */
+.events__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.events__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.events__title span {
+  color: #2563eb; /* blue highlight */
+}
+
+.events__subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Toolbar container */
+.events-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  /* background: #fff; */
+  /* border: 1px solid #e5e7eb; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.08); */
+}
+
+/* Groups */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-group {
+  flex: 1;
+}
+
+/* Labels */
+.filter-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Inputs & Selects */
+.input,
+.select {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.search-input {
+  width: 80%;
+}
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280; /* gray-500 */
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Button */
+.btn-clear {
+  padding: 0.45rem 0.9rem;
+  background: #1659df;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* .btn-clear:hover {
+  background: #bd8310;
+} */
+
+.btn-clear.active {
+  background: #ebb625;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+
+/* Legend */
+.events__legend {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.legend-star {
+  color: gold;
+  margin-right: 0.25rem;
+}
+
+/* Status messages */
+.events__loading,
+.events__error,
+.events__empty {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+/* Grid */
+.events__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* EventCard (generic style if not styled inside component) */
+.event-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.event-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to right, #f9fafb, #f3f4f6);
+}
+
+.event-card__badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.event-card__badge--featured {
+  background: #2563eb;
+  color: #fff;
+}
+
+.event-card__badge--category {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.event-card__body {
+  padding: 1rem;
+  flex: 1;
+}
+
+.event-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.event-card__meta {
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.event-card__footer {
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.event-card__button {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.event-card__button:hover {
+  background: #1d4ed8;
+}

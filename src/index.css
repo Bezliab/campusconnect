@@ -1,28 +1,138 @@
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #f9f9f9;
+/* ===========================
+   CampusConnect Global Styles
+   index.css
+=========================== */
 
-}
-.container {
-width: 90%;
-margin: auto;
-max-width: 1200px;
+/* 🎨 Color Palette (CSS Variables) */
+:root {
+  /* Primary Colors */
+  --color-primary: #1E3A8A;   /* Royal Blue */
+  --color-accent: #F97316;    /* Bright Orange */
+
+  /* Secondary Colors */
+  --color-bg: #F3F4F6;        /* Cool Gray (backgrounds) */
+  --color-border: #475569;    /* Slate Gray (borders, muted text) */
+
+  /* Accent Colors */
+  --color-success: #10B981;   /* Emerald Green */
+  --color-featured: #FBBF24;  /* Gold */
+
+  /* Text Colors */
+  --color-text: #1F2937;      /* Dark Charcoal (main text) */
+  --color-inverse: #FFFFFF;   /* White (text on dark bg) */
 }
 
-h1, h2, h3 {
-color: #333;
+/* ===========================
+   Global Resets & Typography
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ===========================
+   Universal Elements
+=========================== */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-accent);
 }
 
 button {
-background-color: #0056d2;
-color: white;
-border: none;
-padding: 10px 16px;
-border-radius: 5px;
-cursor: pointer;
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-inverse);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+button:hover {
+  background-color: var(--color-accent);
+}
+button:active {
+  transform: scale(0.97);
 }
 
-button:hover {
-background-color: #0041a8;
+input, select, textarea {
+  font: inherit;
+  padding: 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  width: 100%;
+  outline: none;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 4px var(--color-primary);
+}
+
+/* ===========================
+   Layout Helpers
+=========================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+
+/* ===========================
+   Navbar & Footer Defaults
+=========================== */
+.navbar {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  color: var(--color-inverse);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--color-inverse);
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--color-featured); /* Gold highlight */
+}
+
+ .footer {
+  background-color: var(--color-primary);
+  color: var(--color-inverse);
+  padding: 1rem;
+}
+ .footer a {
+  color: var(--color-inverse);
+  margin: 0 1rem;
+}
+.footer a:hover {
+  color: var(--color-featured);
 }
