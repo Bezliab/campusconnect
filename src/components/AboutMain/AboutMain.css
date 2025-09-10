@@ -1,12 +1,3 @@
-/* Variables */
-:root {
-    --primary-color: #003466;
-    --text-dark: #333;
-    --text-light: #d1d1d1;
-    --bg-light: #f9f9f9;
-    --white: #fff;
-}
-
 /* About Section */
 .about {
     display: flex;
@@ -16,6 +7,7 @@
 .about-hero {
     position: relative;
     height: 50vh;
+    max-height: 500px;
     text-align: center;
     overflow: hidden;
 }
@@ -56,6 +48,7 @@
     background-image: url("https://images.adsttc.com/media/images/5889/655b/e58e/ce61/eb00/03c6/large_jpg/05-Bekkering-Adams-architects-Schoolcampus-Peer-SB-161001-161016-exterior-agnetencollege-web.jpg?1485399374");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     z-index: 0;
     opacity: 0.5;
 }
@@ -67,7 +60,7 @@ h1.about-title {
     padding: 2rem 0;
 }
 
-/* Affiliations */
+/* Affiliations Section */
 .affiliated-schools {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -95,7 +88,7 @@ h1.about-title {
 
 /* Highlight Section */
 .highlight-section {
-    background-color: var(--bg-light);
+    background-color: #f9f9f9;
     margin-top: 2rem !important;
 }
 
@@ -118,14 +111,14 @@ h1.about-title {
 }
 
 .highlight-text h3 {
-    color: var(--primary-color);
+    color: #003466;
     font-size: 1.8rem;
     line-height: 2;
     margin-bottom: 0.5rem;
 }
 
 .highlight-text p {
-    color: var(--text-dark);
+    color: #333;
     line-height: 1.8;
     font-size: 1.4rem;
 }
@@ -148,6 +141,7 @@ h1.about-title {
 .events-section {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .events-list {
@@ -167,7 +161,7 @@ h1.about-title {
 }
 
 .event-category h2 {
-    color: var(--primary-color);
+    color: #003466;
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
@@ -181,7 +175,7 @@ h1.about-title {
     position: relative;
     margin-bottom: 0.8rem;
     padding-left: 2rem;
-    color: var(--text-dark);
+    color: #333;
     font-size: 1.1rem;
 }
 
