@@ -16,7 +16,7 @@ function AboutMain() {
       </div>
       <div className="container affiliate">
         <h1 className="about-title">
-          Our Affiliated Partners
+          Affiliated Partners
         </h1>
         <div className="affiliated-schools">
           <div className="school">
@@ -39,12 +39,12 @@ function AboutMain() {
       </div>
       <div className="highlight-section">
         <div className="container">
-          <h1 className="about-title">Connecting Students, Empowering Communities</h1>
+          <h1 className="about-title">Community Highlights</h1>
 
           {/* First highlight*/}
           <div className="highlight highlight-row">
             <div className="highlight-text">
-              <h3>Centralized College Information Access</h3>
+              <h3>Information Access</h3>
               <p>
                 CampusConnect provides a unified platform where students, parents, and educators can easily access critical
                 information about the college — such as admission guidelines, course offerings, faculty profiles, and campus
@@ -61,7 +61,7 @@ function AboutMain() {
           <div className="highlight highlight-row reverse">
 
             <div className="highlight-text">
-              <h3>Real-Time Updates and Notifications</h3>
+              <h3>Real-Time Updates </h3>
               <p>
                 CampusConnect ensures users stay informed through real-time announcements, event alerts, academic calendar
                 changes, and emergency updates. Whether it’s a class reschedule, exam timetable, or campus event, the platform
