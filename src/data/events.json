@@ -11,425 +11,425 @@
     "featured": true
   },
   "events": [
-  {
-    "id": 1,
-    "name": "TechFest 2025",
-    "date": "2025-09-20",
-    "time": "10:00 AM – 4:00 PM",
-    "venue": "Main Auditorium",
-    "description": "An intercollegiate technical festival showcasing projects, coding contests, and workshops.",
-    "image": "https://alta.com.vn/wp-content/uploads/2020/11/IMG_2706-5-1.jpg",
-    "category": "Academic"
-  },
-  {
-    "id": 2,
-    "name": "Cultural Week 2025",
-    "date": "2025-07-10",
-    "time": "9:00 AM – 9:00 PM",
-    "venue": "Open Grounds",
-    "description": "A vibrant week-long celebration with dance, drama, music, and art exhibitions.",
-    "image": "https://thepeninsulaqatar.com/get/maximage/20250113_1736754763-228.jpg?1736754764",
-    "category": "Cultural"
-  },
-  {
-    "id": 3,
-    "name": "Departmental Hackathon",
-    "date": "2025-08-12",
-    "time": "8:00 AM – 8:00 PM",
-    "venue": "Lab 302",
-    "description": "A 12-hour coding hackathon organized by the IT department.",
-    "image": "https://techcrunch.com/wp-content/uploads/2015/05/hackathon-ny-2015-02.jpg?w=1024",
-    "category": "Departmental"
-  },
-  {
-    "id": 4,
-    "name": "Annual Sports Meet",
-    "date": "2025-06-05",
-    "time": "7:00 AM – 6:00 PM",
-    "venue": "College Sports Ground",
-    "description": "Athletics, football, basketball, and other intercollegiate competitions.",
-    "image": "https://www.liri-structure.com/wp-content/uploads/2017/03/20151029142744_61618.jpg",
-    "category": "Sports"
-  },
-  {
-    "id": 5,
-    "name": "Alumni Talk Series",
-    "date": "2025-10-15",
-    "time": "2:00 PM – 5:00 PM",
-    "venue": "Seminar Hall 1",
-    "description": "Distinguished alumni share their career journeys and provide guidance to current students.",
-    "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/57643-6-ways-to-successfully-network-at-event?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=628&qlt=100&fmt=png-alpha&fit=constrain",
-    "category": "Academic"
-  },
-  {
-    "id": 6,
-    "name": "Entrepreneurship Summit",
-    "date": "2025-11-05",
-    "time": "9:00 AM – 6:00 PM",
-    "venue": "Innovation Hub",
-    "description": "Panel discussions, startup pitches, and mentorship sessions for aspiring entrepreneurs.",
-    "image": "https://live.staticflickr.com/7706/27881604125_2955115f17_b.jpg",
-    "category": "Academic"
-  },
-  {
-    "id": 7,
-    "name": "World Environment Day Celebration",
-    "date": "2025-06-05",
-    "time": "8:00 AM – 2:00 PM",
-    "venue": "Botanical Garden",
-    "description": "Tree plantation drive, poster competitions, and guest lectures on sustainability.",
-    "image": "https://2017-2021.state.gov/wp-content/uploads/2020/06/6_1_EnviDay3_TW.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 8,
-    "name": "Music Night",
-    "date": "2025-08-25",
-    "time": "6:00 PM – 10:00 PM",
-    "venue": "Amphitheater",
-    "description": "Live performances by student bands and guest artists.",
-    "image": "https://intourist.ru/excursion-files/e/e2/e2c7396353de4ba8892929a69563c4c6.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 9,
-    "name": "Literary Fest",
-    "date": "2025-07-22",
-    "time": "10:00 AM – 6:00 PM",
-    "venue": "Library Hall",
-    "description": "Debates, poetry recitations, and storytelling competitions.",
-    "image": "https://apicms.thestar.com.my/uploads/images/2019/11/12/379918.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 10,
-    "name": "Career Fair 2025",
-    "date": "2025-11-20",
-    "time": "9:00 AM – 5:00 PM",
-    "venue": "Convention Center",
-    "description": "Top companies visit for recruitment and internships.",
-    "image": "https://blog.jobzmall.com/content/images/size/w2000/2019/08/NEWS_UGA_2017-GT-Career-Fair.jpeg",
-    "category": "Academic"
-  },
-  {
-    "id": 11,
-    "name": "Film Screening",
-    "date": "2025-05-18",
-    "time": "5:00 PM – 8:00 PM",
-    "venue": "Auditorium 2",
-    "description": "Screening of award-winning documentaries and short films.",
-    "image": "https://deadline.com/wp-content/uploads/2019/11/2018-12-15_cl-hd-37.jpg?w=1024",
-    "category": "Cultural"
-  },
-  {
-    "id": 12,
-    "name": "Robotics Workshop",
-    "date": "2025-09-25",
-    "time": "10:00 AM – 4:00 PM",
-    "venue": "Robotics Lab",
-    "description": "Hands-on robotics session with AI and automation focus.",
-    "image": "https://i.insider.com/5f6a7d0239ab3b001192c77e?width=2000&format=jpeg&auto=webp",
-    "category": "Academic"
-  },
-  {
-    "id": 13,
-    "name": "Food Festival",
-    "date": "2025-08-30",
-    "time": "11:00 AM – 9:00 PM",
-    "venue": "Cafeteria Lawn",
-    "description": "A food carnival with stalls offering global cuisines.",
-    "image": "https://islamnews.ru/wp-content/uploads/2021/09/9c729d2fbf2e7a278000deec6b0309ad.png",
-    "category": "Cultural"
-  },
-  {
-    "id": 14,
-    "name": "Photography Exhibition",
-    "date": "2025-07-12",
-    "time": "10:00 AM – 6:00 PM",
-    "venue": "Art Gallery",
-    "description": "An exhibition showcasing the best student photography.",
-    "image": "https://petapixel.com/assets/uploads/2022/09/art-exhibition.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 15,
-    "name": "Drama Night",
-    "date": "2025-09-28",
-    "time": "6:00 PM – 9:00 PM",
-    "venue": "Open Stage",
-    "description": "Stage performances by drama enthusiasts featuring classic and modern plays.",
-    "image": "https://icebreakerideas.com/wp-content/uploads/2020/03/Drama-club-Activities.png",
-    "category": "Cultural"
-  },
-  {
-    "id": 16,
-    "name": "Science Exhibition",
-    "date": "2025-10-05",
-    "time": "9:00 AM – 3:00 PM",
-    "venue": "Exhibition Hall",
-    "description": "Innovative projects and experiments by students across various science disciplines.",
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c9141e97894995.5ecfcb1fd91d7.jpg",
-    "category": "Academic"
-  },
-  {
-    "id": 17,
-    "name": "Debate Competition",
-    "date": "2025-09-15",
-    "time": "11:00 AM – 2:00 PM",
-    "venue": "Seminar Hall 2",
-    "description": "Inter-departmental debate competition on current affairs and social issues.",
-    "image": "https://debate.bard.edu/files/2021/07/Bard-Debate-Tournament-2019-scaled.jpeg",
-    "category": "Academic"
-  },
-  {
-    "id": 18,
-    "name": "Teachers' Day Celebration",
-    "date": "2025-09-05",
-    "time": "12:00 PM – 4:00 PM",
-    "venue": "Main Auditorium",
-    "description": "Special performances and felicitation ceremony dedicated to teachers.",
-    "image": "https://www.adotrip.com/public/images/events/5f465986572e1-Teachers%20day%20Travel%20Plan.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 19,
-    "name": "Art & Craft Workshop",
-    "date": "2025-10-12",
-    "time": "10:00 AM – 1:00 PM",
-    "venue": "Art Studio",
-    "description": "Creative workshop on painting, origami, and crafts.",
-    "image": "https://i0.wp.com/aspioneer.com/wp-content/uploads/2020/06/Pinspiration-Hottest-Franchises-2020-3.jpg?fit=1920%2C1282&ssl=1",
-    "category": "Cultural"
-  },
-  {
-    "id": 20,
-    "name": "Quiz Competition",
-    "date": "2025-09-18",
-    "time": "1:00 PM – 3:00 PM",
-    "venue": "Seminar Hall 3",
-    "description": "General knowledge and current affairs quiz for students.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/State_of_the_venue_of_the_quiz_competition_abcmorphous.jpg",
-    "category": "Academic"
-  },
-  {
-    "id": 21,
-    "name": "Health Awareness Camp",
-    "date": "2025-08-18",
-    "time": "9:00 AM – 2:00 PM",
-    "venue": "Medical Center",
-    "description": "Free medical check-up, blood donation drive, and health awareness talks.",
-    "image": "https://godfatherstyle.com/wp-content/uploads/2020/04/3-5.jpg",
-    "category": "Academic"
-  },
-  {
-    "id": 22,
-    "name": "Coding Bootcamp",
-    "date": "2025-07-28",
-    "time": "9:00 AM – 5:00 PM",
-    "venue": "Lab 201",
-    "description": "Intensive coding sessions covering full-stack development.",
-    "image": "https://www.codingbootcamp.cz/img/coding-bootcamp-praha-logo.jpg",
-    "category": "Departmental"
-  },
-  {
-    "id": 23,
-    "name": "Sports Quiz",
-    "date": "2025-09-22",
-    "time": "2:00 PM – 4:00 PM",
-    "venue": "Seminar Hall 4",
-    "description": "Quiz on Olympic history, cricket, football, and sports personalities.",
-    "image": "https://www.thesouthafrican.com/wp-content/uploads/2022/02/Sport-quiz.jpg.optimal.jpg",
-    "category": "Sports"
-  },
-  {
-    "id": 24,
-    "name": "Fashion Show",
-    "date": "2025-09-30",
-    "time": "6:00 PM – 9:00 PM",
-    "venue": "Auditorium",
-    "description": "Students present their own designs in a themed fashion event.",
-    "image": "https://s.yimg.com/ny/api/res/1.2/1Ct9Cmx5A8UCUlv_ZkzP4g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03MTU-/https://s.yimg.com/os/creatr-uploaded-images/2019-09/8119a200-d007-11e9-bf78-549c4503347e",
-    "category": "Cultural"
-  },
-  {
-    "id": 25,
-    "name": "Mathematics Olympiad",
-    "date": "2025-07-05",
-    "time": "10:00 AM – 1:00 PM",
-    "venue": "Mathematics Block",
-    "description": "Challenging math problems for students across departments.",
-    "image": "https://www.soinc.org/sites/default/files/uploaded_files/2018ChampsBSolonMiddleSchool.JPG",
-    "category": "Academic"
-  },
-  {
-    "id": 26,
-    "name": "Photography Contest",
-    "date": "2025-09-19",
-    "time": "10:00 AM – 4:00 PM",
-    "venue": "Amphitheater",
-    "description": "Live photography contest with on-the-spot themes.",
-    "image": "https://c1.35photo.pro/photos_temp/sizes/2270/11350584_1500n.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 27,
-    "name": "Coding Contest",
-    "date": "2025-08-08",
-    "time": "10:00 AM – 4:00 PM",
-    "venue": "Computer Lab",
-    "description": "Competitive programming challenges for coders.",
-    "image": "https://devby.io/storage/images/30/55/65/41/derived/7924290c4ad6d3ffe42fb79e6b90b72a.jpg",
-    "category": "Departmental"
-  },
-  {
-    "id": 28,
-    "name": "Dance Competition",
-    "date": "2025-07-18",
-    "time": "5:00 PM – 8:00 PM",
-    "venue": "Open Stage",
-    "description": "Inter-college dance face-off featuring solo and group performances.",
-    "image": "https://cdn.culture.ru/images/7f6eaa51-be5f-58ae-ac2c-3eb39b76077b",
-    "category": "Cultural"
-  },
-  {
-    "id": 29,
-    "name": "Innovation Fair",
-    "date": "2025-10-20",
-    "time": "10:00 AM – 5:00 PM",
-    "venue": "Innovation Hub",
-    "description": "Students exhibit innovative projects and prototypes.",
-    "image": "https://explore.neumann.edu/hubfs/19466-college-fair-2022.jpg",
-    "category": "Academic"
-  },
-  {
-    "id": 30,
-    "name": "Inter-Department Football",
-    "date": "2025-09-12",
-    "time": "3:00 PM – 6:00 PM",
-    "venue": "Football Ground",
-    "description": "Knockout football matches between departments.",
-    "image": "https://avatars.mds.yandex.net/i?id=765a9fd5495eabaf68f2dcc3eff30ca6_l-5246350-images-thumbs&ref=rim&n=13&w=1241&h=805",
-    "category": "Sports"
-  },
-  {
-    "id": 31,
-    "name": "Cultural Parade",
-    "date": "2025-08-14",
-    "time": "9:00 AM – 12:00 PM",
-    "venue": "College Campus",
-    "description": "Traditional dress parade showcasing diverse cultures.",
-    "image": "https://thepeninsulaqatar.com/get/maximage/20250113_1736754763-228.jpg?1736754764",
-    "category": "Cultural"
-  },
-  {
-    "id": 32,
-    "name": "Drama Workshop",
-    "date": "2025-09-07",
-    "time": "10:00 AM – 1:00 PM",
-    "venue": "Drama Studio",
-    "description": "Workshop on stage acting and script writing.",
-    "image": "https://www.aber.ac.uk/en/tfts/tfts-schools/tfts---workshop.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 33,
-    "name": "Chess Tournament",
-    "date": "2025-08-21",
-    "time": "11:00 AM – 4:00 PM",
-    "venue": "Recreation Room",
-    "description": "Inter-department chess championship.",
-    "image": "https://avatars.mds.yandex.net/i?id=47d0fb1c2a73f090989551c819f0e6d1_l-4982359-images-thumbs&ref=rim&n=13&w=1920&h=1080",
-    "category": "Sports"
-  },
-  {
-    "id": 34,
-    "name": "Guest Lecture on AI",
-    "date": "2025-07-27",
-    "time": "2:00 PM – 4:00 PM",
-    "venue": "Seminar Hall 5",
-    "description": "Talk by industry expert on artificial intelligence trends.",
-    "image": "https://now.uiowa.edu/sites/now.uiowa.edu/files/styles/scale_1000/public/2017/10/science_informing_policy.jpg?itok=GZtFnZkZ",
-    "category": "Academic"
-  },
-  {
-    "id": 35,
-    "name": "Poetry Slam",
-    "date": "2025-08-09",
-    "time": "6:00 PM – 9:00 PM",
-    "venue": "Amphitheater",
-    "description": "Open mic poetry slam for budding poets.",
-    "image": "https://cdn.shopify.com/s/files/1/0542/9653/articles/Poetry_Slam_2018_5c0e1c0e-c1d3-482d-a556-367db1b4e81d_2048x.jpg?v=1579722087",
-    "category": "Cultural"
-  },
-  {
-    "id": 36,
-    "name": "Startup Pitch",
-    "date": "2025-11-02",
-    "time": "10:00 AM – 2:00 PM",
-    "venue": "Innovation Hub",
-    "description": "Students pitch their startup ideas to investors.",
-    "image": "https://assets.entrepreneur.com/content/3x2/2000/20150427224844-shark-tank-tv-entrepreneur-business-pitch.jpeg",
-    "category": "Academic"
-  },
-  {
-    "id": 37,
-    "name": "Science Quiz",
-    "date": "2025-09-03",
-    "time": "2:00 PM – 4:00 PM",
-    "venue": "Seminar Hall 6",
-    "description": "Quiz competition based on science and technology.",
-    "image": "https://d39l2hkdp2esp1.cloudfront.net/img/photo/125366/125366_00_2x.jpg?20180910142944",
-    "category": "Academic"
-  },
-  {
-    "id": 38,
-    "name": "Cultural Dance Night",
-    "date": "2025-09-08",
-    "time": "6:00 PM – 10:00 PM",
-    "venue": "Open Grounds",
-    "description": "Dance performances representing various cultures.",
-    "image": "https://thediplomat.com/wp-content/uploads/2018/03/sizes/td-story-s-2/thediplomat-south-asia-dance.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 39,
-    "name": "Cricket Match",
-    "date": "2025-08-02",
-    "time": "9:00 AM – 5:00 PM",
-    "venue": "Cricket Ground",
-    "description": "Friendly cricket match between faculty and students.",
-    "image": "https://www.cricketworld.com/images/f-116821.jpg",
-    "category": "Sports"
-  },
-  {
-    "id": 40,
-    "name": "Women's Day Celebration",
-    "date": "2025-03-08",
-    "time": "10:00 AM – 1:00 PM",
-    "venue": "Auditorium",
-    "description": "Special event celebrating women's achievements and contributions.",
-    "image": "https://www.un.org/sites/un2.un.org/files/2021/03/international-womens-day.jpg",
-    "category": "Cultural"
-  },
-  {
-    "id": 41,
-    "name": "Coding Hackathon",
-    "date": "2025-11-12",
-    "time": "9:00 AM – 9:00 PM",
-    "venue": "Computer Lab 1",
-    "description": "24-hour coding hackathon with exciting problem statements.",
-    "image": "https://www.insidehighered.com/sites/default/files/styles/max_650x650/public/media/hackathon_0.jpg?itok=5QihRIFJ",
-    "category": "Departmental"
-  },
-  {
-    "id": 42,
-    "name": "Christmas Carnival",
-    "date": "2025-12-24",
-    "time": "4:00 PM – 10:00 PM",
-    "venue": "Main Grounds",
-    "description": "Christmas celebration with games, food stalls, and music.",
-    "image": "https://static.wixstatic.com/media/11062b_92aef6d5a8e44413aa1968bc9a1b14e4~mv2.jpg/v1/fill/w_640,h_427,al_c,q_90/file.jpg",
-    "category": "Cultural"
-  }
-]
+    {
+      "id": 1,
+      "name": "TechFest 2025",
+      "date": "2025-09-20",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Main Auditorium",
+      "description": "An intercollegiate technical festival showcasing projects, coding contests, and workshops.",
+      "image": "https://alta.com.vn/wp-content/uploads/2020/11/IMG_2706-5-1.jpg",
+      "category": "Academic"
+    },
+    {
+      "id": 2,
+      "name": "Cultural Week 2025",
+      "date": "2025-07-10",
+      "time": "9:00 AM – 9:00 PM",
+      "venue": "Open Grounds",
+      "description": "A vibrant week-long celebration with dance, drama, music, and art exhibitions.",
+      "image": "https://thepeninsulaqatar.com/get/maximage/20250113_1736754763-228.jpg?1736754764",
+      "category": "Cultural"
+    },
+    {
+      "id": 3,
+      "name": "Departmental Hackathon",
+      "date": "2025-08-12",
+      "time": "8:00 AM – 8:00 PM",
+      "venue": "Lab 302",
+      "description": "A 12-hour coding hackathon organized by the IT department.",
+      "image": "https://techcrunch.com/wp-content/uploads/2015/05/hackathon-ny-2015-02.jpg?w=1024",
+      "category": "Departmental"
+    },
+    {
+      "id": 4,
+      "name": "Annual Sports Meet",
+      "date": "2025-06-05",
+      "time": "7:00 AM – 6:00 PM",
+      "venue": "College Sports Ground",
+      "description": "Athletics, football, basketball, and other intercollegiate competitions.",
+      "image": "https://www.liri-structure.com/wp-content/uploads/2017/03/20151029142744_61618.jpg",
+      "category": "Sports"
+    },
+    {
+      "id": 5,
+      "name": "Alumni Talk Series",
+      "date": "2025-10-15",
+      "time": "2:00 PM – 5:00 PM",
+      "venue": "Seminar Hall 1",
+      "description": "Distinguished alumni share their career journeys and provide guidance to current students.",
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/57643-6-ways-to-successfully-network-at-event?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=628&qlt=100&fmt=png-alpha&fit=constrain",
+      "category": "Academic"
+    },
+    {
+      "id": 6,
+      "name": "Entrepreneurship Summit",
+      "date": "2025-11-05",
+      "time": "9:00 AM – 6:00 PM",
+      "venue": "Innovation Hub",
+      "description": "Panel discussions, startup pitches, and mentorship sessions for aspiring entrepreneurs.",
+      "image": "https://live.staticflickr.com/7706/27881604125_2955115f17_b.jpg",
+      "category": "Academic"
+    },
+    {
+      "id": 7,
+      "name": "World Environment Day Celebration",
+      "date": "2025-06-05",
+      "time": "8:00 AM – 2:00 PM",
+      "venue": "Botanical Garden",
+      "description": "Tree plantation drive, poster competitions, and guest lectures on sustainability.",
+      "image": "https://2017-2021.state.gov/wp-content/uploads/2020/06/6_1_EnviDay3_TW.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 8,
+      "name": "Music Night",
+      "date": "2025-08-25",
+      "time": "6:00 PM – 10:00 PM",
+      "venue": "Amphitheater",
+      "description": "Live performances by student bands and guest artists.",
+      "image": "https://intourist.ru/excursion-files/e/e2/e2c7396353de4ba8892929a69563c4c6.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 9,
+      "name": "Literary Fest",
+      "date": "2025-07-22",
+      "time": "10:00 AM – 6:00 PM",
+      "venue": "Library Hall",
+      "description": "Debates, poetry recitations, and storytelling competitions.",
+      "image": "https://apicms.thestar.com.my/uploads/images/2019/11/12/379918.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 10,
+      "name": "Career Fair 2025",
+      "date": "2025-11-20",
+      "time": "9:00 AM – 5:00 PM",
+      "venue": "Convention Center",
+      "description": "Top companies visit for recruitment and internships.",
+      "image": "https://blog.jobzmall.com/content/images/size/w2000/2019/08/NEWS_UGA_2017-GT-Career-Fair.jpeg",
+      "category": "Academic"
+    },
+    {
+      "id": 11,
+      "name": "Film Screening",
+      "date": "2025-05-18",
+      "time": "5:00 PM – 8:00 PM",
+      "venue": "Auditorium 2",
+      "description": "Screening of award-winning documentaries and short films.",
+      "image": "https://deadline.com/wp-content/uploads/2019/11/2018-12-15_cl-hd-37.jpg?w=1024",
+      "category": "Cultural"
+    },
+    {
+      "id": 12,
+      "name": "Robotics Workshop",
+      "date": "2025-09-25",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Robotics Lab",
+      "description": "Hands-on robotics session with AI and automation focus.",
+      "image": "https://i.insider.com/5f6a7d0239ab3b001192c77e?width=2000&format=jpeg&auto=webp",
+      "category": "Academic"
+    },
+    {
+      "id": 13,
+      "name": "Food Festival",
+      "date": "2025-08-30",
+      "time": "11:00 AM – 9:00 PM",
+      "venue": "Cafeteria Lawn",
+      "description": "A food carnival with stalls offering global cuisines.",
+      "image": "https://islamnews.ru/wp-content/uploads/2021/09/9c729d2fbf2e7a278000deec6b0309ad.png",
+      "category": "Cultural"
+    },
+    {
+      "id": 14,
+      "name": "Photography Exhibition",
+      "date": "2025-07-12",
+      "time": "10:00 AM – 6:00 PM",
+      "venue": "Art Gallery",
+      "description": "An exhibition showcasing the best student photography.",
+      "image": "https://petapixel.com/assets/uploads/2022/09/art-exhibition.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 15,
+      "name": "Drama Night",
+      "date": "2025-09-28",
+      "time": "6:00 PM – 9:00 PM",
+      "venue": "Open Stage",
+      "description": "Stage performances by drama enthusiasts featuring classic and modern plays.",
+      "image": "https://icebreakerideas.com/wp-content/uploads/2020/03/Drama-club-Activities.png",
+      "category": "Cultural"
+    },
+    {
+      "id": 16,
+      "name": "Science Exhibition",
+      "date": "2025-10-05",
+      "time": "9:00 AM – 3:00 PM",
+      "venue": "Exhibition Hall",
+      "description": "Innovative projects and experiments by students across various science disciplines.",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c9141e97894995.5ecfcb1fd91d7.jpg",
+      "category": "Academic"
+    },
+    {
+      "id": 17,
+      "name": "Debate Competition",
+      "date": "2025-09-15",
+      "time": "11:00 AM – 2:00 PM",
+      "venue": "Seminar Hall 2",
+      "description": "Inter-departmental debate competition on current affairs and social issues.",
+      "image": "https://debate.bard.edu/files/2021/07/Bard-Debate-Tournament-2019-scaled.jpeg",
+      "category": "Academic"
+    },
+    {
+      "id": 18,
+      "name": "Teachers' Day Celebration",
+      "date": "2025-09-05",
+      "time": "12:00 PM – 4:00 PM",
+      "venue": "Main Auditorium",
+      "description": "Special performances and felicitation ceremony dedicated to teachers.",
+      "image": "https://www.adotrip.com/public/images/events/5f465986572e1-Teachers%20day%20Travel%20Plan.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 19,
+      "name": "Art & Craft Workshop",
+      "date": "2025-10-12",
+      "time": "10:00 AM – 1:00 PM",
+      "venue": "Art Studio",
+      "description": "Creative workshop on painting, origami, and crafts.",
+      "image": "https://i0.wp.com/aspioneer.com/wp-content/uploads/2020/06/Pinspiration-Hottest-Franchises-2020-3.jpg?fit=1920%2C1282&ssl=1",
+      "category": "Cultural"
+    },
+    {
+      "id": 20,
+      "name": "Quiz Competition",
+      "date": "2025-09-18",
+      "time": "1:00 PM – 3:00 PM",
+      "venue": "Seminar Hall 3",
+      "description": "General knowledge and current affairs quiz for students.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/State_of_the_venue_of_the_quiz_competition_abcmorphous.jpg",
+      "category": "Academic"
+    },
+    {
+      "id": 21,
+      "name": "Health Awareness Camp",
+      "date": "2025-08-18",
+      "time": "9:00 AM – 2:00 PM",
+      "venue": "Medical Center",
+      "description": "Free medical check-up, blood donation drive, and health awareness talks.",
+      "image": "https://godfatherstyle.com/wp-content/uploads/2020/04/3-5.jpg",
+      "category": "Academic"
+    },
+    {
+      "id": 22,
+      "name": "Coding Bootcamp",
+      "date": "2025-07-28",
+      "time": "9:00 AM – 5:00 PM",
+      "venue": "Lab 201",
+      "description": "Intensive coding sessions covering full-stack development.",
+      "image": "https://www.codingbootcamp.cz/img/coding-bootcamp-praha-logo.jpg",
+      "category": "Departmental"
+    },
+    {
+      "id": 23,
+      "name": "Sports Quiz",
+      "date": "2025-09-22",
+      "time": "2:00 PM – 4:00 PM",
+      "venue": "Seminar Hall 4",
+      "description": "Quiz on Olympic history, cricket, football, and sports personalities.",
+      "image": "https://www.thesouthafrican.com/wp-content/uploads/2022/02/Sport-quiz.jpg.optimal.jpg",
+      "category": "Sports"
+    },
+    {
+      "id": 24,
+      "name": "Fashion Show",
+      "date": "2025-09-30",
+      "time": "6:00 PM – 9:00 PM",
+      "venue": "Auditorium",
+      "description": "Students present their own designs in a themed fashion event.",
+      "image": "https://s.yimg.com/ny/api/res/1.2/1Ct9Cmx5A8UCUlv_ZkzP4g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03MTU-/https://s.yimg.com/os/creatr-uploaded-images/2019-09/8119a200-d007-11e9-bf78-549c4503347e",
+      "category": "Cultural"
+    },
+    {
+      "id": 25,
+      "name": "Mathematics Olympiad",
+      "date": "2025-07-05",
+      "time": "10:00 AM – 1:00 PM",
+      "venue": "Mathematics Block",
+      "description": "Challenging math problems for students across departments.",
+      "image": "https://www.soinc.org/sites/default/files/uploaded_files/2018ChampsBSolonMiddleSchool.JPG",
+      "category": "Academic"
+    },
+    {
+      "id": 26,
+      "name": "Photography Contest",
+      "date": "2025-09-19",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Amphitheater",
+      "description": "Live photography contest with on-the-spot themes.",
+      "image": "https://c1.35photo.pro/photos_temp/sizes/2270/11350584_1500n.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 27,
+      "name": "Coding Contest",
+      "date": "2025-08-08",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Computer Lab",
+      "description": "Competitive programming challenges for coders.",
+      "image": "https://devby.io/storage/images/30/55/65/41/derived/7924290c4ad6d3ffe42fb79e6b90b72a.jpg",
+      "category": "Departmental"
+    },
+    {
+      "id": 28,
+      "name": "Dance Competition",
+      "date": "2025-07-18",
+      "time": "5:00 PM – 8:00 PM",
+      "venue": "Open Stage",
+      "description": "Inter-college dance face-off featuring solo and group performances.",
+      "image": "https://cdn.culture.ru/images/7f6eaa51-be5f-58ae-ac2c-3eb39b76077b",
+      "category": "Cultural"
+    },
+    {
+      "id": 29,
+      "name": "Innovation Fair",
+      "date": "2025-10-20",
+      "time": "10:00 AM – 5:00 PM",
+      "venue": "Innovation Hub",
+      "description": "Students exhibit innovative projects and prototypes.",
+      "image": "https://explore.neumann.edu/hubfs/19466-college-fair-2022.jpg",
+      "category": "Academic"
+    },
+    {
+      "id": 30,
+      "name": "Inter-Department Football",
+      "date": "2025-09-12",
+      "time": "3:00 PM – 6:00 PM",
+      "venue": "Football Ground",
+      "description": "Knockout football matches between departments.",
+      "image": "https://avatars.mds.yandex.net/i?id=765a9fd5495eabaf68f2dcc3eff30ca6_l-5246350-images-thumbs&ref=rim&n=13&w=1241&h=805",
+      "category": "Sports"
+    },
+    {
+      "id": 31,
+      "name": "Cultural Parade",
+      "date": "2025-08-14",
+      "time": "9:00 AM – 12:00 PM",
+      "venue": "College Campus",
+      "description": "Traditional dress parade showcasing diverse cultures.",
+      "image": "https://thepeninsulaqatar.com/get/maximage/20250113_1736754763-228.jpg?1736754764",
+      "category": "Cultural"
+    },
+    {
+      "id": 32,
+      "name": "Drama Workshop",
+      "date": "2025-09-07",
+      "time": "10:00 AM – 1:00 PM",
+      "venue": "Drama Studio",
+      "description": "Workshop on stage acting and script writing.",
+      "image": "https://www.aber.ac.uk/en/tfts/tfts-schools/tfts---workshop.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 33,
+      "name": "Chess Tournament",
+      "date": "2025-08-21",
+      "time": "11:00 AM – 4:00 PM",
+      "venue": "Recreation Room",
+      "description": "Inter-department chess championship.",
+      "image": "https://avatars.mds.yandex.net/i?id=47d0fb1c2a73f090989551c819f0e6d1_l-4982359-images-thumbs&ref=rim&n=13&w=1920&h=1080",
+      "category": "Sports"
+    },
+    {
+      "id": 34,
+      "name": "Guest Lecture on AI",
+      "date": "2025-07-27",
+      "time": "2:00 PM – 4:00 PM",
+      "venue": "Seminar Hall 5",
+      "description": "Talk by industry expert on artificial intelligence trends.",
+      "image": "https://now.uiowa.edu/sites/now.uiowa.edu/files/styles/scale_1000/public/2017/10/science_informing_policy.jpg?itok=GZtFnZkZ",
+      "category": "Academic"
+    },
+    {
+      "id": 35,
+      "name": "Poetry Slam",
+      "date": "2025-08-09",
+      "time": "6:00 PM – 9:00 PM",
+      "venue": "Amphitheater",
+      "description": "Open mic poetry slam for budding poets.",
+      "image": "https://cdn.shopify.com/s/files/1/0542/9653/articles/Poetry_Slam_2018_5c0e1c0e-c1d3-482d-a556-367db1b4e81d_2048x.jpg?v=1579722087",
+      "category": "Cultural"
+    },
+    {
+      "id": 36,
+      "name": "Startup Pitch",
+      "date": "2025-11-02",
+      "time": "10:00 AM – 2:00 PM",
+      "venue": "Innovation Hub",
+      "description": "Students pitch their startup ideas to investors.",
+      "image": "https://assets.entrepreneur.com/content/3x2/2000/20150427224844-shark-tank-tv-entrepreneur-business-pitch.jpeg",
+      "category": "Academic"
+    },
+    {
+      "id": 37,
+      "name": "Science Quiz",
+      "date": "2025-09-03",
+      "time": "2:00 PM – 4:00 PM",
+      "venue": "Seminar Hall 6",
+      "description": "Quiz competition based on science and technology.",
+      "image": "https://d39l2hkdp2esp1.cloudfront.net/img/photo/125366/125366_00_2x.jpg?20180910142944",
+      "category": "Academic"
+    },
+    {
+      "id": 38,
+      "name": "Cultural Dance Night",
+      "date": "2025-09-08",
+      "time": "6:00 PM – 10:00 PM",
+      "venue": "Open Grounds",
+      "description": "Dance performances representing various cultures.",
+      "image": "https://thediplomat.com/wp-content/uploads/2018/03/sizes/td-story-s-2/thediplomat-south-asia-dance.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 39,
+      "name": "Cricket Match",
+      "date": "2025-08-02",
+      "time": "9:00 AM – 5:00 PM",
+      "venue": "Cricket Ground",
+      "description": "Friendly cricket match between faculty and students.",
+      "image": "https://www.cricketworld.com/images/f-116821.jpg",
+      "category": "Sports"
+    },
+    {
+      "id": 40,
+      "name": "Women's Day Celebration",
+      "date": "2025-03-08",
+      "time": "10:00 AM – 1:00 PM",
+      "venue": "Auditorium",
+      "description": "Special event celebrating women's achievements and contributions.",
+      "image": "https://www.un.org/sites/un2.un.org/files/2021/03/international-womens-day.jpg",
+      "category": "Cultural"
+    },
+    {
+      "id": 41,
+      "name": "Coding Hackathon",
+      "date": "2025-11-12",
+      "time": "9:00 AM – 9:00 PM",
+      "venue": "Computer Lab 1",
+      "description": "24-hour coding hackathon with exciting problem statements.",
+      "image": "https://www.insidehighered.com/sites/default/files/styles/max_650x650/public/media/hackathon_0.jpg?itok=5QihRIFJ",
+      "category": "Departmental"
+    },
+    {
+      "id": 42,
+      "name": "Christmas Carnival",
+      "date": "2025-12-24",
+      "time": "4:00 PM – 10:00 PM",
+      "venue": "Main Grounds",
+      "description": "Christmas celebration with games, food stalls, and music.",
+      "image": "https://static.wixstatic.com/media/11062b_92aef6d5a8e44413aa1968bc9a1b14e4~mv2.jpg/v1/fill/w_640,h_427,al_c,q_90/file.jpg",
+      "category": "Cultural"
+    }
+  ]
 }

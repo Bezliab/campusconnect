@@ -7,10 +7,10 @@ import EventsSection from "../components/EventsSection/EventsSection";
 
 function Home() {
   const backgroundImages = [
-    "https://s3.amazonaws.com/media.thecrimson.com/photos/2017/10/01/220933_1324562.jpg",
-    "https://www.sjsu.edu/_images/people/ADV_campus-events-jgensheimer_1.jpg",
-    "https://today.uic.edu/wp-content/uploads/2015/12/landscaped-quad.jpg",
-    "https://i.pinimg.com/originals/ab/47/db/ab47db936365b54271138581f1b8b699.jpg",
+    "https://devby.io/storage/images/30/55/65/41/derived/7924290c4ad6d3ffe42fb79e6b90b72a.jpg",
+    "https://debate.bard.edu/files/2021/07/Bard-Debate-Tournament-2019-scaled.jpeg",
+    "https://petapixel.com/assets/uploads/2022/09/art-exhibition.jpg",
+    "https://images.ctfassets.net/7thvzrs93dvf/7aVGKtOsspwcrLmUIb57JX/7e8e998a2e599f7866419a1c4c292c66/344_876935_160708alumninetwork_Amanda_hero.jpg",
     "https://www.sarahlawrence.edu/media/student-life/images/student_life_main_QDN_2590.jpg",
   ];
 
@@ -83,8 +83,12 @@ function Home() {
             gatherings, we've got you covered.
           </p>
           <div className="hero-btn">
-            <Link to="/events" className="feature-btn primary-btn">Explore events</Link>
-            <Link to="/about" className="feature-btn register-btn">About Us</Link>
+            <Link to="/events" className="feature-btn primary-btn">
+              Explore events
+            </Link>
+            <Link to="/about" className="feature-btn register-btn">
+              About Us
+            </Link>
           </div>
         </div>
       </section>
@@ -102,38 +106,13 @@ function Home() {
         </div>
       </div>
 
-      
       <section className="homeEventSection">
         <HomeEvents />
         <EventsSection />
       </section>
 
-      {/* Latest events */}
-      <div className="container info-section">
-        <h2 className="title">The latest from CampusConnect</h2>
-        <p className="subtitle">
-          We aim to foster a vibrant campus community by keeping you informed
-          and engaged.
-        </p>
-        <div className="latest-events">
-          {/* Map through latest events and display them */}
-          <div className="event-card">
-            <h3>Campus Carnival '25</h3>
-            <p>
-              Join us for a day of fun, food, and festivities on April 15th!
-            </p>
-          </div>
-          <div className="event-card">
-            <h3>Spring Festival 2024</h3>
-            <p>
-              Join us for a day of fun, food, and festivities on April 15th!
-            </p>
-          </div>
-        </div>
-      </div>
-      
       {/* Newsletter */}
-      <section className="container newsletter">
+      <section className="newsletter">
         <div className="newsletter-content">
           <h2 className="title">Subscribe to our Newsletter</h2>
           <p className="subtitle">
@@ -150,7 +129,6 @@ function Home() {
           <button className="feature-btn register-btn">Subscribe</button>
         </div>
       </section>
-      
     </div>
   );
 }
