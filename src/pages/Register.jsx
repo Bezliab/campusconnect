@@ -5,7 +5,7 @@ export default function Registration() {
     <div className="auth-container">
       <div className="auth-card">
         {/* Logo placeholder */}
-        <div className="auth-logo">Campus Connect</div>
+        <div className="auth-logo">CampusConnect</div>
         <p className="auth-subtitle">Please enter your details to Register</p>
 
         {/* Registration form */}

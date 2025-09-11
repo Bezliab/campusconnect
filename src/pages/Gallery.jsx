@@ -9,7 +9,7 @@ const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedYear, setSelectedYear] = useState('All');
   const [currentBg, setCurrentBg] = useState(0);
-  const [modalImage, setModalImage] = useState(null); // <-- for modal
+  const [modalImage, setModalImage] = useState(null);
 
   const categories = ['All', 'Technical', 'Cultural', 'Sports', 'Academic'];
   const years = ['All', '2024', '2023', '2022'];
@@ -123,12 +123,11 @@ const Gallery = () => {
               <div 
                 key={image.id} 
                 className="gallery-card"
-                onClick={() => setModalImage(image)} // open modal
+                onClick={() => setModalImage(image)}
               >
                 <div className="card-image-container">
                   <img src={image.imageUrl} alt={image.title} />
-                  <div className="card-image-overlay">
-                  </div>
+                  <div className="card-image-overlay"></div>
                   <span className={`category-badge ${getCategoryColor(image.category)}`}>
                     {image.category}
                   </span>
@@ -153,21 +152,36 @@ const Gallery = () => {
           </div>
         )}
 
-        {/* ===== Modal Popup ===== */}
-        {modalImage && (
-          <div className="modal-overlay" onClick={() => setModalImage(null)}>
-            <div className="modal-content" onClick={e => e.stopPropagation()}>
-              <button className="modal-close-btn" onClick={() => setModalImage(null)}>
-                <X size={20} />
-              </button>
-              <img src={modalImage.imageUrl} alt={modalImage.title} className="modal-image" />
-              <h2 className="modal-title">{modalImage.title}</h2>
-              <p className="modal-description">{modalImage.description}</p>
-              <p className="modal-event"><strong>Event:</strong> {modalImage.event}</p>
-              <p className="modal-year"><strong>Year:</strong> {modalImage.year}</p>
-            </div>
-          </div>
-        )}
+       {/* ===== Modal Popup ===== */}
+{modalImage && (
+  <div className="modal-overlay" onClick={() => setModalImage(null)}>
+    <div className="modal-content" onClick={e => e.stopPropagation()}>
+      <button className="modal-close" onClick={() => setModalImage(null)}>
+        <X size={20} />
+      </button>
+
+      <div className="modal-body">
+        {/* Left: Image */}
+        <div className="modal-left">
+          <img 
+            src={modalImage.imageUrl} 
+            alt={modalImage.title} 
+            className="modal-image" 
+          />
+        </div>
+
+        {/* Right: Text */}
+        <div className="modal-right">
+          <h2 className="modal-title">{modalImage.title}</h2>
+          <p className="modal-description">{modalImage.description}</p>
+          <p className="modal-event"><strong>Event:</strong> {modalImage.event}</p>
+          <p className="modal-year"><strong>Year:</strong> {modalImage.year}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
       </div>
     </div>
   );
