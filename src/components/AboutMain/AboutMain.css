@@ -141,7 +141,7 @@ h1.about-title {
 .events-section {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3rem !important;
 }
 
 .events-list {
@@ -213,7 +213,7 @@ h1.about-title {
 @media (max-width: 900px) {
   .about-title {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.8rem !important;
   }
   .affiliated-schools {
     grid-template-columns: repeat(2, 1fr);
@@ -278,6 +278,10 @@ h1.about-title {
   .container {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .about-title{
+    font-size: 1.4rem !important;
   }
 
   .about-hero-title {
