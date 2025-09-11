@@ -13,7 +13,6 @@ const EventCatalog = () => {
   const [showBookmarked, setShowBookmarked] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [sortBy, setSortBy] = useState('date');
-  const [timeLeft, setTimeLeft] = useState({});
   const [selectedEventId, setSelectedEventId] = useState(null);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -29,31 +28,6 @@ const EventCatalog = () => {
       setBookmarkedEvents(new Set(JSON.parse(savedBookmarks)));
     }
   }, []);
-
-  useEffect(() => {
-    // Countdown timer for featured event
-    if (featuredEvent) {
-      const timer = setInterval(() => {
-        const now = new Date().getTime();
-        const eventDate = new Date(featuredEvent.date).getTime();
-        const distance = eventDate - now;
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        setTimeLeft({ days, hours, minutes, seconds });
-
-        if (distance < 0) {
-          clearInterval(timer);
-          setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-        }
-      }, 1000);
-
-      return () => clearInterval(timer);
-    }
-  }, [featuredEvent]);
 
   useEffect(() => {
     // Filter and sort events
@@ -152,31 +126,9 @@ const EventCatalog = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1 className="college-title">Maybe College Events</h1>
-          <div className="featured-event-info">
-            <h2>{featuredEvent?.name}</h2>
-            <p>{featuredEvent?.description}</p>
-          </div>
-          <div className="countdown">
-            <h3>Event Starts In:</h3>
-            <div className="countdown-timer">
-              <div className="time-unit">
-                <span className="number">{timeLeft.days || 0}</span>
-                <span className="label">Days</span>
-              </div>
-              <div className="time-unit">
-                <span className="number">{timeLeft.hours || 0}</span>
-                <span className="label">Hours</span>
-              </div>
-              <div className="time-unit">
-                <span className="number">{timeLeft.minutes || 0}</span>
-                <span className="label">Minutes</span>
-              </div>
-              <div className="time-unit">
-                <span className="number">{timeLeft.seconds || 0}</span>
-                <span className="label">Seconds</span>
-              </div>
-            </div>
+          <h1 className="college-title">College Events</h1>
+          <div className="hero-event-info">
+            <p>Discover upcoming college events, from tech fests and workshops to cultural nights and sports competitions — all in one place with CampusConnect.</p>
           </div>
         </div>
       </section>
@@ -235,7 +187,7 @@ const EventCatalog = () => {
                 onBookmark={handleBookmark}
                 getCategoryColor={getCategoryColor}
                 formatDate={formatDate}
-                onEventClick={handleEventClick}
+                onViewDetails={handleEventClick}
               />
             ))}
           </div>

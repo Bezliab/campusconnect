@@ -1,9 +1,16 @@
 import React from 'react';
-import { Bookmark, BookmarkCheck, Calendar, MapPin, Clock } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Bookmark, BookmarkCheck, Calendar, MapPin, Clock, Eye } from 'lucide-react';
 
-const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDate, onEventClick }) => {
+const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDate }) => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate(`/events/${event.id}`);
+  };
+
   return (
-    <div className="event-card" onClick={() => onEventClick(event.id)}>
+    <div className="event-card">
       <div className="event-image">
         <img src={event.image} alt={event.name} />
         <div 
@@ -34,20 +41,26 @@ const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDa
         
         <p className="event-description">{event.description}</p>
         
-        <button 
-          className={`bookmark-btn ${isBookmarked ? 'bookmarked' : ''}`}
-          onClick={(e) => {
-            e.stopPropagation();
-            onBookmark(event.id);
-          }}
-        >
-          {isBookmarked ? (
-            <BookmarkCheck size={20} />
-          ) : (
-            <Bookmark size={20} />
-          )}
-          {isBookmarked ? 'Bookmarked' : 'Bookmark'}
-        </button>
+        <div className="event-actions">
+          <button 
+            className="view-details-btn"
+            onClick={handleViewDetails}
+          >
+            <Eye size={18} />
+            View Details
+          </button>
+          <button 
+            className={`bookmark-btn ${isBookmarked ? 'bookmarked' : ''}`}
+            onClick={() => onBookmark(event.id)}
+          >
+            {isBookmarked ? (
+              <BookmarkCheck size={18} />
+            ) : (
+              <Bookmark size={18} />
+            )}
+            {isBookmarked ? 'Bookmarked' : 'Bookmark'}
+          </button>
+        </div>
       </div>
     </div>
   );

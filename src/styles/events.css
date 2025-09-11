@@ -6,7 +6,7 @@
 
 .hero-section {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(16, 185, 129, 0.4));
+  background:  rgba(24, 24, 26, 0.5);
   z-index: 2;
 }
 
@@ -50,19 +50,19 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
   letter-spacing: -0.02em;
   color: #f3f4f6;
 }
 
-.featured-event-info h2 {
+.hero-event-info h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #fbbf24;
 }
 
-.featured-event-info p {
+.hero-event-info p {
   font-size: 1.25rem;
   margin-bottom: 3rem;
   opacity: 0.95;
@@ -289,20 +289,39 @@
   overflow: hidden;
 }
 
-.bookmark-btn {
+.event-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.bookmark-btn,
+.view-details-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: 100%;
+  flex: 1;
   padding: 0.75rem 1rem;
-  background: transparent;
-  border: 2px solid #d1d5db;
+  white-space: nowrap;
   border-radius: 12px;
-  color: #6b7280;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   justify-content: center;
+  font-size: 0.875rem;
+}
+.view-details-btn{
+  background: #6c6b69 !important;
+  border: none !important;
+  color: white;
+}
+.bookmark-btn {
+  background: transparent;
+  border: 2px solid #d1d5db;
+  color: #6b7280;
 }
 
 .bookmark-btn:hover {
@@ -315,6 +334,19 @@
   background: #3b82f6;
   border-color: #3b82f6;
   color: white;
+}
+
+.view-details-btn {
+  background: #3b82f6;
+  border: 2px solid #3b82f6;
+  color: white;
+}
+
+.view-details-btn:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
 }
 
 .no-events {
