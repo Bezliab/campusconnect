@@ -141,7 +141,7 @@ h1.about-title {
 .events-section {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3rem !important;
 }
 
 .events-list {

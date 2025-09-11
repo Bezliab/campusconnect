@@ -45,21 +45,28 @@ function Navbar() {
         </Link>
 
         {/* Hamburger / Close (mobile) */}
-        <button
+        <div
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           {menuOpen ? (
-            <XMarkIcon className="icon" />
+            <XMarkIcon className="menu-icon" />
           ) : (
-            <Bars3Icon className="icon" />
+            <Bars3Icon className="menu-icon" />
           )}
-        </button>
+        </div>
       </div>
 
       {/* Mobile slide-in menu */}
-      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+      <div
+        id="mobile-menu"
+        className={`mobile-menu${menuOpen ? " open" : ""}`}
+        role="menu"
+        aria-hidden={!menuOpen}
+      >
         <ul>
           <li>
             <Link to="/" onClick={() => setMenuOpen(false)}>
@@ -86,8 +93,22 @@ function Navbar() {
               Contact
             </Link>
           </li>
+          <li>
+            <Link to="/register" className="register-btn" onClick={() => setMenuOpen(false)}>
+              Register
+            </Link>
+          </li>
         </ul>
       </div>
+      {/* Overlay for mobile menu */}
+      {menuOpen && (
+        <div
+          className="mobile-menu-overlay"
+          onClick={() => setMenuOpen(false)}
+          tabIndex={-1}
+          aria-hidden="true"
+        />
+      )}
     </nav>
   );
 }
