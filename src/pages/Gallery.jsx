@@ -128,12 +128,10 @@ const Gallery = () => {
                 <div className="card-image-container">
                   <img src={image.imageUrl} alt={image.title} />
                   <div className="card-image-overlay">
-                    <span className="view-text">👁 View Image</span>
                   </div>
                   <span className={`category-badge ${getCategoryColor(image.category)}`}>
                     {image.category}
                   </span>
-                  <span className="year-badge">{image.year}</span>
                 </div>
 
                 <div className="card-content">
@@ -154,46 +152,6 @@ const Gallery = () => {
             <button onClick={clearFilters} className="hero-gradient-btn">Clear All Filters</button>
           </div>
         )}
-
-        {/* Category Quick Filters */}
-        <div className="category-section">
-          <div className="category-section-header">
-            <h2 className="category-section-title">Browse by Category</h2>
-            <p className="category-section-description">
-              Explore images from different event categories
-            </p>
-          </div>
-
-          <div className="category-grid">
-            {categories.slice(1).map(category => {
-              const categoryCount = images.filter(img => img.category === category).length;
-              const getCategoryIcon = cat => {
-                switch (cat) {
-                  case 'Technical': return '💻';
-                  case 'Cultural': return '🎭';
-                  case 'Sports': return '⚽';
-                  case 'Academic': return '🏢';
-                  default: return '📸';
-                }
-              };
-
-              return (
-                <button
-                  key={category}
-                  onClick={() => {
-                    setSelectedCategory(category);
-                    setSelectedYear('All');
-                  }}
-                  className="category-filter-btn"
-                >
-                  <div className="category-icon">{getCategoryIcon(category)}</div>
-                  <div className="category-name">{category}</div>
-                  <div className="category-count">{categoryCount} Events</div>
-                </button>
-              );
-            })}
-          </div>
-        </div>
 
         {/* ===== Modal Popup ===== */}
         {modalImage && (
