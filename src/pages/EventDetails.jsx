@@ -1,8 +1,12 @@
 import React from 'react';
 import { ArrowLeft, Calendar, Clock, MapPin, Users, Tag, Bookmark, BookmarkCheck } from 'lucide-react';
 import '../styles/eventDetail.css';
+import { useParams } from 'react-router-dom';
+import eventdf from '../data/events.json';
 
 const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
+  const { id } = useParams();
+  const event = eventdf.find(p => p.id === parseInt(id));
   if (!event) {
     return (
       <div className="event-details-container">
@@ -40,7 +44,7 @@ const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
 
   return (
     <div className="event-details-container">
-      <div className="event-details-header">
+      <div className="event-details-button">
         <button onClick={onBack} className="back-button">
           <ArrowLeft size={20} />
           Back to Events
@@ -50,7 +54,7 @@ const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
       <div className="event-details-content">
         <div className="event-hero">
           <div className="event-hero-image">
-            <img src={event.image} alt={event.name} />
+            <img src={event.image} alt={event.name} style={{ borderRadius: '25px' }} />
             <div className="event-hero-overlay"></div>
           </div>
           <div className="event-hero-content">
@@ -133,7 +137,6 @@ const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
                 </span>
               </div>
             </div>
-
             <div className="event-contact">
               <h3>Contact Information</h3>
               <p><strong>Email:</strong> events@maybecollege.edu</p>
