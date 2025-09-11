@@ -6,7 +6,7 @@
     "year": "2024",
     "event": "TechFest 2024",
     "description": "Students participating in coding competitions and exhibitions.",
-    "imageUrl": "/images/codingcompet.jpg"
+    "imageUrl": "https://www.cryptopolitan.com/wp-content/uploads/2024/01/event-b192b9a9.webp"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "year": "2024",
     "event": "Cultural Night 2024",
     "description": "Traditional dances performed by students.",
-    "imageUrl": "/images/cultural_1.jpg"
+    "imageUrl": "https://userscontent2.emaze.com/images/7781358c-0c2c-4651-aa6c-534ec79b2d8b/5b50384d-122a-4e9b-8e71-9273821cb9d8.png"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "year": "2024",
     "event": "TechFest 2024",
     "description": "Showcasing innovative student projects.",
-    "imageUrl": "/images/techfest_2.jpg"
+    "imageUrl": "https://www.thetradeshownetwork.com/hubfs/rsna-1.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "year": "2023",
     "event": "TechFest 2023",
     "description": "An expert sharing industry insights.",
-    "imageUrl": "/images/techfest_3.jpg"
+    "imageUrl": "https://cdn.pressebox.de/a/34ceb15ef9e6209e/attachments/1233312.attachment/filename/827_2.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "year": "2024",
     "event": "Cultural Night 2024",
     "description": "Students performing live music.",
-    "imageUrl": "/images/cultural_2.jpg"
+    "imageUrl": "https://c8.alamy.com/comp/2FWKT10/middle-school-student-concert-band-performance-in-davis-california-2FWKT10.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "year": "2022",
     "event": "Cultural Night 2022",
     "description": "Students performing a drama skit.",
-    "imageUrl": "/images/cultural_3.jpg"
+    "imageUrl": "https://static01.nyt.com/images/2016/03/27/magazine/27shuffle-ss-slide-6K87/27shuffle-ss-slide-6K87-superJumbo.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "year": "2022",
     "event": "Sports Meet 2022",
     "description": "Cricket tournament between colleges.",
-    "imageUrl": "/images/sports_1.jpg"
+    "imageUrl": "https://img.redbull.com/images/c_fill,g_auto,w_1200,h_630/f_auto,q_auto/redbullcom/2014/09/18/1331679348638_2/t20-batsmen-in-the-world-right-now"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "year": "2023",
     "event": "Sports Meet 2023",
     "description": "Various track and field competitions.",
-    "imageUrl": "/images/sports_2.jpg"
+    "imageUrl": "https://4.bp.blogspot.com/-yMgIIzyBNnc/T_Ob_sbkuhI/AAAAAAAADEc/MGRA2xGq358/s1600/track%2Band%2Bfield%2Bday%2B2%2B3%2B1282.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "year": "2022",
     "event": "Sports Meet 2022",
     "description": "Exciting basketball finals.",
-    "imageUrl": "/images/sports_3.jpg"
+    "imageUrl": "https://cdn.vox-cdn.com/thumbor/yLxlaTLbHy1d_tkihjeApT8cPQE=/0x0:4796x2698/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/53890687/657519570.0.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "year": "2023",
     "event": "Science Exhibition 2023",
     "description": "Students presenting innovative science projects.",
-    "imageUrl": "/images/science_1.jpg"
+    "imageUrl": "https://live.staticflickr.com/7075/7268714842_e7e3aa1829_b.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "year": "2023",
     "event": "Tech Workshop 2023",
     "description": "Hands-on robotics and automation workshop for students.",
-    "imageUrl": "/images/Techworkshop_1.jpg"
+    "imageUrl": "https://media.npr.org/assets/img/2023/10/04/mleong_scioly_20230831_slide-1fc39305d8ab464d47b44d973eec5ba99454c852.jpg"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "year": "2023",
     "event": "Annual Day 2023",
     "description": "A parade showcasing student talents and cultural heritage.",
-    "imageUrl": "/images/cultural_4.jpg"
+    "imageUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1xSK9q.img?w=940&h=529&m=4&q=74"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "year": "2022",
     "event": "Hackathon 2022",
     "description": "Teams developing innovative solutions within 24 hours.",
-    "imageUrl": "/images/hackathon_1.jpg"
+    "imageUrl": "https://hightech.fm/wp-content/uploads/2023/09/41611db17477b9f54b70cec71260a4538800158cf1924e827bb2cfee028e9a87-2048x1152.jpeg"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "year": "2024",
     "event": "AI Summit 2024",
     "description": "Renowned professor delivering a lecture on artificial intelligence trends.",
-    "imageUrl": "/images/ai_lecture.jpg"
+    "imageUrl": "https://www.sueddeutsche.de/2022/06/14/23c5258b-714a-4ae1-b32d-d96964f4e482.jpeg?q=60&fm=jpeg&width=2000&rect=0%2C35%2C860%2C484"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "year": "2023",
     "event": "Mind Sports 2023",
     "description": "Students competing in a strategic chess tournament.",
-    "imageUrl": "/images/chess_1.jpg"
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/54fe2721e4b03e430c530d7d/1696222503317-GUFQWPT4Z9KGIE0ID0KV/CFCC+2023+Autumn+Open+Tournament-1.jpg"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "year": "2024",
     "event": "Cultural Night 2024",
     "description": "Showcasing modern and traditional student-designed outfits.",
-    "imageUrl": "/images/fashion_show.jpg"
+    "imageUrl": "https://brechando.com/wp-content/uploads/2016/07/texo_moda-mariana-zappar.jpg"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "year": "2023",
     "event": "Bootcamp 2023",
     "description": "Intensive programming sessions for beginners and enthusiasts.",
-    "imageUrl": "/images/bootcamp_1.jpg"
+    "imageUrl": "https://wjccschools.org/nes/wp-content/uploads/sites/11/2019/11/IMG_6634-scaled.jpg"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "year": "2022",
     "event": "Math Fest 2022",
     "description": "Inter-school mathematics quiz competition.",
-    "imageUrl": "/images/math_quiz.jpg"
+    "imageUrl": "https://www.brookings.edu/wp-content/uploads/2017/04/es_20170426_understanding_and_addressing_teacher_shortages_in_us_dee_goldhaber.jpg"
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "year": "2024",
     "event": "Sports Meet 2024",
     "description": "Thrilling football matches between college teams.",
-    "imageUrl": "/images/football_1.jpg"
+    "imageUrl": "https://www.americanfootballinternational.com/wp-content/uploads/Mexico-20223-ONEFA-Sept-16-Borregas-TEM-Tigres.png"
   },
   {
     "id": 20,
@@ -177,7 +177,7 @@
     "year": "2023",
     "event": "Art Fest 2023",
     "description": "Students displaying creative photography works.",
-    "imageUrl": "/images/photography_1.jpg"
+    "imageUrl": "https://www.studis-online.de/StudInfo/Bilder/HS/711-diploma-creative-direction1200x801.jpg"
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "year": "2024",
     "event": "E-Sports Fest 2024",
     "description": "Students competing in popular multiplayer video games.",
-    "imageUrl": "/images/esports_1.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/LOL2016WorldsFinalsArena.jpg/1600px-LOL2016WorldsFinalsArena.jpg"
   },
   {
     "id": 22,
@@ -195,7 +195,7 @@
     "year": "2023",
     "event": "Debate Fest 2023",
     "description": "Teams debating on current global issues.",
-    "imageUrl": "/images/debate_1.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Debaters_compete_at_NSDA_Nationals_03.jpg/960px-Debaters_compete_at_NSDA_Nationals_03.jpg"
   },
   {
     "id": 23,
@@ -204,7 +204,7 @@
     "year": "2022",
     "event": "Food Fest 2022",
     "description": "Students presenting traditional foods from different regions.",
-    "imageUrl": "/images/foodfest_1.jpg"
+    "imageUrl": "https://avatars.mds.yandex.net/get-altay/15112342/2a000001956b2137e9bcc833f19f27991090/XXXL"
   },
   {
     "id": 24,
@@ -213,7 +213,7 @@
     "year": "2024",
     "event": "TechFest 2024",
     "description": "Students designing and flying custom-built drones.",
-    "imageUrl": "/images/drone_1.jpg"
+    "imageUrl": "https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/news/events/alphapilot/austin-race/i-2PQpHmz-X4%20(1).jpg"
   },
   {
     "id": 25,
@@ -222,7 +222,7 @@
     "year": "2023",
     "event": "Annual Day 2023",
     "description": "Stage performances of classic and modern plays.",
-    "imageUrl": "/images/theatre_1.jpg"
+    "imageUrl": "https://static.tildacdn.com/tild3938-3564-4933-a165-643066653637/34.jpg"
   },
   {
     "id": 26,
@@ -231,7 +231,7 @@
     "year": "2022",
     "event": "CyberSec Summit 2022",
     "description": "Hands-on ethical hacking and cybersecurity awareness training.",
-    "imageUrl": "/images/cybersec_1.jpg"
+    "imageUrl": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2023/05/civil_security_from_space/24895653-1-eng-GB/Civil_security_from_space.jpg"
   },
   {
     "id": 27,
@@ -240,7 +240,7 @@
     "year": "2024",
     "event": "Cultural Night 2024",
     "description": "Students performing self-written and classic poetry.",
-    "imageUrl": "/images/poetry_1.jpg"
+    "imageUrl": "https://arc.stimg.co/startribunemedia/TCGHM2XWLUIZPJO72ZMF4TVVOU.jpg?&w=436&ar=3:2&fit=crop"
   },
   {
     "id": 28,
@@ -249,7 +249,7 @@
     "year": "2022",
     "event": "Sports Meet 2022",
     "description": "Fast-paced table tennis matches.",
-    "imageUrl": "/images/tabletennis_1.jpg"
+    "imageUrl": "https://i.cbc.ca/1.5199621.1562246239!/fileImage/httpImage/youth-table-tennis-championship-summerside-2019.jpg"
   },
   {
     "id": 29,
@@ -258,7 +258,7 @@
     "year": "2024",
     "event": "Science Week 2024",
     "description": "Students exploring stars and planets with telescopes.",
-    "imageUrl": "/images/astronomy_1.jpg"
+    "imageUrl": "https://www.hannaplaut.com/wp-content/uploads/2023/03/mcdonald_observ_night-1536x1024.jpg"
   },
   {
     "id": 30,
@@ -267,7 +267,7 @@
     "year": "2023",
     "event": "Innovation Week 2023",
     "description": "Student entrepreneurs presenting business ideas to judges.",
-    "imageUrl": "/images/startup_1.jpg"
+    "imageUrl": "https://www.sxsw.com/wp-content/uploads/2020/05/sxswpitch-Beverly-Schulze.png"
   },
   {
     "id": 31,
@@ -276,7 +276,7 @@
     "year": "2023",
     "event": "Music Fest 2023",
     "description": "Live performance of cultural and folk instruments.",
-    "imageUrl": "/images/music_1.jpg"
+    "imageUrl": "https://assets.classicfm.com/2014/27/springwood-high-school-concert-band7-1405022373-view-1.jpg"
   },
   {
     "id": 32,
@@ -285,7 +285,7 @@
     "year": "2024",
     "event": "Sports Meet 2024",
     "description": "Badminton singles and doubles championship.",
-    "imageUrl": "/images/badminton_1.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/2011_US_Open_Badminton_2626.jpg"
   },
   {
     "id": 33,
@@ -294,7 +294,7 @@
     "year": "2022",
     "event": "LitFest 2022",
     "description": "Discussion panels and presentations on literature and language.",
-    "imageUrl": "/images/litfest_1.jpg"
+    "imageUrl": "https://fmv.edu.tr/Uploads/Gallery/Medium/afdb64fd-8018-4dd0-a99d-779dd139fb1c.jpg"
   },
   {
     "id": 34,
@@ -303,7 +303,7 @@
     "year": "2023",
     "event": "Hack Sprint 2023",
     "description": "Quick problem-solving coding competition.",
-    "imageUrl": "/images/hacksprint_1.jpg"
+    "imageUrl": "https://miro.medium.com/v2/resize:fit:1200/1*ToKCG2zjVB12XFGBPYVVhg.png"
   },
   {
     "id": 35,
@@ -312,7 +312,7 @@
     "year": "2022",
     "event": "Art Fest 2022",
     "description": "Students showcasing paintings, sculptures, and craftwork.",
-    "imageUrl": "/images/art_1.jpg"
+    "imageUrl": "https://live.mts.ru/image/1300x1300/tretyakovskaya-galereya-zapustila-novii-tsifrovoi-proekt-caea0a74-1ec4-f4ed-faa2-ae693cf7387e.jpg"
   },
   {
     "id": 36,
@@ -321,7 +321,7 @@
     "year": "2024",
     "event": "TechFest 2024",
     "description": "Students racing robots they have designed and built.",
-    "imageUrl": "/images/robotrace_1.jpg"
+    "imageUrl": "https://images.unian.net/photos/2016_10/thumb_files/1200_0_1477221540-8576.jpeg"
   },
   {
     "id": 37,
@@ -330,7 +330,7 @@
     "year": "2023",
     "event": "Sports Meet 2023",
     "description": "Exciting volleyball final match between top teams.",
-    "imageUrl": "/images/volleyball_1.jpg"
+    "imageUrl": "https://cdn.vox-cdn.com/thumbor/ObPkVJfnjLoqEKgxzTPCXe--5AY=/0x265:3688x2196/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19552338/1189906066.jpg.jpg"
   },
   {
     "id": 38,
@@ -339,7 +339,7 @@
     "year": "2024",
     "event": "Humanities Week 2024",
     "description": "Open dialogue on philosophy and critical thinking.",
-    "imageUrl": "/images/philosophy_1.jpg"
+    "imageUrl": "https://asset.library.wisc.edu/1711.dl/5YBS6WEY4CVY79D/M/h1380-08990.jpg"
   },
   {
     "id": 39,
@@ -348,7 +348,7 @@
     "year": "2022",
     "event": "Sports Meet 2022",
     "description": "Students demonstrating self-defense and martial art skills.",
-    "imageUrl": "/images/martialarts_1.jpg"
+    "imageUrl": "https://media.defense.gov/2019/Oct/31/2002204439/-1/-1/0/191030-A-XX639-1005.JPG"
   },
   {
     "id": 40,
@@ -357,6 +357,6 @@
     "year": "2023",
     "event": "Cultural Night 2023",
     "description": "Runway show highlighting diverse cultural attire.",
-    "imageUrl": "/images/fashion_2.jpg"
+    "imageUrl": "https://live.staticflickr.com/462/19027925970_6cc3fb8286_b.jpg"
   }
 ]

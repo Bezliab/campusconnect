@@ -1,202 +1,207 @@
-import React, { useEffect, useMemo, useState } from "react";
-import EventCard from "../components/EventCard/EventCard.jsx";
-import eventsFallback from "../data/events.json";
-import "../styles/events.css";
+import React, { useState, useEffect } from 'react';
+import { Bookmark, BookmarkCheck, Filter, Calendar, MapPin, Clock, Users } from 'lucide-react';
+import eventsData from '../data/events.json';
+import EventCard from '../components/EventCard/EventCard';
+import EventDetails from './EventDetails';
+import '../styles/events.css';
 
-const DATA_URL = "/data/events.json";
-const BOOKMARK_KEY = "campusconnect:bookmarkedEvents:v1";
+const EventCatalog = () => {
+  const [events, setEvents] = useState([]);
+  const [filteredEvents, setFilteredEvents] = useState([]);
+  const [featuredEvent, setFeaturedEvent] = useState(null);
+  const [bookmarkedEvents, setBookmarkedEvents] = useState(new Set());
+  const [showBookmarked, setShowBookmarked] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [sortBy, setSortBy] = useState('date');
+  const [selectedEventId, setSelectedEventId] = useState(null);
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
-// Sorting options
-const SORTS = [
-  { key: "dateAsc", label: "Date" },
-  { key: "nameAsc", label: "Name" },
-  { key: "categoryAsc", label: "Category" }
-];
-
-// Sorting functions
-const sorters = {
-  dateAsc: (a, b) => new Date(a.date) - new Date(b.date),
-  dateDesc: (a, b) => new Date(b.date) - new Date(a.date),
-  nameAsc: (a, b) => a.title.localeCompare(b.title),
-  categoryAsc: (a, b) => a.category.localeCompare(b.category)
-};
-
-// Get unique categories from events
-const uniqueCategories = (events) => {
-  const set = new Set();
-  events.forEach((e) => e.category && set.add(e.category));
-  return ["All", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
-};
-
-const Events = () => {
-  const [allEvents, setAllEvents] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
-  const [category, setCategory] = useState("All");
-  const [sortBy, setSortBy] = useState("dateAsc");
-  const [query, setQuery] = useState("");
-
-  // bookmarks is an array of event titles
-  const [bookmarks, setBookmarks] = useState(() => {
-    try {
-      const raw = localStorage.getItem(BOOKMARK_KEY);
-      return raw ? JSON.parse(raw) : [];
-    } catch {
-      return [];
-    }
-  });
-
-  // NEW: state to show only bookmarks
-  const [showBookmarks, setShowBookmarks] = useState(false);
-
-  // Fetch events.json
   useEffect(() => {
-    let alive = true;
-    const fetchData = async () => {
-      try {
-        const res = await fetch(DATA_URL, { cache: "no-store" });
-        if (!res.ok) throw new Error("Network error");
-        const data = await res.json();
-        if (alive) setAllEvents(Array.isArray(data) ? data : []);
-      } catch (e) {
-        console.warn("Falling back to imported events.json", e);
-        if (alive) setAllEvents(Array.isArray(eventsFallback) ? eventsFallback : []);
-      } finally {
-        if (alive) setLoading(false);
-      }
-    };
-    fetchData();
-    return () => {
-      alive = false;
-    };
+    // Load events from JSON
+    setEvents(eventsData.events);
+    setFeaturedEvent(eventsData.featuredEvent);
+    setFilteredEvents(eventsData.events);
+
+    // Load bookmarks from localStorage
+    const savedBookmarks = localStorage.getItem('bookmarkedEvents');
+    if (savedBookmarks) {
+      setBookmarkedEvents(new Set(JSON.parse(savedBookmarks)));
+    }
   }, []);
 
-  // Persist bookmarks
   useEffect(() => {
-    try {
-      localStorage.setItem(BOOKMARK_KEY, JSON.stringify(bookmarks));
-    } catch (e) {
-      console.error("Could not persist bookmarks", e);
-    }
-  }, [bookmarks]);
+    // Filter and sort events
+    let filtered = [...events];
 
-  // Build category list from events
-  const categories = useMemo(() => uniqueCategories(allEvents), [allEvents]);
-
-  // Filtered list
-  const filtered = useMemo(() => {
-    let list = [...allEvents];
-
-    if (showBookmarks) {
-      list = list.filter((e) => bookmarks.includes(e.title));
+    // Category filter
+    if (selectedCategory !== 'all') {
+      filtered = filtered.filter(event => event.category === selectedCategory);
     }
 
-    if (category !== "All") list = list.filter((e) => e.category === category);
-
-    if (query.trim()) {
-      const q = query.toLowerCase();
-      list = list.filter(
-        (e) =>
-          e.title.toLowerCase().includes(q) ||
-          e.description.toLowerCase().includes(q) ||
-          e.venue.toLowerCase().includes(q) ||
-          (e.category && e.category.toLowerCase().includes(q))
-      );
+    // Show bookmarked filter
+    if (showBookmarked) {
+      filtered = filtered.filter(event => bookmarkedEvents.has(event.id));
     }
 
-    list.sort(sorters[sortBy] ?? sorters.dateAsc);
-    return list;
-  }, [allEvents, category, sortBy, query, bookmarks, showBookmarks]);
+    // Sort events
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case 'date':
+          return new Date(a.date) - new Date(b.date);
+        case 'name':
+          return a.name.localeCompare(b.name);
+        case 'category':
+          return a.category.localeCompare(b.category);
+        default:
+          return 0;
+      }
+    });
 
-  // Toggle bookmark
-  const toggleBookmark = (title) => {
-    setBookmarks((prev) =>
-      prev.includes(title) ? prev.filter((t) => t !== title) : [...prev, title]
-    );
+    setFilteredEvents(filtered);
+  }, [events, selectedCategory, sortBy, bookmarkedEvents, showBookmarked]);
+
+  const handleBookmark = (eventId) => {
+    const newBookmarks = new Set(bookmarkedEvents);
+    if (newBookmarks.has(eventId)) {
+      newBookmarks.delete(eventId);
+    } else {
+      newBookmarks.add(eventId);
+    }
+    setBookmarkedEvents(newBookmarks);
+    localStorage.setItem('bookmarkedEvents', JSON.stringify([...newBookmarks]));
   };
 
+  const handleEventClick = (eventId) => {
+    const event = events.find(e => e.id === eventId);
+    setSelectedEvent(event);
+    setSelectedEventId(eventId);
+  };
+
+  const handleBackToEvents = () => {
+    setSelectedEventId(null);
+    setSelectedEvent(null);
+  };
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    });
+  };
+
+  const getCategoryColor = (category) => {
+    const colors = {
+      academic: '#3B82F6',
+      cultural: '#F59E0B',
+      sports: '#10B981',
+      departmental: '#8B5CF6'
+    };
+    return colors[category] || '#6B7280';
+  };
+
+  // If an event is selected, show the EventDetails component
+  if (selectedEventId && selectedEvent) {
+    return (
+      <EventDetails
+        event={selectedEvent}
+        onBack={handleBackToEvents}
+        isBookmarked={bookmarkedEvents.has(selectedEventId)}
+        onBookmark={handleBookmark}
+      />
+    );
+  }
+
   return (
-    <section className="events">
-      <header className="events__header">
-        <h1 className="events__title">CampusConnect — Events</h1>
-        <p className="events__subtitle">
-          Explore upcoming activities across Academic, Cultural, Sports, and Departmental tracks.
-        </p>
-      </header>
-
-      <div className="events-toolbar">
-  {/* Search */}
-  <div className="filter-group search-group">
-    <input
-      className="input search-input"
-      type="search"
-      placeholder="Search events, departments..."
-      value={query}
-      onChange={(e) => setQuery(e.target.value)}
-      aria-label="Search events"
-    />
-  </div>
-
-  {/* Filters */}
-  <div className="filter-group filters">
-    <label htmlFor="category" className="filter-label">Category:</label>
-    <select
-      id="category"
-      className="select"
-      value={category}
-      onChange={(e) => setCategory(e.target.value)}
-    >
-      {categories.map((cat) => (
-        <option key={cat} value={cat}>{cat}</option>
-      ))}
-    </select>
-
-    <label htmlFor="sortBy" className="filter-label">Sort:</label>
-    <select
-      id="sortBy"
-      className="select"
-      value={sortBy}
-      onChange={(e) => setSortBy(e.target.value)}
-    >
-      {SORTS.map((s) => (
-        <option key={s.key} value={s.key}>{s.label}</option>
-      ))}
-    </select>
-
-    <button
-      className={`btn-clear ${showBookmarks ? "active" : ""}`}
-      onClick={() => setShowBookmarks((prev) => !prev)}
-    >
-      {showBookmarks ? "Show All Events" : "Show Bookmarked"}
-    </button>
-  </div>
-</div>
-
-
-      {/* Status messages */}
-      {loading ? (
-        <div className="events__loading">Loading events…</div>
-      ) : error ? (
-        <div className="events__error">
-          Failed to load events. Please check <code>data/events.json</code>.
+    <div className="event-catalog">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-background">
+          <img src={featuredEvent?.image} alt="Featured Event" />
+          <div className="hero-overlay"></div>
         </div>
-      ) : filtered.length === 0 ? (
-        <div className="events__empty">No events match your filters.</div>
-      ) : (
-        <div className="events__grid">
-          {filtered.map((evt) => (
-            <EventCard
-              key={evt.id}
-              event={evt}
-              isBookmarked={bookmarks.includes(evt.title)}
-              onToggleBookmark={toggleBookmark}
-            />
-          ))}
+        <div className="hero-background">
+          <img src={featuredEvent?.image} alt="Featured Event" />
+          <div className="hero-overlay"></div>
         </div>
-      )}
-    </section>
+        <div className="hero-content">
+          <h1 className="college-title">College Events</h1>
+          <div className="hero-event-info">
+            <p>Discover upcoming college events, from tech fests and workshops to cultural nights and sports competitions — all in one place with CampusConnect.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Catalog Section */}
+      <section className="catalog-section">
+        <div className="container">
+          {/* Controls */}
+          <div className="catalog-controls">
+            <div className="filters">
+              <div className="filter-group">
+                <Filter size={20} />
+                <select 
+                  value={selectedCategory}
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                  className="filter-select"
+                >
+                  <option value="all">All Categories</option>
+                  <option value="academic">Academic Events</option>
+                  <option value="cultural">Cultural Events</option>
+                  <option value="sports">Sports Events</option>
+                  <option value="departmental">Departmental Events</option>
+                </select>
+              </div>
+              
+              <div className="filter-group">
+                <Users size={20} />
+                <select 
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                  className="filter-select"
+                >
+                  <option value="date">Sort by Date</option>
+                  <option value="name">Sort by Name</option>
+                  <option value="category">Sort by Category</option>
+                </select>
+              </div>
+            </div>
+
+            <button 
+              className={`bookmark-toggle ${showBookmarked ? 'active' : ''}`}
+              onClick={() => setShowBookmarked(!showBookmarked)}
+            >
+              <BookmarkCheck size={20} />
+              {showBookmarked ? 'Show All Events' : 'Show Bookmarked'}
+            </button>
+          </div>
+
+          {/* Events Grid */}
+          <div className="events-container">
+            {filteredEvents.map(event => (
+              <EventCard
+                key={event.id}
+                event={event}
+                isBookmarked={bookmarkedEvents.has(event.id)}
+                onBookmark={handleBookmark}
+                getCategoryColor={getCategoryColor}
+                formatDate={formatDate}
+                onViewDetails={handleEventClick}
+              />
+            ))}
+          </div>
+
+          {filteredEvents.length === 0 && (
+            <div className="no-events">
+              <h3>No events found</h3>
+              <p>Try adjusting your filters or check back later for new events.</p>
+            </div>
+          )}
+        </div>
+      </section>
+    </div>
   );
 };
 
-export default Events;
+export default EventCatalog;
