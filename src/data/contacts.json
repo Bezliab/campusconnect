@@ -1,0 +1,54 @@
+{
+  "faculty": [
+    {
+      "id": 1,
+      "name": "Prof. Adeniji Isaac",
+      "designation": "Professor & Head",
+      "department": "Computer Science Engineering",
+      "phone": "+234-9012345678",
+      "email": "isaac.adeniji@college.edu"
+    },
+    {
+      "id": 2,
+      "name": "Prof. Ogunmuyiwa Ireoluwa",
+      "designation": "Associate Professor",
+      "department": "Electronics & Communication",
+      "phone": "+234-8012345678",
+      "email": "muyiwa.oreoluwa@college.edu"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Victor Ajisola",
+      "designation": "Assistant Professor",
+      "department": "Mechanical Engineering",
+      "phone": "+234-8012345678",
+      "email": "ajisola.victor@college.edu"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Mustapha Akintola",
+      "role": "Student Coordinator - Technical Events",
+      "department": "CSE Final Year",
+      "phone": "+234-8012345678",
+      "email": "akintola.mustapha@student.college.edu"
+    },
+    {
+      "id": 2,
+      "name": "Ahmad Akorede",
+      "role": "Student Coordinator - Cultural Events",
+      "department": "ECE Final Year",
+      "phone": "+234-8012345678",
+      "email": "akorede.ahmad@student.college.edu"
+    },
+    {
+      "id": 3,
+      "name": "Akorede Abduljeleel",
+      "role": "Student Coordinator - Sports Events",
+      "department": "ME Final Year",
+      "phone": "+234-8012345678",
+      "email": "abdul.akorede@student.college.edu"
+    }
+  ]
+}
