@@ -1,5 +1,5 @@
+import React from "react";
 import "./AboutMain.css";
-
 function AboutMain() {
   return (
     <section className="about">

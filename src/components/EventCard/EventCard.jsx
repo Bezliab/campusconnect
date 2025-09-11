@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Bookmark, BookmarkCheck, Calendar, MapPin, Clock, Eye } from 'lucide-react';
 
-const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDate, onViewDetails }) => {
+const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDate }) => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate(`/events/${event.id}`);
+  };
+
   return (
     <div className="event-card">
       <div className="event-image">
@@ -37,7 +44,7 @@ const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDa
         <div className="event-actions">
           <button 
             className="view-details-btn"
-            onClick={() => onViewDetails(event.id)}
+            onClick={handleViewDetails}
           >
             <Eye size={18} />
             View Details

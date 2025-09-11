@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import contactsData from "../data/contacts.json"
 import "../styles/contact.css"
@@ -24,15 +22,18 @@ function Contact() {
   }
 
   return (
-    <div className="container">
-      <div className="contact-page">
+    <>
+      <div className="contact-hero">
         <div className="contact-text">
           <h1>Contact Us</h1>
           <p className="contact-intro">
             Get in touch with our faculty and student coordinators for any event-related queries.
           </p>
         </div>
+        <div className="overlay"></div>
+      </div>
 
+      <div className="container contact-content">
         <section className="coordinators-section">
           <h2>Faculty Coordinators</h2>
           <div className="coordinators-grid">
@@ -102,25 +103,25 @@ function Contact() {
                 <h2>{selectedPerson.name}</h2>
               </div>
               <div className="popup-details">
-                <div className="detail-item">
+                <div className="contact-detail-item">
                   <strong>Name:</strong> {selectedPerson.name}
                 </div>
-                <div className="detail-item">
+                <div className="contact-detail-item">
                   <strong>Department:</strong> {selectedPerson.department}
                 </div>
-                <div className="detail-item">
+                <div className="contact-detail-item">
                   <strong>Faculty:</strong> {selectedPerson.faculty}
                 </div>
-                <div className="detail-item">
+                <div className="contact-detail-item">
                   <strong>Position:</strong> {selectedPerson.position}
                 </div>
-                <div className="detail-item">
+                <div className="contact-detail-item">
                   <strong>Specialty:</strong> {selectedPerson.specialty}
                 </div>
-                <div className="detail-item">
+                <div className="contact-detail-item">
                   <strong>Phone:</strong> {selectedPerson.phone}
                 </div>
-                <div className="detail-item">
+                <div className="contact-detail-item">
                   <strong>Email:</strong>
                   <a href={`mailto:${selectedPerson.email}`}> {selectedPerson.email}</a>
                 </div>
@@ -132,16 +133,16 @@ function Contact() {
         <section className="location-section">
           <h2>College Location</h2>
           <div className="map-container">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6086750793893!2d3.88568777359533!3d7.397668912390913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d6af7758517%3A0x17e6ec5eb71490c3!2sIdea%20Konsult%20Limited%20Adamasingba!5e0!3m2!1sen!2sng!4v1757591724413!5m2!1sen!2sng" 
-              width="100%" 
-              height="400" 
-              style={{ border: 0 }} 
-              allowfullscreen="" 
-              loading="lazy" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6086750793893!2d3.88568777359533!3d7.397668912390913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d6af7758517%3A0x17e6ec5eb71490c3!2sIdea%20Konsult%20Limited%20Adamasingba!5e0!3m2!1sen!2sng!4v1757591724413!5m2!1sen!2sng"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               title="College Location"
-              ></iframe>
+            ></iframe>
           </div>
           <div className="address-info">
             <h3>Campus Address</h3>
@@ -157,7 +158,7 @@ function Contact() {
           </div>
         </section>
       </div>
-    </div>
+    </>
   )
 }
 
