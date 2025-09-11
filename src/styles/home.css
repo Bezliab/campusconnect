@@ -42,6 +42,8 @@
 
 .subheading {
   max-width: 50rem;
+  width: 90%;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
   color: #fff !important;
@@ -55,6 +57,7 @@
 }
 .hero-container p {
   font-size: 1.2rem;
+  line-height: 1.3;
   color: #e0e0e0;
 }
 
@@ -67,6 +70,7 @@
 
 .feature-btn {
   padding: 0.8rem 2rem !important;
+  display:  flex !important;
 }
 .feature-btn:hover {
   color: white !important;
@@ -139,7 +143,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem !important;
   text-align: center;
 }
 

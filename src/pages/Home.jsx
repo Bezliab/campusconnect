@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
+import HomeEvents from "../components/HomeEvents/HomeEvents";
+import EventsSection from "../components/EventsSection/EventsSection";
 
 function Home() {
   const backgroundImages = [
@@ -100,6 +102,12 @@ function Home() {
         </div>
       </div>
 
+      
+      <section className="homeEventSection">
+        <HomeEvents />
+        <EventsSection />
+      </section>
+
       {/* Latest events */}
       <div className="container info-section">
         <h2 className="title">The latest from CampusConnect</h2>
@@ -123,7 +131,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+      
       {/* Newsletter */}
       <section className="container newsletter">
         <div className="newsletter-content">
@@ -142,6 +150,7 @@ function Home() {
           <button className="feature-btn register-btn">Subscribe</button>
         </div>
       </section>
+      
     </div>
   );
 }
