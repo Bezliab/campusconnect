@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Camera, Calendar as CalendarIcon } from 'lucide-react';
+import { Camera, Calendar as CalendarIcon, X } from 'lucide-react';
 import galleryData from '../data/gallery.json';
 import '../styles/Gallery.css';
 
@@ -9,11 +9,11 @@ const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedYear, setSelectedYear] = useState('All');
   const [currentBg, setCurrentBg] = useState(0);
+  const [modalImage, setModalImage] = useState(null); // <-- for modal
 
   const categories = ['All', 'Technical', 'Cultural', 'Sports', 'Academic'];
   const years = ['All', '2024', '2023', '2022'];
 
-  // Background slideshow images
   const backgroundImages = [
     'https://bloximages.chicago2.vip.townnews.com/chippewa.com/content/tncms/assets/v3/editorial/e/3c/e3cd5a33-eedf-5573-9280-b86bd8d46404/5a7dfdc55be10.image.jpg',
     'https://imu.indiana.edu/images/hotel/reservations-campusevents/football-crowd.jpg',
@@ -26,11 +26,10 @@ const Gallery = () => {
     setFilteredImages(galleryData);
   }, []);
 
-  // Slideshow effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentBg(prev => (prev + 1) % backgroundImages.length);
-    }, 5000); // change every 5 seconds
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -40,11 +39,9 @@ const Gallery = () => {
     if (selectedCategory !== 'All') {
       filtered = filtered.filter(image => image.category === selectedCategory);
     }
-
     if (selectedYear !== 'All') {
       filtered = filtered.filter(image => image.year === selectedYear);
     }
-
     setFilteredImages(filtered);
   }, [images, selectedCategory, selectedYear]);
 
@@ -68,15 +65,11 @@ const Gallery = () => {
       {/* ===== Full Width Header Slideshow ===== */}
       <div
         className="gallery-header-slideshow"
-        style={{
-          backgroundImage: `url(${backgroundImages[currentBg]})`,
-        }}
+        style={{ backgroundImage: `url(${backgroundImages[currentBg]})` }}
       >
         <div className="gallery-header-overlay"></div>
         <div className="gallery-header-content">
-          <h1 className="gallery-title">
-            Event Gallery
-          </h1>
+          <h1 className="gallery-title">Event Gallery</h1>
           <p className="gallery-subtitle">
             Explore memorable moments from our campus events through our visual gallery
           </p>
@@ -90,7 +83,7 @@ const Gallery = () => {
           <div className="filters-row">
             <div className="filters-controls">
               <div className="filter-group">
-                <label className="filter-label">Category:</label>
+                <label>Category:</label>
                 <select 
                   value={selectedCategory} 
                   onChange={e => setSelectedCategory(e.target.value)}
@@ -104,7 +97,7 @@ const Gallery = () => {
 
               <div className="filter-group">
                 <CalendarIcon className="icon-sm text-muted" />
-                <label className="filter-label">Year:</label>
+                <label>Year:</label>
                 <select 
                   value={selectedYear} 
                   onChange={e => setSelectedYear(e.target.value)}
@@ -121,43 +114,30 @@ const Gallery = () => {
               </button>
             </div>
           </div>
-
-          {/* Active Filters */}
-          <div className="active-filters">
-            {selectedCategory !== 'All' && (
-              <span className="filter-badge">
-                Category: {selectedCategory}
-                <button onClick={() => setSelectedCategory('All')} className="remove-filter-btn">×</button>
-              </span>
-            )}
-            {selectedYear !== 'All' && (
-              <span className="year-filter-badge">
-                Year: {selectedYear}
-                <button onClick={() => setSelectedYear('All')} className="remove-filter-btn">×</button>
-              </span>
-            )}
-          </div>
         </div>
 
         {/* Gallery Grid */}
         {filteredImages.length > 0 ? (
           <div className="gallery-grid">
             {filteredImages.map(image => (
-              <div key={image.id} className="gallery-card">
+              <div 
+                key={image.id} 
+                className="gallery-card"
+                onClick={() => setModalImage(image)} // open modal
+              >
                 <div className="card-image-container">
                   <img src={image.imageUrl} alt={image.title} />
-                  <div className="card-image-overlay"></div>
-
+                  <div className="card-image-overlay">
+                    <span className="view-text">👁 View Image</span>
+                  </div>
                   <span className={`category-badge ${getCategoryColor(image.category)}`}>
                     {image.category}
                   </span>
-
                   <span className="year-badge">{image.year}</span>
                 </div>
 
                 <div className="card-content">
                   <h3 className="card-title">{image.title}</h3>
-                  <p className="card-description">{image.description}</p>
                   <div className="card-footer">
                     <span className="card-event">{image.event}</span>
                     <span>{image.year}</span>
@@ -169,10 +149,8 @@ const Gallery = () => {
         ) : (
           <div className="empty-state">
             <Camera className="empty-state-icon" />
-            <h3 className="empty-state-title">No images found</h3>
-            <p className="empty-state-description">
-              No images match your current filters. Try adjusting your selection or clearing the filters.
-            </p>
+            <h3>No images found</h3>
+            <p>No images match your current filters. Try adjusting or clearing filters.</p>
             <button onClick={clearFilters} className="hero-gradient-btn">Clear All Filters</button>
           </div>
         )}
@@ -216,6 +194,22 @@ const Gallery = () => {
             })}
           </div>
         </div>
+
+        {/* ===== Modal Popup ===== */}
+        {modalImage && (
+          <div className="modal-overlay" onClick={() => setModalImage(null)}>
+            <div className="modal-content" onClick={e => e.stopPropagation()}>
+              <button className="modal-close-btn" onClick={() => setModalImage(null)}>
+                <X size={20} />
+              </button>
+              <img src={modalImage.imageUrl} alt={modalImage.title} className="modal-image" />
+              <h2 className="modal-title">{modalImage.title}</h2>
+              <p className="modal-description">{modalImage.description}</p>
+              <p className="modal-event"><strong>Event:</strong> {modalImage.event}</p>
+              <p className="modal-year"><strong>Year:</strong> {modalImage.year}</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
