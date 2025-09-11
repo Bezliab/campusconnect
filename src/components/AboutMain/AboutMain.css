@@ -19,12 +19,7 @@
 /* Hero Content */
 .about-hero-title {
   color: #fff;
-  font-size: 48px;
-}
-
-.desc {
-  color: #faeeda;
-  font-size: 20px;
+  font-size: 4.8rem;
 }
 
 /* Overlay */
@@ -280,7 +275,7 @@ h1.about-title {
     padding-right: 10px;
   }
 
-  .about-title{
+  .about-title {
     font-size: 1.4rem !important;
   }
 

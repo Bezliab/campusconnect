@@ -20,13 +20,17 @@ body {
 /* Colors (CSS Variables) */
 :root {
   --color-primary: #010536;
-  --color-accent: #f97316;
+  --color-accent: #ffa500;
   --color-bg: #f3f4f6;
   --color-border: #475569;
-  --color-success: #10b981;
+  --color-success: #054f05;
   --color-featured: #fbbf24;
   --color-text: #1f2937;
-  --color-inverse: #ffffff;
+  --color-plain: #ffffff;
+  --color-btn: #0056d2;
+  --color-btn-hov: #0e1eb0;
+  --color-sub: #faeeda;
+  --color-inverse: #f3f4f6;
 }
 
 /* Typography */
@@ -36,7 +40,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
   font-weight: 600;
 }
 
@@ -49,20 +52,23 @@ a:hover {
 }
 
 /* Buttons */
-button, .primary-btn{
+button,
+.primary-btn {
   font: inherit;
   cursor: pointer;
   border: none;
   border-radius: 50px;
   padding: 10px 16px;
-  background-color: #0056d2;
-  color: #fff;
+  background-color: var(--color-btn);
+  color: var(--color-plain);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-button:hover, .primary-btn:hover {
-  background-color: #0e1eb0;
+button:hover,
+.primary-btn:hover {
+  background-color: var(--color-btn-hov);
 }
-button:active, .primary-btn:active {
+button:active,
+.primary-btn:active {
   transform: scale(0.97);
 }
 
@@ -89,6 +95,11 @@ textarea:focus {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.desc {
+  color: var(--color-sub);
+  font-size: 2.4rem;
 }
 
 .text-center {
@@ -145,6 +156,7 @@ textarea:focus {
 .nav-links:active {
   color: var(--color-accent);
 }
+
 /* Back to Top Button */
 .back-to-top {
   position: fixed;
@@ -154,9 +166,9 @@ textarea:focus {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ca7d10;
+  background-color: var(--color-btn);
   border: none;
-  color: white;
+  color: var(--color-plain);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,6 +183,6 @@ textarea:focus {
 }
 
 .back-to-top:hover {
-  background-color: #8c6916;
+  background-color: var(--color-btn-hov);
   transform: scale(1.1);
 }
