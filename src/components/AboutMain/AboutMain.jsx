@@ -10,7 +10,7 @@ function AboutMain() {
         <div className="container">
           <h1 className="about-hero-title">About CampusConnect</h1>
           <p className="desc">
-            Based in the United Kingdom
+            Established in 1976 | Based in the United Kingdom
           </p>
         </div>
       </div>

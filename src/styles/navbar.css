@@ -1,29 +1,161 @@
+/* ===== BASE NAVBAR ===== */
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #0056d2;
-padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: background 0.3s ease, color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== LOGO ===== */
+.nav-container li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .logo {
-color: white;
-font-size: 20px;
-font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.nav-links {
-list-style: none;
-display: flex;
-gap: 20px;
+.logo:hover {
+  color: orange;
+  cursor: pointer;
 }
 
-.nav-links a {
-color: white;
-text-decoration: none;
-font-weight: 500;
+.navbar.scrolled .logo {
+  color: rgba(1, 5, 54);
 }
 
-.nav-links a:hover {
-text-decoration: underline;
+/* ===== NAV LINKS (DESKTOP) ===== */
+.nav-links.desktop {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
+  /* font-weight: 550; */
+}
+.nav-links.desktop a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 1.2rem;
+}
+.nav-links.desktop a:hover {
+  text-decoration: underline;
+}
+.navbar.scrolled .nav-links.desktop a {
+  color: rgba(1, 5, 54);
+}
+
+/* ===== REGISTER BUTTON ===== */
+.register-btn {
+  background: orange;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.register-btn:hover {
+  background: darkorange;
+  color: whitesmoke !important;
+}
+.navbar.scrolled .register-btn {
+  background: rgb(0, 5, 63);
+  color: white;
+}
+.navbar.scrolled .register-btn:hover {
+  background: rgba(1, 5, 30);
+}
+
+/* ===== HAMBURGER / CLOSE BUTTON ===== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-toggle .icon {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+.navbar.scrolled .menu-toggle .icon {
+  color: rgba(1, 5, 54);
+}
+
+/* ===== MOBILE SLIDE MENU ===== */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  background: white;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  padding-top: 70px; /* below nav */
+  z-index: 900;
+}
+.mobile-menu.open {
+  right: 0;
+}
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-menu ul li {
+  padding: 1rem;
+}
+.mobile-menu ul li a {
+  color: rgba(1, 5, 54);
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+@media (max-width: 900px) {
+  .nav-links.desktop {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .register-btn {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
 }
