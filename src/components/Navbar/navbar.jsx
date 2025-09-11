@@ -53,7 +53,7 @@ function Navbar() {
           aria-controls="mobile-menu"
         >
           {menuOpen ? (
-            <XMarkIcon className="menu-icon" />
+            <XMarkIcon className="menu-icon close-nav" />
           ) : (
             <Bars3Icon className="menu-icon" />
           )}
