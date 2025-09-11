@@ -1,4 +1,4 @@
-import '../styles/Register.css';
+import "../styles/Register.css";
 
 export default function Registration() {
   return (
@@ -15,25 +15,24 @@ export default function Registration() {
 
           <div className="password-row">
             <label>Password</label>
-            <a href="/" className="forgot-link">Forgot password?</a>
+            <a href="/" className="forgot-link">
+              Forgot password?
+            </a>
           </div>
           <input type="password" placeholder="••••••••" required />
 
           <label>Confirm Password</label>
           <input type="password" placeholder="••••••••" required />
 
-        <div className="terms">
-        <input type="checkbox" id="terms" className="small-checkbox" />
-           <label htmlFor="terms">
-            I accept Terms and Conditions
-            </label>
-        </div>
+          <div className="terms">
+            <input type="checkbox" id="terms" className="small-checkbox" />
+            <label htmlFor="terms">I accept Terms and Conditions</label>
+          </div>
 
           <button type="submit" className="btn-primary">
-            Create an account
+            Register with us
           </button>
         </form>
-
       </div>
     </div>
   );

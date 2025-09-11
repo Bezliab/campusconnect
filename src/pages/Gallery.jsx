@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import { Camera, Calendar as CalendarIcon, X } from 'lucide-react';
-import galleryData from '../data/gallery.json';
-import '../styles/Gallery.css';
+import React, { useState, useEffect } from "react";
+import { Camera, Calendar as CalendarIcon, X } from "lucide-react";
+import galleryData from "../data/gallery.json";
+import "../styles/Gallery.css";
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [selectedYear, setSelectedYear] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedYear, setSelectedYear] = useState("All");
   const [currentBg, setCurrentBg] = useState(0);
   const [modalImage, setModalImage] = useState(null);
 
-  const categories = ['All', 'Technical', 'Cultural', 'Sports', 'Academic'];
-  const years = ['All', '2024', '2023', '2022'];
+  const categories = ["All", "Technical", "Cultural", "Sports", "Academic"];
+  const years = ["All", "2024", "2023", "2022"];
 
   const backgroundImages = [
-    'https://bloximages.chicago2.vip.townnews.com/chippewa.com/content/tncms/assets/v3/editorial/e/3c/e3cd5a33-eedf-5573-9280-b86bd8d46404/5a7dfdc55be10.image.jpg',
-    'https://imu.indiana.edu/images/hotel/reservations-campusevents/football-crowd.jpg',
-    'https://images.squarespace-cdn.com/content/v1/56709e74a976af4552e28f93/1560937035996-X9ENEFTORNKZYBIHWKEX/410044_00_N148_medium.jpg',
-    'https://eventsdc.com/sites/default/files/styles/webp/public/2020-09/The%20Fields%20at%20RFK_Field%202%20%281%29_0.jpg.webp?itok=TSr2yodl'
+    "https://bloximages.chicago2.vip.townnews.com/chippewa.com/content/tncms/assets/v3/editorial/e/3c/e3cd5a33-eedf-5573-9280-b86bd8d46404/5a7dfdc55be10.image.jpg",
+    "https://imu.indiana.edu/images/hotel/reservations-campusevents/football-crowd.jpg",
+    "https://images.squarespace-cdn.com/content/v1/56709e74a976af4552e28f93/1560937035996-X9ENEFTORNKZYBIHWKEX/410044_00_N148_medium.jpg",
+    "https://eventsdc.com/sites/default/files/styles/webp/public/2020-09/The%20Fields%20at%20RFK_Field%202%20%281%29_0.jpg.webp?itok=TSr2yodl",
   ];
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Gallery = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentBg(prev => (prev + 1) % backgroundImages.length);
+      setCurrentBg((prev) => (prev + 1) % backgroundImages.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
@@ -36,27 +36,34 @@ const Gallery = () => {
   useEffect(() => {
     let filtered = images;
 
-    if (selectedCategory !== 'All') {
-      filtered = filtered.filter(image => image.category === selectedCategory);
+    if (selectedCategory !== "All") {
+      filtered = filtered.filter(
+        (image) => image.category === selectedCategory
+      );
     }
-    if (selectedYear !== 'All') {
-      filtered = filtered.filter(image => image.year === selectedYear);
+    if (selectedYear !== "All") {
+      filtered = filtered.filter((image) => image.year === selectedYear);
     }
     setFilteredImages(filtered);
   }, [images, selectedCategory, selectedYear]);
 
   const clearFilters = () => {
-    setSelectedCategory('All');
-    setSelectedYear('All');
+    setSelectedCategory("All");
+    setSelectedYear("All");
   };
 
   const getCategoryColor = (category) => {
     switch (category.toLowerCase()) {
-      case 'technical': return 'category-technical';
-      case 'cultural': return 'category-cultural';
-      case 'sports': return 'category-sports';
-      case 'academic': return 'category-academic';
-      default: return 'category-default';
+      case "technical":
+        return "category-technical";
+      case "cultural":
+        return "category-cultural";
+      case "sports":
+        return "category-sports";
+      case "academic":
+        return "category-academic";
+      default:
+        return "category-default";
     }
   };
 
@@ -69,9 +76,9 @@ const Gallery = () => {
       >
         <div className="gallery-header-overlay"></div>
         <div className="gallery-header-content">
-          <h1 className="gallery-title">Event Gallery</h1>
           <p className="gallery-subtitle">
-            Explore memorable moments from our campus events through our visual gallery
+            Explore memorable moments from our campus events through our visual
+            gallery
           </p>
         </div>
       </div>
@@ -84,13 +91,15 @@ const Gallery = () => {
             <div className="filters-controls">
               <div className="filter-group">
                 <label>Category:</label>
-                <select 
-                  value={selectedCategory} 
-                  onChange={e => setSelectedCategory(e.target.value)}
+                <select
+                  value={selectedCategory}
+                  onChange={(e) => setSelectedCategory(e.target.value)}
                   className="filter-select"
                 >
-                  {categories.map(category => (
-                    <option key={category} value={category}>{category}</option>
+                  {categories.map((category) => (
+                    <option key={category} value={category}>
+                      {category}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -98,13 +107,15 @@ const Gallery = () => {
               <div className="filter-group">
                 <CalendarIcon className="icon-sm text-muted" />
                 <label>Year:</label>
-                <select 
-                  value={selectedYear} 
-                  onChange={e => setSelectedYear(e.target.value)}
+                <select
+                  value={selectedYear}
+                  onChange={(e) => setSelectedYear(e.target.value)}
                   className="filter-select year-select"
                 >
-                  {years.map(year => (
-                    <option key={year} value={year}>{year}</option>
+                  {years.map((year) => (
+                    <option key={year} value={year}>
+                      {year}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -119,16 +130,20 @@ const Gallery = () => {
         {/* Gallery Grid */}
         {filteredImages.length > 0 ? (
           <div className="gallery-grid">
-            {filteredImages.map(image => (
-              <div 
-                key={image.id} 
+            {filteredImages.map((image) => (
+              <div
+                key={image.id}
                 className="gallery-card"
                 onClick={() => setModalImage(image)}
               >
                 <div className="card-image-container">
                   <img src={image.imageUrl} alt={image.title} />
                   <div className="card-image-overlay"></div>
-                  <span className={`category-badge ${getCategoryColor(image.category)}`}>
+                  <span
+                    className={`category-badge ${getCategoryColor(
+                      image.category
+                    )}`}
+                  >
                     {image.category}
                   </span>
                 </div>
@@ -147,41 +162,52 @@ const Gallery = () => {
           <div className="empty-state">
             <Camera className="empty-state-icon" />
             <h3>No images found</h3>
-            <p>No images match your current filters. Try adjusting or clearing filters.</p>
-            <button onClick={clearFilters} className="hero-gradient-btn">Clear All Filters</button>
+            <p>
+              No images match your current filters. Try adjusting or clearing
+              filters.
+            </p>
+            <button onClick={clearFilters} className="hero-gradient-btn">
+              Clear All Filters
+            </button>
           </div>
         )}
 
-       {/* ===== Modal Popup ===== */}
-{modalImage && (
-  <div className="modal-overlay" onClick={() => setModalImage(null)}>
-    <div className="modal-content" onClick={e => e.stopPropagation()}>
-      <button className="modal-close" onClick={() => setModalImage(null)}>
-        <X size={20} />
-      </button>
+        {/* ===== Modal Popup ===== */}
+        {modalImage && (
+          <div className="modal-overlay" onClick={() => setModalImage(null)}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <button
+                className="modal-close"
+                onClick={() => setModalImage(null)}
+              >
+                <X size={20} />
+              </button>
 
-      <div className="modal-body">
-        {/* Left: Image */}
-        <div className="modal-left">
-          <img 
-            src={modalImage.imageUrl} 
-            alt={modalImage.title} 
-            className="modal-image" 
-          />
-        </div>
+              <div className="modal-body">
+                {/* Left: Image */}
+                <div className="modal-left">
+                  <img
+                    src={modalImage.imageUrl}
+                    alt={modalImage.title}
+                    className="modal-image"
+                  />
+                </div>
 
-        {/* Right: Text */}
-        <div className="modal-right">
-          <h2 className="modal-title">{modalImage.title}</h2>
-          <p className="modal-description">{modalImage.description}</p>
-          <p className="modal-event"><strong>Event:</strong> {modalImage.event}</p>
-          <p className="modal-year"><strong>Year:</strong> {modalImage.year}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
-
+                {/* Right: Text */}
+                <div className="modal-right">
+                  <h2 className="modal-title">{modalImage.title}</h2>
+                  <p className="modal-description">{modalImage.description}</p>
+                  <p className="modal-event">
+                    <strong>Event:</strong> {modalImage.event}
+                  </p>
+                  <p className="modal-year">
+                    <strong>Year:</strong> {modalImage.year}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
