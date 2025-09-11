@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Calendar, Clock, MapPin, Tag, Bookmark, BookmarkCheck } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, MapPin, Users, Tag, Bookmark, BookmarkCheck } from 'lucide-react';
 import '../styles/eventDetail.css';
 
 const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
@@ -85,12 +85,10 @@ const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
               <h2>About This Event</h2>
               <p className="event-full-description">{event.description}</p>
               
-              {event.additionalInfo && (
-                <div className="additional-info">
-                  <h3>Additional Information</h3>
-                  <p>{event.additionalInfo}</p>
-                </div>
-              )}
+              <div className="event-info-notice">
+                <h3>Event Information</h3>
+                <p>For more detailed information about this event, please contact the organizers or check back closer to the event date for updates.</p>
+              </div>
             </div>
           </div>
 
@@ -119,6 +117,15 @@ const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
               <div className="quick-info-item">
                 <strong>Date:</strong>
                 <span>{formatDate(event.date)}</span>
+              </div>
+              <div className="quick-info-item">
+                <strong>Time:</strong>
+                <span>{event.time}</span>
+              </div>
+              <div className="quick-info-item">
+                <strong>Venue:</strong>
+                <span>{event.venue}</span>
+              </div>
               <div className="quick-info-item">
                 <strong>Category:</strong>
                 <span style={{ color: getCategoryColor(event.category) }}>
@@ -126,7 +133,12 @@ const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
                 </span>
               </div>
             </div>
-              </div>
+
+            <div className="event-contact">
+              <h3>Contact Information</h3>
+              <p><strong>Email:</strong> events@maybecollege.edu</p>
+              <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            </div>
           </div>
         </div>
       </div>

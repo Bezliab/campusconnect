@@ -14,16 +14,19 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="/events">Events</a>
+              <Link to="/events">Events</Link>
             </li>
             <li>
-              <a href="/gallery">Gallery</a>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/feedback">Feedback</Link>
             </li>
           </ul>
         </div>

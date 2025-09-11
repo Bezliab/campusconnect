@@ -42,6 +42,8 @@
 
 .subheading {
   max-width: 50rem;
+  width: 90%;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
   color: #fff !important;
@@ -55,6 +57,7 @@
 }
 .hero-container p {
   font-size: 1.2rem;
+  line-height: 1.3;
   color: #e0e0e0;
 }
 
@@ -66,7 +69,11 @@
 }
 
 .feature-btn {
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 2rem !important;
+  display:  flex !important;
+}
+.feature-btn:hover {
+  color: white !important;
 }
 
 /* ===== COUNTDOWN SECTION ===== */
@@ -136,7 +143,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem !important;
   text-align: center;
 }
 
@@ -155,13 +162,6 @@
   position: relative;
   text-align: left;
 }
-
-.formReal {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem;
-}
-
 .icon {
   position: absolute;
   top: 5px;
@@ -196,6 +196,9 @@
   .time-box small {
     font-size: 0.8rem;
   }
+  .newsletter-form-container {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 480px) {
@@ -215,4 +218,5 @@
   .time-box small {
     font-size: 0.75rem;
   }
+  
 }
