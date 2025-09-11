@@ -6,7 +6,11 @@
       "designation": "Professor & Head",
       "department": "Computer Science Engineering",
       "phone": "+234-9012345678",
-      "email": "isaac.adeniji@college.edu"
+      "email": "isaac.adeniji@college.edu",
+      "image": "https://avatars.mds.yandex.net/i?id=9dd2340c2192b96267154e1b7d93dcbc65d7941e-5234281-images-thumbs&n=13",
+      "faculty": "Engineering",
+      "position": "Department Head",
+      "specialty": "Artificial Intelligence & Machine Learning"
     },
     {
       "id": 2,
@@ -14,7 +18,11 @@
       "designation": "Associate Professor",
       "department": "Electronics & Communication",
       "phone": "+234-8012345678",
-      "email": "muyiwa.oreoluwa@college.edu"
+      "email": "muyiwa.oreoluwa@college.edu",
+      "image": "https://www.icirnigeria.org/wp-content/uploads/2021/06/Ibrahim-Abubakar.jpg",
+      "faculty": "Engineering",
+      "position": "Associate Professor",
+      "specialty": "Digital Signal Processing & Communications"
     },
     {
       "id": 3,
@@ -22,7 +30,11 @@
       "designation": "Assistant Professor",
       "department": "Mechanical Engineering",
       "phone": "+234-8012345678",
-      "email": "ajisola.victor@college.edu"
+      "email": "ajisola.victor@college.edu",
+      "image": "https://www.icirnigeria.org/wp-content/uploads/2022/08/Omolade-Adunbi.jpg",
+      "faculty": "Engineering",
+      "position": "Assistant Professor",
+      "specialty": "Thermodynamics & Heat Transfer"
     }
   ],
   "students": [
@@ -32,7 +44,11 @@
       "role": "Student Coordinator - Technical Events",
       "department": "CSE Final Year",
       "phone": "+234-8012345678",
-      "email": "akintola.mustapha@student.college.edu"
+      "email": "akintola.mustapha@student.college.edu",
+      "image": "https://avatars.mds.yandex.net/i?id=80c67b958d83ecf459e13924d062a0948a9e7717-5219993-images-thumbs&n=13",
+      "faculty": "Engineering",
+      "position": "Student Coordinator",
+      "specialty": "Software Development & Programming"
     },
     {
       "id": 2,
@@ -40,7 +56,11 @@
       "role": "Student Coordinator - Cultural Events",
       "department": "ECE Final Year",
       "phone": "+234-8012345678",
-      "email": "akorede.ahmad@student.college.edu"
+      "email": "akorede.ahmad@student.college.edu",
+      "image": "https://avatars.mds.yandex.net/i?id=7d7d9221742d5983d8653b6aee158a9eaed71e1c-16296664-images-thumbs&n=13",
+      "faculty": "Engineering",
+      "position": "Student Coordinator",
+      "specialty": "Event Management & Cultural Activities"
     },
     {
       "id": 3,
@@ -48,7 +68,11 @@
       "role": "Student Coordinator - Sports Events",
       "department": "ME Final Year",
       "phone": "+234-8012345678",
-      "email": "abdul.akorede@student.college.edu"
+      "email": "abdul.akorede@student.college.edu",
+      "image": "https://t4.ftcdn.net/jpg/03/46/30/41/360_F_346304190_Z24YmA6PiGjCMOxzYI5ZJcMyiMo6EIId.jpg",
+      "faculty": "Engineering",
+      "position": "Student Coordinator",
+      "specialty": "Sports Management & Athletic Events"
     }
   ]
 }
