@@ -1,0 +1,201 @@
+/* Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  padding: 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✅ Background image with blur */
+.auth-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://uwm.edu/news/wp-content/uploads/sites/41/2016/10/voting1-EH-750x500.jpg") no-repeat center center/cover;
+  filter: blur(8px) brightness(0.8);
+  z-index: -1; /* keeps it behind the card */
+}
+
+/* Card */
+.auth-card {
+  background: rgba(255, 255, 255, 0.9); /* semi-transparent for effect */
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: 60px;
+  backdrop-filter: blur(4px); /* subtle glass effect */
+}
+
+/* Logo */
+.auth-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Headings */
+.auth-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.auth-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+.auth-form {
+  text-align: left;
+}
+
+.auth-form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #374151;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  transition: border 0.2s;
+}
+
+.auth-form input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Password row */
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-link {
+  font-size: 0.8rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Terms */
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  gap: 6px; /* tighter spacing */
+}
+
+.terms input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.terms label {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Button */
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1f2937;
+}
+
+/* Footer */
+.auth-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.auth-footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================= */
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-top: 40px;
+  }
+
+  .auth-title {
+    font-size: 1.1rem;
+  }
+
+  .auth-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .auth-card {
+    max-width: 420px;
+    padding: 2.5rem;
+  }
+
+  .auth-title {
+    font-size: 1.3rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
