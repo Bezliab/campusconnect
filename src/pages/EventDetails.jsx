@@ -1,22 +1,25 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, MapPin, Users, Tag, Bookmark, BookmarkCheck } from 'lucide-react';
 import '../styles/eventDetail.css';
-import { useParams } from 'react-router-dom';
-import eventdf from '../data/events.json';
+import eventsData from '../data/events.json';
+import { Link } from 'react-router-dom';
 
-const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
+const EventDetails = ({ onBack, isBookmarked, onBookmark }) => {
   const { id } = useParams();
-  const event = eventdf.find(p => p.id === parseInt(id));
+  // Find the event by id (convert id to number if your ids are numbers)
+  const event = eventsData.events.find(e => String(e.id) === String(id));
+
   if (!event) {
     return (
       <div className="event-details-container">
         <div className="event-not-found">
           <h2>Event Not Found</h2>
           <p>The requested event could not be found.</p>
-          <button onClick={onBack} className="back-button">
+          <Link to="/" onClick={onBack} className="back-button">
             <ArrowLeft size={20} />
             Back to Events
-          </button>
+          </Link>
         </div>
       </div>
     );
@@ -45,10 +48,10 @@ const EventDetails = ({ event, onBack, isBookmarked, onBookmark }) => {
   return (
     <div className="event-details-container">
       <div className="event-details-button">
-        <button onClick={onBack} className="back-button">
+        <Link to="/events" onClick={onBack} className="back-button">
           <ArrowLeft size={20} />
           Back to Events
-        </button>
+        </Link>
       </div>
 
       <div className="event-details-content">
