@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { IoMailOpenOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 
 function Home() {
-  // 1️⃣ Slideshow images
   const backgroundImages = [
     "https://s3.amazonaws.com/media.thecrimson.com/photos/2017/10/01/220933_1324562.jpg",
     "https://www.sjsu.edu/_images/people/ADV_campus-events-jgensheimer_1.jpg",
@@ -14,7 +14,6 @@ function Home() {
 
   const [currentBg, setCurrentBg] = useState(0);
 
-  // change background every 4s
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentBg((prev) => (prev + 1) % backgroundImages.length);
@@ -82,8 +81,8 @@ function Home() {
             gatherings, we've got you covered.
           </p>
           <div className="hero-btn">
-            <button className="feature-btn">Explore events</button>
-            <button className="feature-btn register-btn">About Us</button>
+            <Link to="/events" className="feature-btn primary-btn">Explore events</Link>
+            <Link to="/about" className="feature-btn register-btn">About Us</Link>
           </div>
         </div>
       </section>

@@ -48,7 +48,7 @@ a:hover {
 }
 
 /* Buttons */
-button {
+button, .primary-btn{
   font: inherit;
   cursor: pointer;
   border: none;
@@ -58,10 +58,10 @@ button {
   color: #fff;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-button:hover {
+button:hover, .primary-btn:hover {
   background-color: #0e1eb0;
 }
-button:active {
+button:active, .primary-btn:active {
   transform: scale(0.97);
 }
 
