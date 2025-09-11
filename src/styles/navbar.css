@@ -55,8 +55,8 @@
 }
 
 .navbar.scrolled .logo-image {
-  filter: brightness(0) saturate(100%) invert(21%) sepia(83%) saturate(749%)
-    hue-rotate(203deg) brightness(95%) contrast(89%);
+  filter: brightness(0) saturate(100%) invert(62%) sepia(98%) saturate(2000%)
+    hue-rotate(-20deg) brightness(105%) contrast(105%);
 }
 
 .navbar.scrolled .logo {
