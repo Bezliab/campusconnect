@@ -8,7 +8,6 @@
     "description": "Students participating in coding competitions and exhibitions.",
     "imageUrl": "/images/codingcompet.jpg"
   },
-
   {
     "id": 2,
     "title": "Cultural Dance Performance",
@@ -18,7 +17,6 @@
     "description": "Traditional dances performed by students.",
     "imageUrl": "/images/cultural_1.jpg"
   },
-  
   {
     "id": 3,
     "title": "Project Exhibition Showcase",
@@ -28,7 +26,6 @@
     "description": "Showcasing innovative student projects.",
     "imageUrl": "/images/techfest_2.jpg"
   },
-
   {
     "id": 4,
     "title": "Industry Tech Talk",
@@ -38,7 +35,6 @@
     "description": "An expert sharing industry insights.",
     "imageUrl": "/images/techfest_3.jpg"
   },
-
   {
     "id": 5,
     "title": "Student Band Performance",
@@ -48,7 +44,6 @@
     "description": "Students performing live music.",
     "imageUrl": "/images/cultural_2.jpg"
   },
-
   {
     "id": 6,
     "title": "Drama Performance",
@@ -58,7 +53,6 @@
     "description": "Students performing a drama skit.",
     "imageUrl": "/images/cultural_3.jpg"
   },
-
   {
     "id": 7,
     "title": "Inter-College Cricket Match",
@@ -68,7 +62,6 @@
     "description": "Cricket tournament between colleges.",
     "imageUrl": "/images/sports_1.jpg"
   },
-
   {
     "id": 8,
     "title": "Track and Field Events",
@@ -78,7 +71,6 @@
     "description": "Various track and field competitions.",
     "imageUrl": "/images/sports_2.jpg"
   },
-
   {
     "id": 9,
     "title": "Basketball Tournament Finals",
@@ -88,7 +80,6 @@
     "description": "Exciting basketball finals.",
     "imageUrl": "/images/sports_3.jpg"
   },
-
   {
     "id": 10,
     "title": "Science Exhibition Display",
@@ -98,7 +89,6 @@
     "description": "Students presenting innovative science projects.",
     "imageUrl": "/images/science_1.jpg"
   },
-
   {
     "id": 11,
     "title": "Robotics Workshop",
@@ -108,7 +98,6 @@
     "description": "Hands-on robotics and automation workshop for students.",
     "imageUrl": "/images/Techworkshop_1.jpg"
   },
-  
   {
     "id": 12,
     "title": "Annual Cultural Parade",
@@ -117,6 +106,257 @@
     "event": "Annual Day 2023",
     "description": "A parade showcasing student talents and cultural heritage.",
     "imageUrl": "/images/cultural_4.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Hackathon Challenge",
+    "category": "Technical",
+    "year": "2022",
+    "event": "Hackathon 2022",
+    "description": "Teams developing innovative solutions within 24 hours.",
+    "imageUrl": "/images/hackathon_1.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Guest Lecture on AI",
+    "category": "Academic",
+    "year": "2024",
+    "event": "AI Summit 2024",
+    "description": "Renowned professor delivering a lecture on artificial intelligence trends.",
+    "imageUrl": "/images/ai_lecture.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Chess Tournament",
+    "category": "Sports",
+    "year": "2023",
+    "event": "Mind Sports 2023",
+    "description": "Students competing in a strategic chess tournament.",
+    "imageUrl": "/images/chess_1.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Fashion Show",
+    "category": "Cultural",
+    "year": "2024",
+    "event": "Cultural Night 2024",
+    "description": "Showcasing modern and traditional student-designed outfits.",
+    "imageUrl": "/images/fashion_show.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Coding Bootcamp",
+    "category": "Technical",
+    "year": "2023",
+    "event": "Bootcamp 2023",
+    "description": "Intensive programming sessions for beginners and enthusiasts.",
+    "imageUrl": "/images/bootcamp_1.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Mathematics Quiz",
+    "category": "Academic",
+    "year": "2022",
+    "event": "Math Fest 2022",
+    "description": "Inter-school mathematics quiz competition.",
+    "imageUrl": "/images/math_quiz.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Football Championship",
+    "category": "Sports",
+    "year": "2024",
+    "event": "Sports Meet 2024",
+    "description": "Thrilling football matches between college teams.",
+    "imageUrl": "/images/football_1.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Photography Exhibition",
+    "category": "Cultural",
+    "year": "2023",
+    "event": "Art Fest 2023",
+    "description": "Students displaying creative photography works.",
+    "imageUrl": "/images/photography_1.jpg"
+  },
+  {
+    "id": 21,
+    "title": "E-Sports Gaming Tournament",
+    "category": "Sports",
+    "year": "2024",
+    "event": "E-Sports Fest 2024",
+    "description": "Students competing in popular multiplayer video games.",
+    "imageUrl": "/images/esports_1.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Debate Competition Finals",
+    "category": "Academic",
+    "year": "2023",
+    "event": "Debate Fest 2023",
+    "description": "Teams debating on current global issues.",
+    "imageUrl": "/images/debate_1.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Cultural Food Festival",
+    "category": "Cultural",
+    "year": "2022",
+    "event": "Food Fest 2022",
+    "description": "Students presenting traditional foods from different regions.",
+    "imageUrl": "/images/foodfest_1.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Drone Innovation Challenge",
+    "category": "Technical",
+    "year": "2024",
+    "event": "TechFest 2024",
+    "description": "Students designing and flying custom-built drones.",
+    "imageUrl": "/images/drone_1.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Drama Theatre Night",
+    "category": "Cultural",
+    "year": "2023",
+    "event": "Annual Day 2023",
+    "description": "Stage performances of classic and modern plays.",
+    "imageUrl": "/images/theatre_1.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Cybersecurity Workshop",
+    "category": "Technical",
+    "year": "2022",
+    "event": "CyberSec Summit 2022",
+    "description": "Hands-on ethical hacking and cybersecurity awareness training.",
+    "imageUrl": "/images/cybersec_1.jpg"
+  },
+  {
+    "id": 27,
+    "title": "Poetry Recital Evening",
+    "category": "Cultural",
+    "year": "2024",
+    "event": "Cultural Night 2024",
+    "description": "Students performing self-written and classic poetry.",
+    "imageUrl": "/images/poetry_1.jpg"
+  },
+  {
+    "id": 28,
+    "title": "Table Tennis Championship",
+    "category": "Sports",
+    "year": "2022",
+    "event": "Sports Meet 2022",
+    "description": "Fast-paced table tennis matches.",
+    "imageUrl": "/images/tabletennis_1.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Astronomy Night",
+    "category": "Academic",
+    "year": "2024",
+    "event": "Science Week 2024",
+    "description": "Students exploring stars and planets with telescopes.",
+    "imageUrl": "/images/astronomy_1.jpg"
+  },
+  {
+    "id": 30,
+    "title": "Start-Up Pitch Contest",
+    "category": "Technical",
+    "year": "2023",
+    "event": "Innovation Week 2023",
+    "description": "Student entrepreneurs presenting business ideas to judges.",
+    "imageUrl": "/images/startup_1.jpg"
+  },
+  {
+    "id": 31,
+    "title": "Traditional Music Concert",
+    "category": "Cultural",
+    "year": "2023",
+    "event": "Music Fest 2023",
+    "description": "Live performance of cultural and folk instruments.",
+    "imageUrl": "/images/music_1.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Badminton Open",
+    "category": "Sports",
+    "year": "2024",
+    "event": "Sports Meet 2024",
+    "description": "Badminton singles and doubles championship.",
+    "imageUrl": "/images/badminton_1.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Literature Symposium",
+    "category": "Academic",
+    "year": "2022",
+    "event": "LitFest 2022",
+    "description": "Discussion panels and presentations on literature and language.",
+    "imageUrl": "/images/litfest_1.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Coding Hack Sprint",
+    "category": "Technical",
+    "year": "2023",
+    "event": "Hack Sprint 2023",
+    "description": "Quick problem-solving coding competition.",
+    "imageUrl": "/images/hacksprint_1.jpg"
+  },
+  {
+    "id": 35,
+    "title": "Fine Arts Exhibition",
+    "category": "Cultural",
+    "year": "2022",
+    "event": "Art Fest 2022",
+    "description": "Students showcasing paintings, sculptures, and craftwork.",
+    "imageUrl": "/images/art_1.jpg"
+  },
+  {
+    "id": 36,
+    "title": "Robotics Race",
+    "category": "Technical",
+    "year": "2024",
+    "event": "TechFest 2024",
+    "description": "Students racing robots they have designed and built.",
+    "imageUrl": "/images/robotrace_1.jpg"
+  },
+  {
+    "id": 37,
+    "title": "Volleyball Cup Finals",
+    "category": "Sports",
+    "year": "2023",
+    "event": "Sports Meet 2023",
+    "description": "Exciting volleyball final match between top teams.",
+    "imageUrl": "/images/volleyball_1.jpg"
+  },
+  {
+    "id": 38,
+    "title": "Philosophy Discussion Forum",
+    "category": "Academic",
+    "year": "2024",
+    "event": "Humanities Week 2024",
+    "description": "Open dialogue on philosophy and critical thinking.",
+    "imageUrl": "/images/philosophy_1.jpg"
+  },
+  {
+    "id": 39,
+    "title": "Martial Arts Demonstration",
+    "category": "Sports",
+    "year": "2022",
+    "event": "Sports Meet 2022",
+    "description": "Students demonstrating self-defense and martial art skills.",
+    "imageUrl": "/images/martialarts_1.jpg"
+  },
+  {
+    "id": 40,
+    "title": "Cultural Fashion Parade",
+    "category": "Cultural",
+    "year": "2023",
+    "event": "Cultural Night 2023",
+    "description": "Runway show highlighting diverse cultural attire.",
+    "imageUrl": "/images/fashion_2.jpg"
   }
 ]
-
