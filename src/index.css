@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -51,14 +52,14 @@ button {
   font: inherit;
   cursor: pointer;
   border: none;
-  border-radius: 6px;
+  border-radius: 50px;
   padding: 10px 16px;
   background-color: #0056d2;
   color: #fff;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 button:hover {
-  background-color: #0041a8;
+  background-color: #0e1eb0;
 }
 button:active {
   transform: scale(0.97);

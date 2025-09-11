@@ -54,7 +54,10 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 CampusConnect. All rights reserved. | Aptech Limited</p>
+        <p>
+          &copy; 2025 CampusConnect. All rights reserved. | CampusConnect
+          Limited
+        </p>
       </div>
     </footer>
   );

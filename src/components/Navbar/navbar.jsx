@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../../styles/navbar.css";
@@ -17,30 +18,31 @@ function Navbar() {
   return (
     <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="nav-container">
-        <span className="logo">CampusConnect</span>
+        <li>
+          <Link to="/" className="logo">
+            CampusConnect
+          </Link>
+        </li>
 
         {/* Desktop links */}
         <ul className="nav-links desktop">
           <li>
-            <a href="/">Home</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/events">Events</Link>
           </li>
           <li>
-            <a href="/events">Events</a>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li>
-            <a href="/gallery">Gallery</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 
-        <a href="/register" className="register-btn">
+        <Link to="/register" className="register-btn">
           Register
-        </a>
+        </Link>
 
         {/* Hamburger / Close (mobile) */}
         <button
@@ -60,29 +62,29 @@ function Navbar() {
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="/" onClick={() => setMenuOpen(false)}>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" onClick={() => setMenuOpen(false)}>
+            <Link to="/about" onClick={() => setMenuOpen(false)}>
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/events" onClick={() => setMenuOpen(false)}>
+            <Link to="/events" onClick={() => setMenuOpen(false)}>
               Events
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/gallery" onClick={() => setMenuOpen(false)}>
+            <Link to="/gallery" onClick={() => setMenuOpen(false)}>
               Gallery
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact" onClick={() => setMenuOpen(false)}>
+            <Link to="/contact" onClick={() => setMenuOpen(false)}>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
