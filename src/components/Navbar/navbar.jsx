@@ -27,10 +27,10 @@ function Navbar() {
         {/* Desktop links */}
         <ul className="nav-links desktop">
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about/">About</Link>
           </li>
           <li>
-            <Link to="/events">Events</Link>
+            <Link to="/events/">Events</Link>
           </li>
           <li>
             <Link to="/gallery">Gallery</Link>
