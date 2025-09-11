@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomeEvents.css"; // import stylesheet
 import { Home } from "lucide-react";
+import "../../styles/home.css";
 
 const offers = [
   {
@@ -32,7 +33,7 @@ const offers = [
 function HomeEvents() {
   return (
     <section className="offers-section">
-      <h2 className="section-title">What We Offer</h2>
+      <h2 className="title">What We Offer</h2>
 
       <div className="offers-container container">
         {offers.map((offer) => (
@@ -52,6 +53,6 @@ function HomeEvents() {
       </div>
     </section>
   );
-};
+}
 
 export default HomeEvents;

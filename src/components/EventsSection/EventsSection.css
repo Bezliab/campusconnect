@@ -3,13 +3,13 @@
   background: #fff;
 }
 
-.section-title {
+/* .section-title {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: #003466;
   margin: 40px 0 30px;
-}
+} */
 
 .events-grid {
   display: grid;

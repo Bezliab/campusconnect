@@ -1,5 +1,6 @@
 import React from "react";
 import "./EventsSection.css";
+import "../../styles/home.css";
 
 const upcomingEvents = [
   {
@@ -89,6 +90,6 @@ function EventsSection() {
       </div>
     </section>
   );
-};
+}
 
 export default EventsSection;

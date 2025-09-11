@@ -19,6 +19,11 @@ function Navbar() {
     <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="nav-container">
         <li>
+          <img
+            src="../img/campusconnect logo.png"
+            alt="CampusConnect Logo"
+            className="logo-image"
+          />
           <Link to="/" className="logo">
             CampusConnect
           </Link>
@@ -94,7 +99,11 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/register" className="register-btn" onClick={() => setMenuOpen(false)}>
+            <Link
+              to="/register"
+              className="register-btn"
+              onClick={() => setMenuOpen(false)}
+            >
               Register
             </Link>
           </li>

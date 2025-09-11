@@ -1,9 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { Bookmark, BookmarkCheck, Filter, Calendar, MapPin, Clock, Users } from 'lucide-react';
-import eventsData from '../data/events.json';
-import EventCard from '../components/EventCard/EventCard';
-import EventDetails from './EventDetails';
-import '../styles/events.css';
+import React, { useState, useEffect } from "react";
+import {
+  Bookmark,
+  BookmarkCheck,
+  Filter,
+  Calendar,
+  MapPin,
+  Clock,
+  Users,
+} from "lucide-react";
+import eventsData from "../data/events.json";
+import EventCard from "../components/EventCard/EventCard";
+import EventDetails from "./EventDetails";
+import "../styles/events.css";
 
 const EventCatalog = () => {
   const [events, setEvents] = useState([]);
@@ -11,8 +19,8 @@ const EventCatalog = () => {
   const [featuredEvent, setFeaturedEvent] = useState(null);
   const [bookmarkedEvents, setBookmarkedEvents] = useState(new Set());
   const [showBookmarked, setShowBookmarked] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [sortBy, setSortBy] = useState('date');
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [sortBy, setSortBy] = useState("date");
   const [selectedEventId, setSelectedEventId] = useState(null);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -23,7 +31,7 @@ const EventCatalog = () => {
     setFilteredEvents(eventsData.events);
 
     // Load bookmarks from localStorage
-    const savedBookmarks = localStorage.getItem('bookmarkedEvents');
+    const savedBookmarks = localStorage.getItem("bookmarkedEvents");
     if (savedBookmarks) {
       setBookmarkedEvents(new Set(JSON.parse(savedBookmarks)));
     }
@@ -34,23 +42,25 @@ const EventCatalog = () => {
     let filtered = [...events];
 
     // Category filter
-    if (selectedCategory !== 'all') {
-      filtered = filtered.filter(event => event.category === selectedCategory);
+    if (selectedCategory !== "all") {
+      filtered = filtered.filter(
+        (event) => event.category === selectedCategory
+      );
     }
 
     // Show bookmarked filter
     if (showBookmarked) {
-      filtered = filtered.filter(event => bookmarkedEvents.has(event.id));
+      filtered = filtered.filter((event) => bookmarkedEvents.has(event.id));
     }
 
     // Sort events
     filtered.sort((a, b) => {
       switch (sortBy) {
-        case 'date':
+        case "date":
           return new Date(a.date) - new Date(b.date);
-        case 'name':
+        case "name":
           return a.name.localeCompare(b.name);
-        case 'category':
+        case "category":
           return a.category.localeCompare(b.category);
         default:
           return 0;
@@ -68,11 +78,11 @@ const EventCatalog = () => {
       newBookmarks.add(eventId);
     }
     setBookmarkedEvents(newBookmarks);
-    localStorage.setItem('bookmarkedEvents', JSON.stringify([...newBookmarks]));
+    localStorage.setItem("bookmarkedEvents", JSON.stringify([...newBookmarks]));
   };
 
   const handleEventClick = (eventId) => {
-    const event = events.find(e => e.id === eventId);
+    const event = events.find((e) => e.id === eventId);
     setSelectedEvent(event);
     setSelectedEventId(eventId);
   };
@@ -84,21 +94,21 @@ const EventCatalog = () => {
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      day: '2-digit',
-      month: 'short',
-      year: 'numeric'
+    return date.toLocaleDateString("en-US", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
     });
   };
 
   const getCategoryColor = (category) => {
     const colors = {
-      academic: '#3B82F6',
-      cultural: '#F59E0B',
-      sports: '#10B981',
-      departmental: '#8B5CF6'
+      academic: "#3B82F6",
+      cultural: "#F59E0B",
+      sports: "#10B981",
+      departmental: "#8B5CF6",
     };
-    return colors[category] || '#6B7280';
+    return colors[category] || "#6B7280";
   };
 
   // If an event is selected, show the EventDetails component
@@ -126,9 +136,12 @@ const EventCatalog = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <h1 className="college-title">College Events</h1>
           <div className="hero-event-info">
-            <p>Discover upcoming college events, from tech fests and workshops to cultural nights and sports competitions — all in one place with CampusConnect.</p>
+            <p>
+              Discover upcoming college events, from tech fests and workshops to
+              cultural nights and sports competitions — all in one place with
+              CampusConnect.
+            </p>
           </div>
         </div>
       </section>
@@ -141,7 +154,7 @@ const EventCatalog = () => {
             <div className="filters">
               <div className="filter-group">
                 <Filter size={20} />
-                <select 
+                <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
                   className="filter-select"
@@ -153,10 +166,10 @@ const EventCatalog = () => {
                   <option value="departmental">Departmental Events</option>
                 </select>
               </div>
-              
+
               <div className="filter-group">
                 <Users size={20} />
-                <select 
+                <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
                   className="filter-select"
@@ -168,18 +181,18 @@ const EventCatalog = () => {
               </div>
             </div>
 
-            <button 
-              className={`bookmark-toggle ${showBookmarked ? 'active' : ''}`}
+            <button
+              className={`bookmark-toggle ${showBookmarked ? "active" : ""}`}
               onClick={() => setShowBookmarked(!showBookmarked)}
             >
               <BookmarkCheck size={20} />
-              {showBookmarked ? 'Show All Events' : 'Show Bookmarked'}
+              {showBookmarked ? "Show All Events" : "Show Bookmarked"}
             </button>
           </div>
 
           {/* Events Grid */}
           <div className="events-container">
-            {filteredEvents.map(event => (
+            {filteredEvents.map((event) => (
               <EventCard
                 key={event.id}
                 event={event}
@@ -195,7 +208,9 @@ const EventCatalog = () => {
           {filteredEvents.length === 0 && (
             <div className="no-events">
               <h3>No events found</h3>
-              <p>Try adjusting your filters or check back later for new events.</p>
+              <p>
+                Try adjusting your filters or check back later for new events.
+              </p>
             </div>
           )}
         </div>
