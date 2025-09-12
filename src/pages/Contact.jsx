@@ -1,33 +1,34 @@
-import { useState, useEffect } from "react"
-import contactsData from "../data/contacts.json"
-import "../styles/contact.css"
+import { useState, useEffect } from "react";
+import contactsData from "../data/contacts.json";
+import "../styles/contact.css";
 
 function Contact() {
-  const [contacts, setContacts] = useState({ faculty: [], students: [] })
-  const [selectedPerson, setSelectedPerson] = useState(null)
-  const [isPopupOpen, setIsPopupOpen] = useState(false)
+  const [contacts, setContacts] = useState({ faculty: [], students: [] });
+  const [selectedPerson, setSelectedPerson] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useEffect(() => {
-    setContacts(contactsData)
-  }, [])
+    setContacts(contactsData);
+  }, []);
 
   const handleCardClick = (person) => {
-    setSelectedPerson(person)
-    setIsPopupOpen(true)
-  }
+    setSelectedPerson(person);
+    setIsPopupOpen(true);
+  };
 
   const closePopup = () => {
-    setIsPopupOpen(false)
-    setSelectedPerson(null)
-  }
+    setIsPopupOpen(false);
+    setSelectedPerson(null);
+  };
 
   return (
     <>
       <div className="contact-hero">
         <div className="contact-text">
           <h1>Contact Us</h1>
-          <p className="contact-intro">
-            Get in touch with our faculty and student coordinators for any event-related queries.
+          <p className="hero-event-info">
+            Get in touch with our faculty and student coordinators for any
+            event-related queries.
           </p>
         </div>
         <div className="overlay"></div>
@@ -38,9 +39,16 @@ function Contact() {
           <h2>Faculty Coordinators</h2>
           <div className="coordinators-grid">
             {contacts.faculty.map((faculty) => (
-              <div key={faculty.id} className="coordinator-card" onClick={() => handleCardClick(faculty)}>
+              <div
+                key={faculty.id}
+                className="coordinator-card"
+                onClick={() => handleCardClick(faculty)}
+              >
                 <div className="coordinator-image">
-                  <img src={faculty.image || "/placeholder.svg"} alt={faculty.name} />
+                  <img
+                    src={faculty.image || "/placeholder.svg"}
+                    alt={faculty.name}
+                  />
                 </div>
                 <div className="coordinator-info">
                   <h3>{faculty.name}</h3>
@@ -65,9 +73,16 @@ function Contact() {
           <h2>Student Coordinators</h2>
           <div className="coordinators-grid">
             {contacts.students.map((student) => (
-              <div key={student.id} className="coordinator-card" onClick={() => handleCardClick(student)}>
+              <div
+                key={student.id}
+                className="coordinator-card"
+                onClick={() => handleCardClick(student)}
+              >
                 <div className="coordinator-image">
-                  <img src={student.image || "/placeholder.svg"} alt={student.name} />
+                  <img
+                    src={student.image || "/placeholder.svg"}
+                    alt={student.name}
+                  />
                 </div>
                 <div className="coordinator-info">
                   <h3>{student.name}</h3>
@@ -123,7 +138,10 @@ function Contact() {
                 </div>
                 <div className="contact-detail-item">
                   <strong>Email:</strong>
-                  <a href={`mailto:${selectedPerson.email}`}> {selectedPerson.email}</a>
+                  <a href={`mailto:${selectedPerson.email}`}>
+                    {" "}
+                    {selectedPerson.email}
+                  </a>
                 </div>
               </div>
             </div>
@@ -159,7 +177,7 @@ function Contact() {
         </section>
       </div>
     </>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

@@ -12,7 +12,7 @@ const Gallery = () => {
   const [modalImage, setModalImage] = useState(null);
 
   const categories = ["All", "Technical", "Cultural", "Sports", "Academic"];
-  const years = ["All", "2024", "2023", "2022"];
+  const years = ["All", "2024–25", "2023–24", "2022–23"];
 
   const backgroundImages = [
     "https://bloximages.chicago2.vip.townnews.com/chippewa.com/content/tncms/assets/v3/editorial/e/3c/e3cd5a33-eedf-5573-9280-b86bd8d46404/5a7dfdc55be10.image.jpg",

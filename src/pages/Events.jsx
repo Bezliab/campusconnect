@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Routes, Route, useNavigate, useParams } from "react-router-dom";
 import {
+  Bookmark,
+  BookmarkCheck,
   Filter,
   Users,
   Search,
@@ -8,9 +11,8 @@ import {
 import eventsData from "../data/events.json";
 import EventCard from "../components/EventCard/EventCard";
 import EventDetails from "./EventDetails";
-import { useBookmarks } from "../context/BookmarkContext";
-import { Routes, Route, useNavigate, useParams } from "react-router-dom";
 import "../styles/events.css";
+import { useBookmarks } from "../context/BookmarkContext";
 
 // Helper to get event by id
 const getEventById = (events, id) => events.find(e => String(e.id) === String(id));
