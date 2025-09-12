@@ -30,3 +30,9 @@
   color: black;
   margin-top: 0.4rem;
 }
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

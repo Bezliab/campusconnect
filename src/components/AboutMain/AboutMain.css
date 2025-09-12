@@ -325,6 +325,7 @@ h1.about-title {
 
   div.departments-list {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 
   .highlight-row,
@@ -439,6 +440,9 @@ h1.about-title {
     grid-template-columns: 1fr;
   }
   .team-list {
+    grid-template-columns: 1fr;
+  }
+  div.departments-list {
     grid-template-columns: 1fr;
   }
 }

@@ -101,12 +101,11 @@ textarea {
   width: 100%;
   outline: none;
 }
-input:focus,
+/* input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 4px var(--color-primary);
-}
+  box-shadow: 0 0 4px  #010536;
+} */
 
 /* Layout Helpers */
 .container {
