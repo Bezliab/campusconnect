@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import eventsData from "../data/events.json";
 import EventCard from "../components/EventCard/EventCard";
-import Pagination from "../components/Pagination";
+import Pagination from "../components/Pargination";
 import EventDetails from "./EventDetails";
 import "../styles/events.css";
 import { useBookmarks } from "../context/BookmarkContext";
@@ -208,17 +208,18 @@ const EventCatalog = () => {
                 </div>
 
                 {/* Events Grid */}
-                <div className="events-container">
-                  {filteredEvents.map((event) => (
-                    <EventCard
-                      key={event.id}
-                      event={event}
-                      getCategoryColor={getCategoryColor}
-                      formatDate={formatDate}
-                      onViewDetails={handleEventCardViewDetails}
-                    />
-                  ))}
-                </div>
+<div className="events-container">
+  {currentEvents.map((event) => (   
+    <EventCard
+      key={event.id}
+      event={event}
+      getCategoryColor={getCategoryColor}
+      formatDate={formatDate}
+      onViewDetails={handleEventCardViewDetails}
+    />
+  ))}
+</div>
+
 
                 {filteredEvents.length === 0 && (
                   <div className="no-events">
