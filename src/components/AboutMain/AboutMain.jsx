@@ -168,6 +168,40 @@ function AboutMain() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="team-section">
+        <div className="container">
+          <h1 className="about-title">Meet Our Team</h1>
+          <div className="team-list">
+            <div className="team-card">
+              <img src="/img/Author.jpg" alt="Dr. Jane Smith" className="team-photo" />
+              <h3>Dr. Jane Smith</h3>
+              <p>Founder & Principal. Visionary leader with 20+ years in education management.</p>
+            </div>
+            <div className="team-card">
+              <img src="/img/logo.jpg" alt="Mr. John Doe" className="team-photo" />
+              <h3>Mr. John Doe</h3>
+              <p>Head of Computer Science. Expert in AI and software engineering.</p>
+            </div>
+            <div className="team-card">
+              <img src="/img/campusconnect logo.png" alt="Ms. Emily White" className="team-photo" />
+              <h3>Ms. Emily White</h3>
+              <p>Student Affairs Coordinator. Passionate about student engagement and support.</p>
+            </div>
+            <div className="team-card">
+              <img src="/img/sports-championship-celebration.png" alt="Coach Mike Brown" className="team-photo" />
+              <h3>Coach Mike Brown</h3>
+              <p>Sports Director. Dedicated to fostering teamwork and athletic excellence.</p>
+            </div>
+            <div className="team-card">
+              <img src="/img/vibrant-cultural-festival.png" alt="Mrs. Linda Green" className="team-photo" />
+              <h3>Mrs. Linda Green</h3>
+              <p>Cultural Events Manager. Inspires creativity and cultural appreciation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <StatsCounter />
       <div className="highlight-section">
         <div className="container">
