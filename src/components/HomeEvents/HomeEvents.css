@@ -57,7 +57,6 @@
   flex-direction: row-reverse;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .offer {
     flex-direction: column;

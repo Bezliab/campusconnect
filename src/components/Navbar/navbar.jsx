@@ -29,7 +29,6 @@ function Navbar() {
           </Link>
         </li>
 
-        {/* Desktop links */}
         <ul className="nav-links desktop">
           <li>
             <Link to="/about/">About</Link>

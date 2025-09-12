@@ -163,7 +163,6 @@ function AboutMain() {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="team-section">
         <div className="container">
           <h1 className="about-title">Meet Our Team</h1>
@@ -203,7 +202,6 @@ function AboutMain() {
         <div className="container">
           <h1 className="about-title">Community Highlights</h1>
 
-          {/* First highlight*/}
           <div className="highlight highlight-row">
             <div className="highlight-text">
               <h3>Information Access</h3>
@@ -224,7 +222,6 @@ function AboutMain() {
             </div>
           </div>
 
-          {/* Second highlight*/}
           <div className="highlight highlight-row reverse">
             <div className="highlight-text">
               <h3>Real-Time Updates </h3>
@@ -249,7 +246,6 @@ function AboutMain() {
       <div className="container events-section">
         <h1 className="about-title">Key Annual Events</h1>
         <div className="events-list">
-          {/* Technical Events */}
           <div className="event-category">
             <h2>Technical Events</h2>
             <ul>
@@ -269,7 +265,6 @@ function AboutMain() {
               </li>
             </ul>
           </div>
-          {/* Cultural Events */}
           <div className="event-category">
             <h2>Cultural Events</h2>
             <ul>
@@ -287,7 +282,6 @@ function AboutMain() {
               </li>
             </ul>
           </div>
-          {/* Sports & Other Activities */}
           <div className="event-category">
             <h2>Sports & Other Activities</h2>
             <ul>

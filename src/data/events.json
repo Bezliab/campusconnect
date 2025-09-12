@@ -2,7 +2,7 @@
   "featuredEvent": {
     "id": "featured-1",
     "name": "Annual Tech Summit 2025",
-    "date": "2025-01-15",
+    "date": "2024-01-15",
     "time": "09:00 AM - 5:00 PM",
     "venue": "Main Auditorium",
     "description": "Join us for the biggest technology event of the year featuring industry leaders, workshops, and networking opportunities.",
@@ -69,7 +69,7 @@
     {
       "id": 6,
       "name": "Entrepreneurship Summit",
-      "date": "2025-11-05",
+      "date": "2023-11-05",
       "time": "9:00 AM – 6:00 PM",
       "venue": "Innovation Hub",
       "description": "Panel discussions, startup pitches, and mentorship sessions for aspiring entrepreneurs.",
@@ -135,7 +135,7 @@
     {
       "id": 12,
       "name": "Robotics Workshop",
-      "date": "2025-09-25",
+      "date": "2024-09-25",
       "time": "10:00 AM – 4:00 PM",
       "venue": "Robotics Lab",
       "description": "Hands-on robotics session with AI and automation focus.",
@@ -168,7 +168,7 @@
     {
       "id": 15,
       "name": "Drama Night",
-      "date": "2025-09-28",
+      "date": "2024-09-28",
       "time": "6:00 PM – 9:00 PM",
       "venue": "Open Stage",
       "description": "Stage performances by drama enthusiasts featuring classic and modern plays.",
@@ -190,7 +190,7 @@
     {
       "id": 17,
       "name": "Debate Competition",
-      "date": "2025-09-15",
+      "date": "2023-09-15",
       "time": "11:00 AM – 2:00 PM",
       "venue": "Seminar Hall 2",
       "description": "Inter-departmental debate competition on current affairs and social issues.",
@@ -223,7 +223,7 @@
     {
       "id": 20,
       "name": "Quiz Competition",
-      "date": "2025-09-18",
+      "date": "2023-09-18",
       "time": "1:00 PM – 3:00 PM",
       "venue": "Seminar Hall 3",
       "description": "General knowledge and current affairs quiz for students.",

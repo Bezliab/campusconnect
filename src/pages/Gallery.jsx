@@ -69,7 +69,6 @@ const Gallery = () => {
 
   return (
     <div className="gallery-container">
-      {/* ===== Full Width Header Slideshow ===== */}
       <div
         className="gallery-header-slideshow"
         style={{ backgroundImage: `url(${backgroundImages[currentBg]})` }}
