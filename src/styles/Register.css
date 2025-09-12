@@ -4,13 +4,11 @@
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
   padding: 2rem 1rem;
   position: relative;
   overflow: hidden;
 }
 
-/* ✅ Background image with blur */
 .auth-container::before {
   content: "";
   position: absolute;
@@ -20,30 +18,28 @@
   height: 100%;
   background: url("https://uwm.edu/news/wp-content/uploads/sites/41/2016/10/voting1-EH-750x500.jpg") no-repeat center center/cover;
   filter: blur(8px) brightness(0.8);
-  z-index: -1; /* keeps it behind the card */
+  z-index: -1; 
 }
 
-/* Card */
 .auth-card {
-  background: rgba(255, 255, 255, 0.9); /* semi-transparent for effect */
+  background: rgba(255, 255, 255, 0.9); 
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
   max-width: 480px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   text-align: center;
-  margin-top: 60px;
-  backdrop-filter: blur(4px); /* subtle glass effect */
+
+  margin-top: 80px;
+  backdrop-filter: blur(4px); 
 }
 
-/* Logo */
 .auth-logo {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-/* Headings */
 .auth-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -56,7 +52,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* Form */
 .auth-form {
   text-align: left;
 }
@@ -85,7 +80,6 @@
   outline: none;
 }
 
-/* Password row */
 .password-row {
   display: flex;
   justify-content: space-between;
@@ -102,13 +96,12 @@
   text-decoration: underline;
 }
 
-/* Terms */
 .terms {
   display: flex;
   align-items: center;
   font-size: 0.85rem;
   margin-bottom: 1rem;
-  gap: 6px; /* tighter spacing */
+  gap: 6px; 
 }
 
 .terms input[type="checkbox"] {
@@ -123,7 +116,6 @@
   cursor: pointer;
 }
 
-/* Button */
 .btn-primary {
   width: 100%;
   padding: 0.75rem;
@@ -140,7 +132,6 @@
 .btn-primary:hover {
   background: #1f2937;
 }
-
 /* Footer */
 .auth-footer {
   margin-top: 1.5rem;
@@ -157,11 +148,6 @@
   text-decoration: underline;
 }
 
-/* ==============================
-   RESPONSIVE DESIGN
-================================= */
-
-/* Small screens (phones) */
 @media (max-width: 480px) {
   .auth-card {
     padding: 1.5rem;
@@ -183,7 +169,6 @@
   }
 }
 
-/* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   .auth-card {
     max-width: 420px;

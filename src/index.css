@@ -108,6 +108,7 @@ textarea:focus {
   box-shadow: 0 0 4px var(--color-primary);
 }
 
+/* Layout Helpers */
 .container {
   width: 90%;
   max-width: 1200px;

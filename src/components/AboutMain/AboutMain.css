@@ -391,7 +391,6 @@ h1.about-title {
   .affiliated-schools {
     grid-template-columns: 1fr;
   }
-
   div.departments-list {
     grid-template-columns: 1fr;
   }
