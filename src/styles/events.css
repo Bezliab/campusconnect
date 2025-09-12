@@ -53,20 +53,6 @@
   color: #f3f4f6;
 }
 
-.hero-event-info h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #fbbf24;
-}
-
-.hero-event-info p {
-  font-size: 1.25rem;
-  margin-bottom: 3rem;
-  opacity: 0.95;
-  line-height: 1.6;
-}
-
 .catalog-section {
   padding: 5rem 0;
 }

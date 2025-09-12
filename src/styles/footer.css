@@ -73,8 +73,6 @@
   color: #95a5a6;
   font-size: 0.9rem;
 }
-
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
