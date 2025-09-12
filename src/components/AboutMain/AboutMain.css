@@ -22,7 +22,7 @@
 
 .desc {
   color: #faeeda;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .overlay {
@@ -253,6 +253,48 @@ h1.about-title {
   color: #1e3a8a;
 }
 
+/* Team Section Styles */
+.team-section {
+  padding: 3rem 0;
+  background-color: #f8f8ff;
+  margin-top: 2rem;
+}
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  min-width: 180px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.10);
+}
+.team-card h3 {
+  font-size: 1.2rem;
+  color: #003466;
+  margin-bottom: 0.5rem;
+}
+.team-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
 @media (max-width: 1200px) {
   .affiliated-schools {
     grid-template-columns: repeat(2, 1fr);
@@ -330,6 +372,12 @@ h1.about-title {
   }
 }
 
+@media (max-width: 900px) {
+  .team-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .affiliated-schools {
     grid-template-columns: repeat(2, 1fr);
@@ -389,6 +437,9 @@ h1.about-title {
 
 @media (max-width: 600px) {
   .affiliated-schools {
+    grid-template-columns: 1fr;
+  }
+  .team-list {
     grid-template-columns: 1fr;
   }
   div.departments-list {
