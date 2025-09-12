@@ -1,7 +1,6 @@
-import React, { useTransition } from "react";
+import React from "react";
 import CountUp from "react-countup";
-import { TbEaseInOut } from "react-icons/tb";
-// import "./statcounter.css";
+import "./statcounter.css";
 
 const StatsCounter = () => {
   const stats = [
@@ -11,51 +10,20 @@ const StatsCounter = () => {
   ];
 
   return (
-    <div style={styles.section}>
-      <div style={styles.grid}>
+    <div className="stats-section">
+      <div className="stats-grid">
         {stats.map((item, index) => (
-          <div key={index} style={styles.statBox}>
-            <h2 style={styles.number}>
+          <div key={index} className="stat-box">
+            <h2 className="stat-number">
               <CountUp end={item.end} duration={2.5} separator="," />
               {item.suffix}
             </h2>
-            <p style={styles.label}>{item.label}</p>
+            <p className="stat-label">{item.label}</p>
           </div>
         ))}
       </div>
     </div>
   );
-};
-
-const styles = {
-  section: {
-    backgroundColor: "#fff",
-    padding: "6rem 2rem 6rem",
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(18rem, 1fr))",
-    gap: "2.4rem",
-    maxWidth: "80rem",
-    margin: "0 auto",
-    textAlign: "center",
-  },
-  statBox: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  number: {
-    fontSize: "3rem",
-    fontWeight: "bold",
-    color: "darkorange",
-    margin: 0,
-  },
-  label: {
-    fontSize: "1.2rem",
-    color: "black",
-    marginTop: "0.4rem",
-  },
 };
 
 export default StatsCounter;

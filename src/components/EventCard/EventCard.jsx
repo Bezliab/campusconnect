@@ -45,7 +45,7 @@ const EventCard = ({ event, getCategoryColor, formatDate, onViewDetails }) => {
         
         <p className="event-description">{event.description}</p>
         
-        <div className="event-actions">
+        <div className="event-actions-btn">
           <button 
             className="view-details-btn"
             onClick={handleViewDetails}
