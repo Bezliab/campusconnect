@@ -22,7 +22,7 @@ const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDa
       </div>
       
       <div className="event-content">
-        <h3 className="event-title">{event.name}</h3>
+        <h3 className="event-title-card">{event.name}</h3>
         
         <div className="event-details">
           <div className="detail-item">

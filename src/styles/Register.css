@@ -32,7 +32,7 @@
   max-width: 480px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   text-align: center;
-  margin-top: 60px;
+  margin-top: 80px;
   backdrop-filter: blur(4px); /* subtle glass effect */
 }
 
