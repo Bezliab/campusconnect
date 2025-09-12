@@ -348,7 +348,7 @@
     "year": "2022–23",
     "event": "Sports Meet 2022",
     "description": "Students demonstrating self-defense and martial art skills.",
-    "imageUrl": "https://media.defense.gov/2019/Oct/31/2002204439/-1/-1/0/191030-A-XX639-1005.JPG"
+    "imageUrl": "https://i.pinimg.com/originals/56/91/2c/56912c6c8aead6fb9cb276fa46739e4c.jpg"
   },
   {
     "id": 40,
@@ -358,5 +358,23 @@
     "event": "Cultural Night 2023",
     "description": "Runway show highlighting diverse cultural attire.",
     "imageUrl": "https://live.staticflickr.com/462/19027925970_6cc3fb8286_b.jpg"
+  },
+  {
+    "id": 41,
+    "title": "Environmental Awareness Rally",
+    "category": "Academic",
+    "year": "2024–25",
+    "event": "Eco Week 2024",
+    "description": "Students participating in a rally to promote environmental conservation.",
+    "imageUrl": "https://live.staticflickr.com/6152/6194793172_34da979eb5_b.jpg"
+  },
+  {
+    "id": 42,
+    "title": "Alumni Meet and Greet",
+    "category": "Cultural",
+    "year": "2023–24",
+    "event": "Alumni Reunion 2023",
+    "description": "Current students and alumni connecting and sharing experiences.",
+    "imageUrl": "https://parklandtalk.com/wp-content/uploads/2019/04/Lori-Alhadeff-meetgreet.jpg"
   }
 ]
