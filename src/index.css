@@ -1,23 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  font-family: "Nunito Sans", "Segoe UI", Roboto, Arial, sans-serif;
-  /* background-color: #f4f4f4; */
-  color: #1f2937;
-  line-height: 1.6;
-  min-height: 100vh;
-  /* overflow-x: hidden; */
-}
-
-/* Colors (CSS Variables) */
 :root {
   --color-primary: #010536;
   --color-accent: #ffa500;
@@ -31,9 +13,32 @@ body {
   --color-btn-hov: #0e1eb0;
   --color-sub: #faeeda;
   --color-inverse: #f3f4f6;
+
+  --font-base: "Nunito Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-heading: "Poppins", sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
 }
 
-/* Typography */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: var(--font-base);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
 h1,
 h2,
 h3,
@@ -51,7 +56,16 @@ a:hover {
   color: var(--color-accent);
 }
 
-/* Buttons */
+.flex {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
 button,
 .primary-btn {
   font: inherit;
@@ -63,6 +77,7 @@ button,
   color: var(--color-plain);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 button:hover,
 .primary-btn:hover {
   background-color: var(--color-btn-hov);
@@ -72,7 +87,10 @@ button:active,
   transform: scale(0.97);
 }
 
-/* Forms */
+.btn:hover {
+  background: var(--color-accent);
+}
+
 input,
 select,
 textarea {
@@ -90,16 +108,15 @@ textarea:focus {
   box-shadow: 0 0 4px var(--color-primary);
 }
 
-/* Layout Helpers */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.desc {
+.hero-event-info {
   color: var(--color-sub);
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
 
 .text-center {
@@ -131,10 +148,6 @@ textarea:focus {
   align-items: center;
 }
 
-/* ===========================
-   Navbar & Footer
-=========================== */
-
 .footer {
   background: linear-gradient(rgba(1, 54, 40, 0.9), rgba(1, 5, 54, 0.9)),
     url("https://avatars.mds.yandex.net/i?id=cb70d5a7b73ea8ee960e08fe05abe471_l-5500026-images-thumbs&ref=rim&n=13&w=1920&h=1280")
@@ -157,7 +170,6 @@ textarea:focus {
   color: var(--color-accent);
 }
 
-/* Back to Top Button */
 .back-to-top {
   position: fixed;
   bottom: 2rem;

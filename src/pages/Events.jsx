@@ -111,7 +111,6 @@ const EventCatalog = () => {
     return colors[category] || "#6B7280";
   };
 
-  // If an event is selected, show the EventDetails component
   if (selectedEventId && selectedEvent) {
     return (
       <EventDetails
