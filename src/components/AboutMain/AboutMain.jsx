@@ -60,7 +60,6 @@ function AboutMain() {
         <div className="container">
           <h1 className="about-title">Institute Overview</h1>
           <p className="overview-text">
-
             CampusConnect is a modern digital platform designed to enhance
             communication, collaboration, and engagement within the academic
             community. It serves as a hub where students, faculty, and staff can
@@ -68,14 +67,12 @@ function AboutMain() {
             that enrich both academic and social life. By combining technology
             with user-friendly design, CampusConnect bridges the gap between
             learning, extracurricular activities, and campus culture.
-
           </p>
         </div>
       </section>
       <section className="mission-vision">
         <div className="container">
           <div className="mission">
-
             <h2>Our Mission</h2>
             <p>
               We aim to create a connected, inclusive, and innovative campus
@@ -103,12 +100,10 @@ function AboutMain() {
               vision is to inspire a culture of lifelong learning, inclusivity,
               and shared achievement, making our institution a model for
               academic and social excellence in the digital age.
-
             </p>
           </div>
         </div>
       </section>
-
 
       {/* Departments Section */}
       <section className="departments-section">
@@ -203,10 +198,12 @@ function AboutMain() {
       </section>
 
       <StatsCounter />
+
       <div className="highlight-section">
         <div className="container">
           <h1 className="about-title">Community Highlights</h1>
 
+          {/* First highlight*/}
           <div className="highlight highlight-row">
             <div className="highlight-text">
               <h3>Information Access</h3>
@@ -227,6 +224,7 @@ function AboutMain() {
             </div>
           </div>
 
+          {/* Second highlight*/}
           <div className="highlight highlight-row reverse">
             <div className="highlight-text">
               <h3>Real-Time Updates </h3>
@@ -251,6 +249,7 @@ function AboutMain() {
       <div className="container events-section">
         <h1 className="about-title">Key Annual Events</h1>
         <div className="events-list">
+          {/* Technical Events */}
           <div className="event-category">
             <h2>Technical Events</h2>
             <ul>
@@ -309,44 +308,6 @@ function AboutMain() {
           </div>
         </div>
       </div>
-      {/* Departments Section */}
-      <section className="departments-section">
-        <div className="container">
-          <h1 className="about-title">Departments</h1>
-          <div className="departments-list">
-            <div className="department-card">
-              <h3>Department of Computer Science</h3>
-              <p>
-                Focused on software engineering, artificial intelligence, data science, and cybersecurity. Offers undergraduate and postgraduate programs with hands-on labs and industry partnerships.
-              </p>
-            </div>
-            <div className="department-card">
-              <h3>Department of Electrical Engineering</h3>
-              <p>
-                Covers electronics, power systems, telecommunications, and embedded systems. Students gain practical experience through projects and internships.
-              </p>
-            </div>
-            <div className="department-card">
-              <h3>Department of Mechanical Engineering</h3>
-              <p>
-                Specializes in robotics, thermodynamics, manufacturing, and automotive engineering. Emphasizes innovation and real-world problem solving.
-              </p>
-            </div>
-            <div className="department-card">
-              <h3>Department of Business Administration</h3>
-              <p>
-                Provides education in management, marketing, finance, and entrepreneurship. Prepares students for leadership roles in diverse industries.
-              </p>
-            </div>
-            <div className="department-card">
-              <h3>Department of Humanities & Social Sciences</h3>
-              <p>
-                Offers courses in communication, psychology, sociology, and languages to foster well-rounded graduates with strong interpersonal skills.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </section>
   );
 }

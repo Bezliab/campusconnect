@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import eventsData from "../data/events.json";
 import EventCard from "../components/EventCard/EventCard";
+import Pagination from "../components/Pargination";
 import EventDetails from "./EventDetails";
 import "../styles/events.css";
 import { useBookmarks } from "../context/BookmarkContext";
@@ -33,6 +34,8 @@ const EventCatalog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const { bookmarkedEvents } = useBookmarks();
   const navigate = useNavigate();
+  const [currentPage, setCurrentPage] = useState(1);
+  const [eventsPerPage] = useState(6);
 
   useEffect(() => {
     setEvents(eventsData.events);
@@ -71,6 +74,7 @@ const EventCatalog = () => {
       }
     });
     setFilteredEvents(filtered);
+    setCurrentPage(1); // Reset to first page on filter/sort change
   }, [events, selectedCategory, sortBy, bookmarkedEvents, showBookmarked, searchQuery]);
 
   const formatDate = (dateString) => {
@@ -90,6 +94,21 @@ const EventCatalog = () => {
       departmental: "#8B5CF6",
     };
     return colors[category] || "#6B7280";
+  };
+
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredEvents.length / eventsPerPage);
+  const startIndex = (currentPage - 1) * eventsPerPage;
+  const endIndex = startIndex + eventsPerPage;
+  const currentEvents = filteredEvents.slice(startIndex, endIndex);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    // Scroll to top of events section
+    document.querySelector('.catalog-section')?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
   };
 
   const handleEventCardViewDetails = (eventId) => {
@@ -189,17 +208,18 @@ const EventCatalog = () => {
                 </div>
 
                 {/* Events Grid */}
-                <div className="events-container">
-                  {filteredEvents.map((event) => (
-                    <EventCard
-                      key={event.id}
-                      event={event}
-                      getCategoryColor={getCategoryColor}
-                      formatDate={formatDate}
-                      onViewDetails={handleEventCardViewDetails}
-                    />
-                  ))}
-                </div>
+<div className="events-container">
+  {currentEvents.map((event) => (   
+    <EventCard
+      key={event.id}
+      event={event}
+      getCategoryColor={getCategoryColor}
+      formatDate={formatDate}
+      onViewDetails={handleEventCardViewDetails}
+    />
+  ))}
+</div>
+
 
                 {filteredEvents.length === 0 && (
                   <div className="no-events">
@@ -210,6 +230,16 @@ const EventCatalog = () => {
                   </div>
                 )}
               </div>
+              {/* Pagination */}
+          {filteredEvents.length > 0 && (
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+              itemsPerPage={eventsPerPage}
+              totalItems={filteredEvents.length}
+            />
+          )}
             </section>
           </div>
         }
