@@ -257,7 +257,7 @@ h1.about-title {
 .team-section {
   padding: 3rem 0;
   background-color: #f8f8ff;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 .team-list {
   display: grid;
@@ -283,7 +283,7 @@ h1.about-title {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.10);
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1);
 }
 .team-card h3 {
   font-size: 1.2rem;
