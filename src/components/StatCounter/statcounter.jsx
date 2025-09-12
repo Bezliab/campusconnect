@@ -15,7 +15,7 @@ const StatsCounter = () => {
         {stats.map((item, index) => (
           <div key={index} className="stat-box">
             <h2 className="stat-number">
-              <CountUp end={item.end} duration={2.5} separator="," />
+              <CountUp end={item.end} duration={3.5} separator="," />
               {item.suffix}
             </h2>
             <p className="stat-label">{item.label}</p>
