@@ -283,6 +283,7 @@ h1.about-title {
 
   div.departments-list {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 
   .highlight-row,
@@ -388,6 +389,10 @@ h1.about-title {
 
 @media (max-width: 600px) {
   .affiliated-schools {
+    grid-template-columns: 1fr;
+  }
+
+  div.departments-list {
     grid-template-columns: 1fr;
   }
 }
