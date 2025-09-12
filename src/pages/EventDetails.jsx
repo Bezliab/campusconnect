@@ -1,14 +1,15 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, MapPin, Users, Tag, Bookmark, BookmarkCheck } from 'lucide-react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { ArrowLeft, Calendar, Clock, MapPin, Tag, Bookmark, BookmarkCheck } from 'lucide-react';
 import '../styles/eventDetail.css';
 import eventsData from '../data/events.json';
-import { Link } from 'react-router-dom';
+import { useBookmarks } from '../context/BookmarkContext';
 
-const EventDetails = ({ onBack, isBookmarked, onBookmark }) => {
+const EventDetails = ({ event: eventProp }) => {
   const { id } = useParams();
-  // Find the event by id (convert id to number if your ids are numbers)
-  const event = eventsData.events.find(e => String(e.id) === String(id));
+  const navigate = useNavigate();
+  const event = eventProp || eventsData.events.find(e => String(e.id) === String(id));
+  const { bookmarkedEvents, toggleBookmark } = useBookmarks();
 
   if (!event) {
     return (
@@ -16,10 +17,10 @@ const EventDetails = ({ onBack, isBookmarked, onBookmark }) => {
         <div className="event-not-found">
           <h2>Event Not Found</h2>
           <p>The requested event could not be found.</p>
-          <Link to="/" onClick={onBack} className="back-button">
+          <button onClick={() => navigate('/events')} className="back-button">
             <ArrowLeft size={20} />
             Back to Events
-          </Link>
+          </button>
         </div>
       </div>
     );
@@ -48,10 +49,10 @@ const EventDetails = ({ onBack, isBookmarked, onBookmark }) => {
   return (
     <div className="event-details-container">
       <div className="event-details-button">
-        <Link to="/events" onClick={onBack} className="back-button">
+        <button onClick={() => navigate('/events')} className="back-button">
           <ArrowLeft size={20} />
           Back to Events
-        </Link>
+        </button>
       </div>
 
       <div className="event-details-content">
@@ -94,7 +95,7 @@ const EventDetails = ({ onBack, isBookmarked, onBookmark }) => {
               
               <div className="event-info-notice">
                 <h3>Event Information</h3>
-                <p>For more detailed information about this event, please contact the organizers or check back closer to the event date for updates.</p>
+                <p>{event.detailedinfo}</p>
               </div>
             </div>
           </div>
@@ -102,10 +103,10 @@ const EventDetails = ({ onBack, isBookmarked, onBookmark }) => {
           <div className="event-sidebar">
             <div className="event-actions">
               <button 
-                className={`bookmark-button ${isBookmarked ? 'bookmarked' : ''}`}
-                onClick={() => onBookmark(event.id)}
+                className={`bookmark-button ${bookmarkedEvents.has(event.id) ? 'bookmarked' : ''}`}
+                onClick={() => toggleBookmark(event.id)}
               >
-                {isBookmarked ? (
+                {bookmarkedEvents.has(event.id) ? (
                   <>
                     <BookmarkCheck size={20} />
                     Bookmarked

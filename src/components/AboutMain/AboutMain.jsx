@@ -13,16 +13,16 @@ function AboutMain() {
           </p>
         </div>
       </div>
-      <div className="container affiliate">
+      <section className="container affiliate">
         <h1 className="about-title">Affiliated Partners</h1>
         <div className="affiliated-schools">
           <div className="school">
             <img
-              src="https://ih1.redbubble.net/image.3644243783.5128/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
-              alt="University of Cambridge"
+              src="https://ahep.ac.uk/wp-content/uploads/2024/02/187299.png"
+              alt="Middlesex University"
               className="school-logo"
             />
-            <span>University of Cambridge</span>
+            <span>Middlesex University</span>
           </div>
           <div className="school">
             <img
@@ -42,14 +42,41 @@ function AboutMain() {
           </div>
           <div className="school">
             <img
-              src="https://changewildlifeconsumers.org/site/assets/files/1226/resizes/resource_university-college-london-ucl-centre-for-behaviour-change-website-1.jpg"
-              alt="University College London"
+              src="https://dlcportal.ui.edu.ng/_next/static/media/ui-logo.bf61628a.png"
+              alt="University of Ibadan"
               className="school-logo"
             />
-            <span>University College London</span>
+            <span>University of Ibadan</span>
           </div>
         </div>
-      </div>
+      </section>
+      {/* Overview Section */}
+      <section className="overview-section">
+        <div className="container">
+          <h1 className="about-title">Institute Overview</h1>
+          <p className="overview-text">
+            CampusConnect is a modern digital platform designed to enhance communication, collaboration, and engagement within the academic community. It serves as a hub where students, faculty, and staff can stay informed about events, access resources, and foster connections that enrich both academic and social life. By combining technology with user-friendly design, CampusConnect bridges the gap between learning, extracurricular activities, and campus culture.
+          </p>
+        </div>
+      </section>
+      <section className="mission-vision">
+        <div className="container">
+          <div className="mission">
+            <h2 >Our Mission</h2>
+            <p>
+              We aim to create a connected, inclusive, and innovative campus environment by providing seamless access to information, resources, and opportunities that empower students and faculty to thrive academically, socially, and professionally.
+              We are dedicated to fostering a vibrant academic community where every member feels valued and supported. Our mission is to bridge gaps between departments, encourage interdisciplinary collaboration, and ensure that every student and staff member has the tools and information they need to succeed. Through continuous innovation and a commitment to excellence, we strive to make campus life more engaging, transparent, and accessible for all.
+            </p>
+          </div>
+          <div className="vision">
+            <h2>Our Vision</h2>
+            <p>
+              CampusConnect intends to be the leading campus engagement platform that transforms higher education communities into vibrant, well-connected ecosystems where collaboration, growth, and innovation flourish.
+              We envision a future where technology seamlessly integrates with campus life, enabling effortless communication, real-time updates, and meaningful connections. Our vision is to inspire a culture of lifelong learning, inclusivity, and shared achievement, making our institution a model for academic and social excellence in the digital age.
+            </p>
+          </div>
+        </div>
+      </section>
       <div className="highlight-section">
         <div className="container">
           <h1 className="about-title">Community Highlights</h1>
@@ -159,6 +186,44 @@ function AboutMain() {
           </div>
         </div>
       </div>
+      {/* Departments Section */}
+      <section className="departments-section">
+        <div className="container">
+          <h1 className="about-title">Departments</h1>
+          <div className="departments-list">
+            <div className="department-card">
+              <h3>Department of Computer Science</h3>
+              <p>
+                Focused on software engineering, artificial intelligence, data science, and cybersecurity. Offers undergraduate and postgraduate programs with hands-on labs and industry partnerships.
+              </p>
+            </div>
+            <div className="department-card">
+              <h3>Department of Electrical Engineering</h3>
+              <p>
+                Covers electronics, power systems, telecommunications, and embedded systems. Students gain practical experience through projects and internships.
+              </p>
+            </div>
+            <div className="department-card">
+              <h3>Department of Mechanical Engineering</h3>
+              <p>
+                Specializes in robotics, thermodynamics, manufacturing, and automotive engineering. Emphasizes innovation and real-world problem solving.
+              </p>
+            </div>
+            <div className="department-card">
+              <h3>Department of Business Administration</h3>
+              <p>
+                Provides education in management, marketing, finance, and entrepreneurship. Prepares students for leadership roles in diverse industries.
+              </p>
+            </div>
+            <div className="department-card">
+              <h3>Department of Humanities & Social Sciences</h3>
+              <p>
+                Offers courses in communication, psychology, sociology, and languages to foster well-rounded graduates with strong interpersonal skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }

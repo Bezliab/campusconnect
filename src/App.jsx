@@ -10,11 +10,12 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer/footer";
 import EventDetails from "./pages/EventDetails";
 import BackToTop from "./components/BacktoTop";
+import { BookmarkProvider } from './context/BookmarkContext';
 
 
 function App() {
   return (
-    <>
+    <BookmarkProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,7 +29,7 @@ function App() {
       </Routes>
       <BackToTop />
       <Footer />
-    </>
+    </BookmarkProvider>
   );
 }
 

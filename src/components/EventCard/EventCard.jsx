@@ -1,13 +1,17 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Bookmark, BookmarkCheck, Calendar, MapPin, Clock, Eye } from 'lucide-react';
+import { useBookmarks } from '../../context/BookmarkContext';
 
-const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDate }) => {
-  const navigate = useNavigate();
+const EventCard = ({ event, getCategoryColor, formatDate, onViewDetails }) => {
+  const { bookmarkedEvents, toggleBookmark } = useBookmarks();
 
   const handleViewDetails = () => {
-    navigate(`/events/${event.id}`);
+    if (onViewDetails) {
+      onViewDetails(event.id); // This will navigate to /events/:id
+    }
   };
+
+  const isBookmarked = bookmarkedEvents.has(event.id);
 
   return (
     <div className="event-card">
@@ -22,7 +26,7 @@ const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDa
       </div>
       
       <div className="event-content">
-        <h3 className="event-title">{event.name}</h3>
+        <h3 className="event-title-card">{event.name}</h3>
         
         <div className="event-details">
           <div className="detail-item">
@@ -51,7 +55,7 @@ const EventCard = ({ event, isBookmarked, onBookmark, getCategoryColor, formatDa
           </button>
           <button 
             className={`bookmark-btn ${isBookmarked ? 'bookmarked' : ''}`}
-            onClick={() => onBookmark(event.id)}
+            onClick={() => toggleBookmark(event.id)}
           >
             {isBookmarked ? (
               <BookmarkCheck size={18} />
