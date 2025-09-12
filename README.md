@@ -6,7 +6,7 @@ CampusConnect is a modern web platform for managing and discovering campus event
 
 ## Live Demo
 
-[Visit CampusConnect Live](https://campusconnect-demo.netlify.app)  
+[Visit CampusConnect Live](https://campusconnect-stacksmith-techwiz6.netlify.app)
 
 ---
 
@@ -15,7 +15,7 @@ CampusConnect is a modern web platform for managing and discovering campus event
 - **Frontend Framework:** [React.js]
 - **Build Tool:** [Vite]
 - **Routing:** [React Router]
-- **Styling:** CSS 
+- **Styling:** CSS
 - **Icons:** [Lucide React] & [React Icons]
 - **State Management:** React Hooks (useState, useEffect)
 - **Version Control:** Git & GitHub
@@ -53,12 +53,14 @@ CampusConnect is a modern web platform for managing and discovering campus event
 ### Installation
 
 1. **Clone the repository:**
+
    ```sh
    git clone https://github.com/Bezliab/campusconnect.git
    cd campusconnect
    ```
 
 2. **Install dependencies:**
+
    ```sh
    npm install
    # or
@@ -66,6 +68,7 @@ CampusConnect is a modern web platform for managing and discovering campus event
    ```
 
 3. **Start the development server (Vite):**
+
    ```sh
    npm run dev
    # or
