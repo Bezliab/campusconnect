@@ -49,7 +49,6 @@ function Navbar() {
           Register
         </Link>
 
-        {/* Hamburger / Close (mobile) */}
         <div
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -65,7 +64,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile slide-in menu */}
+  
       <div
         id="mobile-menu"
         className={`mobile-menu${menuOpen ? " open" : ""}`}
@@ -109,7 +108,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      {/* Overlay for mobile menu */}
+  
       {menuOpen && (
         <div
           className="mobile-menu-overlay"

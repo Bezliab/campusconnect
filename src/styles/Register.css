@@ -30,7 +30,6 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   text-align: center;
   margin: auto;
-  /* margin-top: 80px; */
   backdrop-filter: blur(4px); 
 }
 
@@ -132,7 +131,7 @@
 .btn-primary:hover {
   background: #1f2937;
 }
-/* Footer */
+
 .auth-footer {
   margin-top: 1.5rem;
   font-size: 0.9rem;

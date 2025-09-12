@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeEvents.css"; // import stylesheet
+import "./HomeEvents.css"; 
 import { Home } from "lucide-react";
 import "../../styles/home.css";
 

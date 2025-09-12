@@ -7,7 +7,7 @@ import {
   Users,
   Search,
   ChevronDown,
-  ChevronUp // <-- add this import
+  ChevronUp 
 } from "lucide-react";
 import eventsData from "../data/events.json";
 import EventCard from "../components/EventCard/EventCard";

@@ -7,7 +7,7 @@ const EventCard = ({ event, getCategoryColor, formatDate, onViewDetails }) => {
 
   const handleViewDetails = () => {
     if (onViewDetails) {
-      onViewDetails(event.id); // This will navigate to /events/:id
+      onViewDetails(event.id); 
     }
   };
 

@@ -184,7 +184,6 @@
   /* border-radius: 8px; */
 }
 
-/* Highlighted/selected option styling (browser support may vary) */
 .filter-select option:checked,
 .filter-select option:focus,
 .filter-select option:hover {

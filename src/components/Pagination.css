@@ -1,4 +1,4 @@
-/* Pagination Container */
+
 .pagination-container {
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   font-weight: 500;
 }
 
-/* Pagination Controls */
+
 .pagination-controls {
   display: flex;
   align-items: center;
@@ -53,7 +53,6 @@
   color: #9ca3af;
 }
 
-/* Pagination Numbers */
 .pagination-numbers {
   display: flex;
   align-items: center;
@@ -103,7 +102,6 @@
   background: transparent;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .pagination-container {
     margin-top: 2rem;

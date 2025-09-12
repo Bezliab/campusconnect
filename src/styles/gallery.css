@@ -170,7 +170,6 @@
   opacity: 1;
 }
 
-/* ===== Category Badges ===== */
 .category-badge {
   position: absolute;
   top: 0.5rem;
@@ -188,7 +187,6 @@
 .category-academic { background-color: #f43f5e; }
 .category-default { background-color: #6b7280; }
 
-/* ===== Card Content ===== */
 .card-content {
   padding: 1rem;
   position: absolute;
@@ -217,8 +215,6 @@
   font-size: 0.875rem;
   color: white;
 }
-
-/* ===== Empty State ===== */
 .empty-state {
   text-align: center;
   padding: 2rem;
@@ -231,9 +227,6 @@
   margin-bottom: 1rem;
 }
 
-/* ===============================
-   MODAL
-================================= */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -278,9 +271,9 @@
   border-radius: 0; 
 }
 
-/* Right: Text smaller portion */
+
 .modal-right {
-  flex: 1; /* smaller portion */
+  flex: 1; 
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -310,7 +303,7 @@
   margin-top: 0.25rem;
 }
 
-/* Close Button */
+
 .modal-close{
   position: absolute;
   top: 0.75rem;
@@ -322,7 +315,7 @@
   font-size: 1.2rem;
 }
 
-/* ✅ Responsive: stack on mobile */
+
 @media (max-width: 768px) {
   .modal-body {
     flex-direction: column;
@@ -346,7 +339,7 @@
   }
 }
 
-/* Fade animation */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
