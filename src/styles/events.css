@@ -155,9 +155,12 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   border: 1px solid #e5e7eb;
 }
-
 .filter-group svg {
   color: #6b7280;
+}
+
+.filter-group.filter-group-select {
+  position: relative;
 }
 
 .filter-select {
@@ -168,13 +171,36 @@
   color: #374151;
   outline: none;
   cursor: pointer;
-  min-width: 140px;
+  min-width: 80px;
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 0.5rem center;
-  background-size: 1rem;
   padding-right: 2rem;
+}
+
+.filter-select option {
+  color: #374151;
+  background: #fff;
+  font-size: 0.95em;
+  padding: 0.5em 1em;
+  /* border-radius: 8px; */
+}
+
+/* Highlighted/selected option styling (browser support may vary) */
+.filter-select option:checked,
+.filter-select option:focus,
+.filter-select option:hover {
+  background: #e0e7ff;
+  color: #1d4ed8;
+}
+
+.chevron-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
 }
 
 .bookmark-toggle {

@@ -6,7 +6,8 @@ import {
   Filter,
   Users,
   Search,
-  ChevronDown
+  ChevronDown,
+  ChevronUp // <-- add this import
 } from "lucide-react";
 import eventsData from "../data/events.json";
 import EventCard from "../components/EventCard/EventCard";
@@ -44,13 +45,15 @@ const EventCatalog = () => {
   }, []);
 
   useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, sortBy, showBookmarked, searchQuery]);
+
+  useEffect(() => {
     let filtered = [...events];
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
       filtered = filtered.filter(event => 
-        event.name.toLowerCase().includes(query) ||
-        event.category.toLowerCase().includes(query) ||
-        event.description.toLowerCase().includes(query)
+        event.name.toLowerCase().includes(query)
       );
     }
     if (selectedCategory !== "all") {
@@ -74,7 +77,6 @@ const EventCatalog = () => {
       }
     });
     setFilteredEvents(filtered);
-    setCurrentPage(1); // Reset to first page on filter/sort change
   }, [events, selectedCategory, sortBy, bookmarkedEvents, showBookmarked, searchQuery]);
 
   const formatDate = (dateString) => {
@@ -115,6 +117,11 @@ const EventCatalog = () => {
     navigate(`/events/${eventId}`);
   };
 
+  const handleShowBookmarkedToggle = () => {
+    setShowBookmarked(prev => !prev);
+    setCurrentPage(1);
+  };
+
   return (
     <Routes>
       <Route
@@ -141,7 +148,6 @@ const EventCatalog = () => {
                 </div>
               </div>
             </section>
-
             {/* Event Catalog Section */}
             <section className="catalog-section">
               <div className="container">
@@ -169,7 +175,7 @@ const EventCatalog = () => {
                   </div>
                   
                   <div className="filters">
-                    <div className="filter-group">
+                    <div className="filter-group filter-group-select">
                       <Filter size={20} />
                       <select 
                         value={selectedCategory}
@@ -182,9 +188,12 @@ const EventCatalog = () => {
                         <option value="sports">Sports Events</option>
                         <option value="departmental">Departmental Events</option>
                       </select>
+                      <span className="chevron-icon">
+                        <ChevronDown size={18} />
+                      </span>
                     </div>
                     
-                    <div className="filter-group">
+                    <div className="filter-group filter-group-select">
                       <Users size={20} />
                       <select 
                         value={sortBy}
@@ -195,12 +204,15 @@ const EventCatalog = () => {
                         <option value="name">Sort by Name</option>
                         <option value="category">Sort by Category</option>
                       </select>
+                      <span className="chevron-icon">
+                        <ChevronDown size={18} />
+                      </span>
                     </div>
                   </div>
 
                   <button 
                     className={`bookmark-toggle ${showBookmarked ? 'active' : ''}`}
-                    onClick={() => setShowBookmarked(!showBookmarked)}
+                    onClick={handleShowBookmarkedToggle}
                   >
                     <ChevronDown size={20} />
                     {showBookmarked ? 'Show All Events' : 'Show Bookmarked'}
