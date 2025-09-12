@@ -70,20 +70,6 @@ const EventDetails = ({ event: eventProp }) => {
               {event.category.charAt(0).toUpperCase() + event.category.slice(1)}
             </div>
             <h1 className="event-title">{event.name}</h1>
-            <div className="event-meta">
-              <div className="meta-item">
-                <Calendar size={20} />
-                <span>{formatDate(event.date)}</span>
-              </div>
-              <div className="meta-item">
-                <Clock size={20} />
-                <span>{event.time}</span>
-              </div>
-              <div className="meta-item">
-                <MapPin size={20} />
-                <span>{event.venue}</span>
-              </div>
-            </div>
           </div>
         </div>
 
