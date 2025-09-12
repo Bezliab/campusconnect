@@ -94,7 +94,7 @@ const EventDetails = ({ onBack, isBookmarked, onBookmark }) => {
               
               <div className="event-info-notice">
                 <h3>Event Information</h3>
-                <p>For more detailed information about this event, please contact the organizers or check back closer to the event date for updates.</p>
+                <p>{event.detailedinfo}</p>
               </div>
             </div>
           </div>

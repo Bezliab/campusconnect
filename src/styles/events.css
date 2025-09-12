@@ -53,20 +53,6 @@
   color: #f3f4f6;
 }
 
-.hero-event-info h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #fbbf24;
-}
-
-.hero-event-info p {
-  font-size: 1.25rem;
-  margin-bottom: 3rem;
-  opacity: 0.95;
-  line-height: 1.6;
-}
-
 .catalog-section {
   padding: 5rem 0;
 }
@@ -84,6 +70,73 @@
   margin-bottom: 3rem;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+/* Search Field */
+.search-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 0 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-field:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+}
+
+.search-field svg {
+  color: #6b7280;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #374151;
+  outline: none;
+  font-weight: 500;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.clear-search {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-left: 0.5rem;
+}
+
+.clear-search:hover {
+  background: #f3f4f6;
+  color: #374151;
 }
 
 .filters {
@@ -116,6 +169,12 @@
   outline: none;
   cursor: pointer;
   min-width: 140px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+  padding-right: 2rem;
 }
 
 .bookmark-toggle {
@@ -203,7 +262,7 @@
   padding: 1.5rem;
 }
 
-.event-title {
+.event-title-card {
   font-size: 1.25rem;
   font-weight: 700;
   color: #111827;

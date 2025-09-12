@@ -3,10 +3,9 @@ import {
   Bookmark,
   BookmarkCheck,
   Filter,
-  Calendar,
-  MapPin,
-  Clock,
   Users,
+  Search,
+  ChevronDown
 } from "lucide-react";
 import eventsData from "../data/events.json";
 import EventCard from "../components/EventCard/EventCard";
@@ -23,6 +22,7 @@ const EventCatalog = () => {
   const [sortBy, setSortBy] = useState("date");
   const [selectedEventId, setSelectedEventId] = useState(null);
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     // Load events from JSON
@@ -40,6 +40,16 @@ const EventCatalog = () => {
   useEffect(() => {
     // Filter and sort events
     let filtered = [...events];
+
+     // Search filter
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter(event => 
+        event.name.toLowerCase().includes(query) ||
+        event.category.toLowerCase().includes(query) ||
+        event.description.toLowerCase().includes(query)
+      );
+    }
 
     // Category filter
     if (selectedCategory !== "all") {
@@ -68,7 +78,7 @@ const EventCatalog = () => {
     });
 
     setFilteredEvents(filtered);
-  }, [events, selectedCategory, sortBy, bookmarkedEvents, showBookmarked]);
+  }, [events, selectedCategory, sortBy, bookmarkedEvents, showBookmarked, searchQuery]);
 
   const handleBookmark = (eventId) => {
     const newBookmarks = new Set(bookmarkedEvents);
@@ -111,7 +121,6 @@ const EventCatalog = () => {
     return colors[category] || "#6B7280";
   };
 
-  // If an event is selected, show the EventDetails component
   if (selectedEventId && selectedEvent) {
     return (
       <EventDetails
@@ -151,10 +160,31 @@ const EventCatalog = () => {
         <div className="container">
           {/* Controls */}
           <div className="catalog-controls">
+            <div className="search-container">
+              <div className="search-field">
+                <Search size={20} />
+                <input
+                  type="text"
+                  placeholder="Search events..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="search-input"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="clear-search"
+                  >
+                    ×
+                  </button>
+                )}
+              </div>
+            </div>
+            
             <div className="filters">
               <div className="filter-group">
                 <Filter size={20} />
-                <select
+                <select 
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
                   className="filter-select"
@@ -166,10 +196,10 @@ const EventCatalog = () => {
                   <option value="departmental">Departmental Events</option>
                 </select>
               </div>
-
+              
               <div className="filter-group">
                 <Users size={20} />
-                <select
+                <select 
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
                   className="filter-select"
@@ -181,12 +211,12 @@ const EventCatalog = () => {
               </div>
             </div>
 
-            <button
-              className={`bookmark-toggle ${showBookmarked ? "active" : ""}`}
+            <button 
+              className={`bookmark-toggle ${showBookmarked ? 'active' : ''}`}
               onClick={() => setShowBookmarked(!showBookmarked)}
             >
               <BookmarkCheck size={20} />
-              {showBookmarked ? "Show All Events" : "Show Bookmarked"}
+              {showBookmarked ? 'Show All Events' : 'Show Bookmarked'}
             </button>
           </div>
 
