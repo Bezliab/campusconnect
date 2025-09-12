@@ -1,32 +1,42 @@
+.feedback-header {
+  text-align: center;
+  background-image: url("https://www.studysslc.com/wp-content/uploads/2021/12/SSLC-SPROTTSHAW-LANGUAGE-COLLEGE-PATHWAY.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.feedback-hero-text{
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  z-index: 900;
+}
+
 .feedback-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 70px 20px;
   background-color: #f8fafc;
   min-height: 100vh;
-  border-radius: 50px;
+  border-radius: 1rem;
   margin-top: 5px;
   margin-bottom: 15px;
 }
 
-.feedback-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .feedback-header h1 {
   font-size: 2.5rem;
-  color: #1f2937;
+  color: #fff;
   margin-bottom: 16px;
   font-weight: 700;
 }
 
-.feedback-header .highlight {
-  color: #2563eb;
-}
-
 .feedback-subtitle {
-  color: #6b7280;
+  /* color: #faeeda; */
+  color: #fff;
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 600px;
@@ -72,7 +82,7 @@
 
 .feedback-form-container {
   background: white;
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin-bottom: 40px;
@@ -82,7 +92,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #f8fafc;
+  background: #bbc4cd;
   padding: 20px 24px;
   border-bottom: 1px solid #e5e7eb;
 }
@@ -173,9 +183,10 @@
   padding: 4px;
 }
 
-.star:hover,
-.star.active {
+.star-rating .star:hover,
+.star-rating .star.active {
   color: #fbbf24;
+  background-color: transparent !important;
 }
 
 .submit-btn {
