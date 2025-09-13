@@ -69,23 +69,20 @@ const Gallery = () => {
 
   return (
     <div className="gallery-container">
-      {/* ===== Full Width Header Slideshow ===== */}
       <div
         className="gallery-header-slideshow"
         style={{ backgroundImage: `url(${backgroundImages[currentBg]})` }}
       >
         <div className="gallery-header-overlay"></div>
         <div className="gallery-header-content">
-          <p className="gallery-subtitle">
+          <p className="subheading">
             Explore memorable moments from our campus events through our visual
             gallery
           </p>
         </div>
       </div>
 
-      {/* ===== Page Content Wrapper ===== */}
       <div className="gallery-wrapper">
-        {/* Filters */}
         <div className="filters-section">
           <div className="filters-row">
             <div className="filters-controls">
@@ -127,7 +124,6 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Gallery Grid */}
         {filteredImages.length > 0 ? (
           <div className="gallery-grid">
             {filteredImages.map((image) => (
@@ -172,7 +168,6 @@ const Gallery = () => {
           </div>
         )}
 
-        {/* ===== Modal Popup ===== */}
         {modalImage && (
           <div className="modal-overlay" onClick={() => setModalImage(null)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -180,11 +175,10 @@ const Gallery = () => {
                 className="modal-close"
                 onClick={() => setModalImage(null)}
               >
-                <X size={20} />
+                <X size={24} />
               </button>
 
               <div className="modal-body">
-                {/* Left: Image */}
                 <div className="modal-left">
                   <img
                     src={modalImage.imageUrl}
@@ -193,7 +187,6 @@ const Gallery = () => {
                   />
                 </div>
 
-                {/* Right: Text */}
                 <div className="modal-right">
                   <h2 className="modal-title">{modalImage.title}</h2>
                   <p className="modal-description">{modalImage.description}</p>

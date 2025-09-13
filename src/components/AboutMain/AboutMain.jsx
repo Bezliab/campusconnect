@@ -88,7 +88,7 @@ function AboutMain() {
               engaging, transparent, and accessible for all.
             </p>
           </div>
-          <div className="vision">
+          <div className="mission">
             <h2>Our Vision</h2>
             <p>
               CampusConnect intends to be the leading campus engagement platform
@@ -163,35 +163,71 @@ function AboutMain() {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="team-section">
         <div className="container">
           <h1 className="about-title">Meet Our Team</h1>
           <div className="team-list">
             <div className="team-card">
-              <img src="/img/cyber.jpg" alt="Ajisola Victor" className="team-photo" />
+              <img
+                src="/img/cyber.jpg"
+                alt="Ajisola Victor"
+                className="team-photo"
+              />
               <h3>Ajisola Victor</h3>
-              <p>Web Developer. Specializes in frontend architecture and user experience for CampusConnect.</p>
+              <p>
+                Web Developer. Specializes in frontend architecture and user
+                experience for CampusConnect.
+              </p>
             </div>
             <div className="team-card">
-              <img src="/img/joe.jpg" alt="Ogunmuyiwa Ireoluwa" className="team-photo" />
+              <img
+                src="/img/joe.jpg"
+                alt="Ogunmuyiwa Ireoluwa"
+                className="team-photo"
+              />
               <h3>Ogunmuyiwa Ireoluwa</h3>
-              <p>Web Developer. Focuses on backend integration and optimization for the site.</p>
+              <p>
+                Web Developer. Focuses on backend integration and optimization
+                for the site.
+              </p>
             </div>
+
             <div className="team-card">
-              <img src="/img/ahamd.jpg" alt="Ahmad Akorede " className="team-photo" />
-              <h3>Ahmad Akorede </h3>
-              <p>Web Developer. Expert in responsive design and accessibility for CampusConnect.</p>
-            </div>
-            <div className="team-card">
-              <img src="/img/musty.jpg" alt="Mustapha Akintola" className="team-photo" />
-              <h3>Mustapha Akintola</h3>
-              <p>Web Developer. Works on interactive features and event modules for the platform.</p>
-            </div>
-            <div className="team-card">
-              <img src="/img/Isaac.jpg" alt="Issac adenji" className="team-photo" />
+              <img
+                src="/img/Isaac.jpg"
+                alt="Issac adenji"
+                className="team-photo"
+              />
               <h3>Adeniji Isaac</h3>
-              <p>Web Developer. Responsible for UI enhancements and maintaining code quality.</p>
+              <p>
+                Web Developer. Responsible for UI enhancements and maintaining
+                code quality.
+              </p>
+            </div>
+
+            <div className="team-card">
+              <img
+                src="/img/ahamd.jpg"
+                alt="Ahmad Akorede "
+                className="team-photo"
+              />
+              <h3>Ahmad Abduljeleel </h3>
+              <p>
+                Web Developer. Expert in responsive design and accessibility for
+                CampusConnect.
+              </p>
+            </div>
+            <div className="team-card">
+              <img
+                src="/img/musty.jpg"
+                alt="Mustapha Akintola"
+                className="team-photo"
+              />
+              <h3>Mustapha Akintola</h3>
+              <p>
+                Web Developer. Works on interactive features and event modules
+                for the platform.
+              </p>
             </div>
           </div>
         </div>
@@ -203,7 +239,6 @@ function AboutMain() {
         <div className="container">
           <h1 className="about-title">Community Highlights</h1>
 
-          {/* First highlight*/}
           <div className="highlight highlight-row">
             <div className="highlight-text">
               <h3>Information Access</h3>
@@ -224,7 +259,6 @@ function AboutMain() {
             </div>
           </div>
 
-          {/* Second highlight*/}
           <div className="highlight highlight-row reverse">
             <div className="highlight-text">
               <h3>Real-Time Updates </h3>
@@ -249,7 +283,6 @@ function AboutMain() {
       <div className="container events-section">
         <h1 className="about-title">Key Annual Events</h1>
         <div className="events-list">
-          {/* Technical Events */}
           <div className="event-category">
             <h2>Technical Events</h2>
             <ul>
@@ -269,7 +302,6 @@ function AboutMain() {
               </li>
             </ul>
           </div>
-          {/* Cultural Events */}
           <div className="event-category">
             <h2>Cultural Events</h2>
             <ul>
@@ -287,7 +319,6 @@ function AboutMain() {
               </li>
             </ul>
           </div>
-          {/* Sports & Other Activities */}
           <div className="event-category">
             <h2>Sports & Other Activities</h2>
             <ul>
