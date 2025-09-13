@@ -1,4 +1,3 @@
-/* Container */
 .auth-container {
   display: flex;
   justify-content: center;
@@ -151,7 +150,7 @@
   .auth-card {
     padding: 1.5rem;
     border-radius: 0.75rem;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 
   .auth-title {
