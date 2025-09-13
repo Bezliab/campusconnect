@@ -211,7 +211,7 @@ function AboutMain() {
                 alt="Ahmad Akorede "
                 className="team-photo"
               />
-              <h3>Ahmad Akorede </h3>
+              <h3>Ahmad Abduljeleel </h3>
               <p>
                 Web Developer. Expert in responsive design and accessibility for
                 CampusConnect.
