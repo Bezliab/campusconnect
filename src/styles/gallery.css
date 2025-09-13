@@ -47,6 +47,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+
 }
 
 .filters-section {
@@ -119,6 +120,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1rem;
+  justify-content: center;
 }
 
 .gallery-card {

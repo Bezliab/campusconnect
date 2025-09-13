@@ -187,7 +187,7 @@ function AboutMain() {
               />
               <h3>Ogunmuyiwa Ireoluwa</h3>
               <p>
-                Web Developer. Focuses on backend integration and optimization
+                Web Developer. Focuses on frontend aesthetics and optimization
                 for the site.
               </p>
             </div>
