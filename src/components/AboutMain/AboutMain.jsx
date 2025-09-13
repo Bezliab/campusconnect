@@ -88,7 +88,7 @@ function AboutMain() {
               engaging, transparent, and accessible for all.
             </p>
           </div>
-          <div className="vision">
+          <div className="mission">
             <h2>Our Vision</h2>
             <p>
               CampusConnect intends to be the leading campus engagement platform
@@ -168,29 +168,66 @@ function AboutMain() {
           <h1 className="about-title">Meet Our Team</h1>
           <div className="team-list">
             <div className="team-card">
-              <img src="/img/cyber.jpg" alt="Ajisola Victor" className="team-photo" />
+              <img
+                src="/img/cyber.jpg"
+                alt="Ajisola Victor"
+                className="team-photo"
+              />
               <h3>Ajisola Victor</h3>
-              <p>Web Developer. Specializes in frontend architecture and user experience for CampusConnect.</p>
+              <p>
+                Web Developer. Specializes in frontend architecture and user
+                experience for CampusConnect.
+              </p>
             </div>
             <div className="team-card">
-              <img src="/img/joe.jpg" alt="Ogunmuyiwa Ireoluwa" className="team-photo" />
+              <img
+                src="/img/joe.jpg"
+                alt="Ogunmuyiwa Ireoluwa"
+                className="team-photo"
+              />
               <h3>Ogunmuyiwa Ireoluwa</h3>
-              <p>Web Developer. Focuses on backend integration and optimization for the site.</p>
+              <p>
+                Web Developer. Focuses on backend integration and optimization
+                for the site.
+              </p>
             </div>
+
             <div className="team-card">
-              <img src="/img/ahamd.jpg" alt="Ahmad Akorede " className="team-photo" />
-              <h3>Ahmad Akorede </h3>
-              <p>Web Developer. Expert in responsive design and accessibility for CampusConnect.</p>
-            </div>
-            <div className="team-card">
-              <img src="/img/musty.jpg" alt="Mustapha Akintola" className="team-photo" />
-              <h3>Mustapha Akintola</h3>
-              <p>Web Developer. Works on interactive features and event modules for the platform.</p>
-            </div>
-            <div className="team-card">
-              <img src="/img/Isaac.jpg" alt="Issac adenji" className="team-photo" />
+              <img
+                src="/img/Isaac.jpg"
+                alt="Issac adenji"
+                className="team-photo"
+              />
               <h3>Adeniji Isaac</h3>
-              <p>Web Developer. Responsible for UI enhancements and maintaining code quality.</p>
+              <p>
+                Web Developer. Responsible for UI enhancements and maintaining
+                code quality.
+              </p>
+            </div>
+
+            <div className="team-card">
+              <img
+                src="/img/ahamd.jpg"
+                alt="Ahmad Akorede "
+                className="team-photo"
+              />
+              <h3>Ahmad Akorede </h3>
+              <p>
+                Web Developer. Expert in responsive design and accessibility for
+                CampusConnect.
+              </p>
+            </div>
+            <div className="team-card">
+              <img
+                src="/img/musty.jpg"
+                alt="Mustapha Akintola"
+                className="team-photo"
+              />
+              <h3>Mustapha Akintola</h3>
+              <p>
+                Web Developer. Works on interactive features and event modules
+                for the platform.
+              </p>
             </div>
           </div>
         </div>

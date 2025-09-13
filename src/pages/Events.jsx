@@ -7,7 +7,7 @@ import {
   Users,
   Search,
   ChevronDown,
-  ChevronUp 
+  ChevronUp,
 } from "lucide-react";
 import eventsData from "../data/events.json";
 import EventCard from "../components/EventCard/EventCard";
@@ -17,7 +17,8 @@ import "../styles/events.css";
 import { useBookmarks } from "../context/BookmarkContext";
 
 // Helper to get event by id
-const getEventById = (events, id) => events.find(e => String(e.id) === String(id));
+const getEventById = (events, id) =>
+  events.find((e) => String(e.id) === String(id));
 
 const EventDetailsWrapper = ({ events }) => {
   const { id } = useParams();
@@ -32,7 +33,7 @@ const EventCatalog = () => {
   const [showBookmarked, setShowBookmarked] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [sortBy, setSortBy] = useState("date");
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const { bookmarkedEvents } = useBookmarks();
   const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
@@ -52,7 +53,7 @@ const EventCatalog = () => {
     let filtered = [...events];
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(event => 
+      filtered = filtered.filter((event) =>
         event.name.toLowerCase().includes(query)
       );
     }
@@ -77,7 +78,14 @@ const EventCatalog = () => {
       }
     });
     setFilteredEvents(filtered);
-  }, [events, selectedCategory, sortBy, bookmarkedEvents, showBookmarked, searchQuery]);
+  }, [
+    events,
+    selectedCategory,
+    sortBy,
+    bookmarkedEvents,
+    showBookmarked,
+    searchQuery,
+  ]);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -107,9 +115,9 @@ const EventCatalog = () => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
     // Scroll to top of events section
-    document.querySelector('.catalog-section')?.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
+    document.querySelector(".catalog-section")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
   };
 
@@ -118,7 +126,7 @@ const EventCatalog = () => {
   };
 
   const handleShowBookmarkedToggle = () => {
-    setShowBookmarked(prev => !prev);
+    setShowBookmarked((prev) => !prev);
     setCurrentPage(1);
   };
 
@@ -139,11 +147,11 @@ const EventCatalog = () => {
                 <div className="hero-overlay"></div>
               </div>
               <div className="hero-content">
-                <div className="hero-event-info">
+                <div className="subheading">
                   <p>
-                    Discover upcoming college events, from tech fests and workshops to
-                    cultural nights and sports competitions — all in one place with
-                    CampusConnect.
+                    Discover upcoming college events, from tech fests and
+                    workshops to cultural nights and sports competitions — all
+                    in one place with CampusConnect.
                   </p>
                 </div>
               </div>
@@ -165,7 +173,7 @@ const EventCatalog = () => {
                       />
                       {searchQuery && (
                         <button
-                          onClick={() => setSearchQuery('')}
+                          onClick={() => setSearchQuery("")}
                           className="clear-search"
                         >
                           ×
@@ -173,11 +181,11 @@ const EventCatalog = () => {
                       )}
                     </div>
                   </div>
-                  
+
                   <div className="filters">
                     <div className="filter-group filter-group-select">
                       <Filter size={20} />
-                      <select 
+                      <select
                         value={selectedCategory}
                         onChange={(e) => setSelectedCategory(e.target.value)}
                         className="filter-select"
@@ -186,16 +194,18 @@ const EventCatalog = () => {
                         <option value="academic">Academic Events</option>
                         <option value="cultural">Cultural Events</option>
                         <option value="sports">Sports Events</option>
-                        <option value="departmental">Departmental Events</option>
+                        <option value="departmental">
+                          Departmental Events
+                        </option>
                       </select>
                       <span className="chevron-icon">
                         <ChevronDown size={18} />
                       </span>
                     </div>
-                    
+
                     <div className="filter-group filter-group-select">
                       <Users size={20} />
-                      <select 
+                      <select
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
                         className="filter-select"
@@ -210,56 +220,55 @@ const EventCatalog = () => {
                     </div>
                   </div>
 
-                  <button 
-                    className={`bookmark-toggle ${showBookmarked ? 'active' : ''}`}
+                  <button
+                    className={`bookmark-toggle ${
+                      showBookmarked ? "active" : ""
+                    }`}
                     onClick={handleShowBookmarkedToggle}
                   >
                     <ChevronDown size={20} />
-                    {showBookmarked ? 'Show All Events' : 'Show Bookmarked'}
+                    {showBookmarked ? "Show All Events" : "Show Bookmarked"}
                   </button>
                 </div>
 
                 {/* Events Grid */}
-<div className="events-container">
-  {currentEvents.map((event) => (   
-    <EventCard
-      key={event.id}
-      event={event}
-      getCategoryColor={getCategoryColor}
-      formatDate={formatDate}
-      onViewDetails={handleEventCardViewDetails}
-    />
-  ))}
-</div>
-
+                <div className="events-container">
+                  {currentEvents.map((event) => (
+                    <EventCard
+                      key={event.id}
+                      event={event}
+                      getCategoryColor={getCategoryColor}
+                      formatDate={formatDate}
+                      onViewDetails={handleEventCardViewDetails}
+                    />
+                  ))}
+                </div>
 
                 {filteredEvents.length === 0 && (
                   <div className="no-events">
                     <h3>No events found</h3>
                     <p>
-                      Try adjusting your filters or check back later for new events.
+                      Try adjusting your filters or check back later for new
+                      events.
                     </p>
                   </div>
                 )}
               </div>
               {/* Pagination */}
-          {filteredEvents.length > 0 && (
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              onPageChange={handlePageChange}
-              itemsPerPage={eventsPerPage}
-              totalItems={filteredEvents.length}
-            />
-          )}
+              {filteredEvents.length > 0 && (
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={handlePageChange}
+                  itemsPerPage={eventsPerPage}
+                  totalItems={filteredEvents.length}
+                />
+              )}
             </section>
           </div>
         }
       />
-      <Route
-        path=":id"
-        element={<EventDetailsWrapper events={events} />}
-      />
+      <Route path=":id" element={<EventDetailsWrapper events={events} />} />
     </Routes>
   );
 };

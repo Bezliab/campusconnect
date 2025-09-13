@@ -75,14 +75,14 @@ const Gallery = () => {
       >
         <div className="gallery-header-overlay"></div>
         <div className="gallery-header-content">
-          <p className="gallery-subtitle">
+          <p className="subheading">
             Explore memorable moments from our campus events through our visual
             gallery
           </p>
         </div>
       </div>
 
-      {/* ===== Page Content Wrapper ===== */}
+      {/*  Page Content Wrapper*/}
       <div className="gallery-wrapper">
         {/* Filters */}
         <div className="filters-section">
@@ -171,7 +171,7 @@ const Gallery = () => {
           </div>
         )}
 
-        {/* ===== Modal Popup ===== */}
+        {/* Modal Popup */}
         {modalImage && (
           <div className="modal-overlay" onClick={() => setModalImage(null)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -183,7 +183,6 @@ const Gallery = () => {
               </button>
 
               <div className="modal-body">
-                {/* Left: Image */}
                 <div className="modal-left">
                   <img
                     src={modalImage.imageUrl}
@@ -192,7 +191,6 @@ const Gallery = () => {
                   />
                 </div>
 
-                {/* Right: Text */}
                 <div className="modal-right">
                   <h2 className="modal-title">{modalImage.title}</h2>
                   <p className="modal-description">{modalImage.description}</p>

@@ -253,7 +253,6 @@ h1.about-title {
   color: #1e3a8a;
 }
 
-
 .team-section {
   padding: 3rem 0;
   background-color: #f8f8ff;
@@ -298,6 +297,10 @@ h1.about-title {
 @media (max-width: 1200px) {
   .affiliated-schools {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -380,7 +383,10 @@ h1.about-title {
 
 @media (max-width: 768px) {
   .affiliated-schools {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .school span {
+    text-align: center;
   }
   .school {
     min-width: unset;
@@ -411,6 +417,12 @@ h1.about-title {
     font-size: 1.3rem;
     line-height: 1.1;
   }
+  p.overview-text,
+  .mission p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
   .highlight-text h3 {
     font-size: 1.1rem;
     line-height: 1.2;
