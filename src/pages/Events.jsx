@@ -149,9 +149,7 @@ const EventCatalog = () => {
               <div className="hero-content">
                 <div className="subheading">
                   <p>
-                    Discover upcoming college events, from tech fests and
-                    workshops to cultural nights and sports competitions — all
-                    in one place with CampusConnect.
+                    Discover information about upcoming and past college events, types, and departments of past events.
                   </p>
                 </div>
               </div>

@@ -38,8 +38,6 @@ CampusConnect is a modern web platform for managing and discovering campus event
   Sample events are provided in `src/data/events.json` with fields such as `id`, `name`, `date`, `time`, `venue`, `category`, `description`, and `image`.
 - **Contacts:**  
   Faculty and student coordinators are listed in `src/data/contacts.json` with fields like `id`, `name`, `designation`/`role`, `department`, `phone`, `email`, and `image`.
-- **Images:**  
-  Placeholder images are used for events and contacts where actual images are not provided.
 
 ---
 

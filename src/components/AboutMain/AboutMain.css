@@ -297,6 +297,8 @@ h1.about-title {
 @media (max-width: 1200px) {
   .affiliated-schools {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 2rem;
   }
 
   .team-list {

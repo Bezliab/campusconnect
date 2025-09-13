@@ -105,6 +105,7 @@ textarea {
 .subheading {
   max-width: 50rem;
   width: 90%;
+  font-size: 1.4rem;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
