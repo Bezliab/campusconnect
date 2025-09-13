@@ -20,7 +20,8 @@
       "description": "An intercollegiate technical festival showcasing projects, coding contests, and workshops.",
       "image": "https://alta.com.vn/wp-content/uploads/2020/11/IMG_2706-5-1.jpg",
       "category": "academic",
-      "detailedinfo": "TechFest 2025 is the premier technical festival of the year, bringing together students, professionals, and enthusiasts from various fields of technology. The event will feature a range of activities including project exhibitions, coding competitions, hackathons, and hands-on workshops led by industry experts. Attendees will have the opportunity to network with like-minded individuals, learn about the latest technological advancements, and showcase their own innovations. Whether you're a student looking to gain practical experience or a professional seeking to stay updated with industry trends, TechFest 2025 has something for everyone. Don't miss out on this exciting event that promises to inspire and empower the tech community!"
+      "detailedinfo": "TechFest 2025 is the premier technical festival of the year, bringing together students, professionals, and enthusiasts from various fields of technology. The event will feature a range of activities including project exhibitions, coding competitions, hackathons, and hands-on workshops led by industry experts. Attendees will have the opportunity to network with like-minded individuals, learn about the latest technological advancements, and showcase their own innovations. Whether you're a student looking to gain practical experience or a professional seeking to stay updated with industry trends, TechFest 2025 has something for everyone. Don't miss out on this exciting event that promises to inspire and empower the tech community!",
+      "department": "Computer Science & Engineering"
     },
     {
       "id": 2,
@@ -31,7 +32,8 @@
       "description": "A vibrant week-long celebration with dance, drama, music, and art exhibitions.",
       "image": "https://thepeninsulaqatar.com/get/maximage/20250113_1736754763-228.jpg?1736754764",
       "category": "cultural",
-      "detailedinfo": "Cultural Week 2025 is a vibrant celebration of the arts, showcasing the diverse talents of our students. The week will feature a variety of performances, including dance, drama, and music, as well as art exhibitions highlighting the creativity of our community. Join us for this exciting event that promises to inspire and entertain!"
+      "detailedinfo": "Cultural Week 2025 is a vibrant celebration of the arts, showcasing the diverse talents of our students. The week will feature a variety of performances, including dance, drama, and music, as well as art exhibitions highlighting the creativity of our community. Join us for this exciting event that promises to inspire and entertain!",
+      "department": "Arts & Humanities"
     },
     {
       "id": 3,
@@ -42,7 +44,8 @@
       "description": "A 12-hour coding hackathon organized by the IT department.",
       "image": "https://techcrunch.com/wp-content/uploads/2015/05/hackathon-ny-2015-02.jpg?w=1024",
       "category": "departmental",
-      "detailedinfo": "The Departmental Hackathon is a thrilling 12-hour coding marathon organized by the IT department. Participants will form teams to tackle real-world problems, develop innovative solutions, and showcase their coding skills. The event will provide an excellent opportunity for networking, learning, and collaboration among students passionate about technology. Prizes will be awarded to the best projects, so bring your A-game and get ready to code!"
+      "detailedinfo": "The Departmental Hackathon is a thrilling 12-hour coding marathon organized by the IT department. Participants will form teams to tackle real-world problems, develop innovative solutions, and showcase their coding skills. The event will provide an excellent opportunity for networking, learning, and collaboration among students passionate about technology. Prizes will be awarded to the best projects, so bring your A-game and get ready to code!",
+      "department": "Information Technology"
     },
     {
       "id": 4,
@@ -53,7 +56,8 @@
       "description": "Athletics, football, basketball, and other intercollegiate competitions.",
       "image": "https://www.liri-structure.com/wp-content/uploads/2017/03/20151029142744_61618.jpg",
       "category": "sports",
-      "detailedinfo": "The Annual Sports Meet is a highly anticipated event that brings together athletes from various colleges to compete in a range of sports including athletics, football, basketball, and more. The event aims to promote physical fitness, teamwork, and sportsmanship among students. Participants will have the opportunity to showcase their talents, compete for trophies, and build lasting friendships. Spectators can look forward to an action-packed day filled with thrilling competitions and exciting performances. Join us in celebrating the spirit of sports and camaraderie at the Annual Sports Meet!"
+      "detailedinfo": "The Annual Sports Meet is a highly anticipated event that brings together athletes from various colleges to compete in a range of sports including athletics, football, basketball, and more. The event aims to promote physical fitness, teamwork, and sportsmanship among students. Participants will have the opportunity to showcase their talents, compete for trophies, and build lasting friendships. Spectators can look forward to an action-packed day filled with thrilling competitions and exciting performances. Join us in celebrating the spirit of sports and camaraderie at the Annual Sports Meet!",
+      "department": "Physical Education"
     },
     {
       "id": 5,
@@ -64,7 +68,8 @@
       "description": "Distinguished alumni share their career journeys and provide guidance to current students.",
       "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/57643-6-ways-to-successfully-network-at-event?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=628&qlt=100&fmt=png-alpha&fit=constrain",
       "category": "academic",
-      "detailedinfo": "The Alumni Talk Series is an inspiring event where distinguished alumni return to share their career journeys, insights, and advice with current students. Attendees will have the opportunity to learn from the experiences of successful graduates, ask questions, and gain valuable guidance on navigating their own career paths. This event aims to foster connections between alumni and students, creating a supportive community that encourages professional growth and development."
+      "detailedinfo": "The Alumni Talk Series is an inspiring event where distinguished alumni return to share their career journeys, insights, and advice with current students. Attendees will have the opportunity to learn from the experiences of successful graduates, ask questions, and gain valuable guidance on navigating their own career paths. This event aims to foster connections between alumni and students, creating a supportive community that encourages professional growth and development.",
+      "department": "Career Services"
     },
     {
       "id": 6,
@@ -75,7 +80,8 @@
       "description": "Panel discussions, startup pitches, and mentorship sessions for aspiring entrepreneurs.",
       "image": "https://live.staticflickr.com/7706/27881604125_2955115f17_b.jpg",
       "category": "academic",
-      "detailedinfo": "The Entrepreneurship Summit is a dynamic event designed to inspire and support aspiring entrepreneurs. Attendees will have the opportunity to participate in panel discussions featuring industry experts, pitch their startup ideas to a panel of judges, and engage in mentorship sessions with experienced entrepreneurs. This summit aims to foster innovation, collaboration, and networking among students interested in entrepreneurship."
+      "detailedinfo": "The Entrepreneurship Summit is a dynamic event designed to inspire and support aspiring entrepreneurs. Attendees will have the opportunity to participate in panel discussions featuring industry experts, pitch their startup ideas to a panel of judges, and engage in mentorship sessions with experienced entrepreneurs. This summit aims to foster innovation, collaboration, and networking among students interested in entrepreneurship.",
+      "department": "Business Administration"
     },
     {
       "id": 7,
@@ -86,7 +92,8 @@
       "description": "Tree plantation drive, poster competitions, and guest lectures on sustainability.",
       "image": "https://2017-2021.state.gov/wp-content/uploads/2020/06/6_1_EnviDay3_TW.jpg",
       "category": "cultural",
-      "detailedinfo": "The World Environment Day Celebration is a special event dedicated to raising awareness about environmental issues and promoting sustainable practices. Activities include a tree plantation drive, where participants can contribute to greening the campus, as well as poster competitions that encourage creative expression around environmental themes. Guest lectures by experts in sustainability will provide valuable insights and inspire action among attendees."
+      "detailedinfo": "The World Environment Day Celebration is a special event dedicated to raising awareness about environmental issues and promoting sustainable practices. Activities include a tree plantation drive, where participants can contribute to greening the campus, as well as poster competitions that encourage creative expression around environmental themes. Guest lectures by experts in sustainability will provide valuable insights and inspire action among attendees.",
+      "department": "Environmental Science"
     },
     {
       "id": 8,
@@ -97,7 +104,8 @@
       "description": "Live performances by student bands and guest artists.",
       "image": "https://intourist.ru/excursion-files/e/e2/e2c7396353de4ba8892929a69563c4c6.jpg",
       "category": "cultural",
-      "detailedinfo": "Music Night is an exciting event that showcases the musical talents of students and guest artists. Attendees can enjoy a variety of performances, ranging from solo acts to full bands, covering different genres of music. This event aims to create a vibrant atmosphere where students can express themselves through music, connect with fellow music lovers, and appreciate the artistic talents within the community."
+      "detailedinfo": "Music Night is an exciting event that showcases the musical talents of students and guest artists. Attendees can enjoy a variety of performances, ranging from solo acts to full bands, covering different genres of music. This event aims to create a vibrant atmosphere where students can express themselves through music, connect with fellow music lovers, and appreciate the artistic talents within the community.",
+      "department": "Music"
     },
     {
       "id": 9,
@@ -108,7 +116,8 @@
       "description": "Debates, poetry recitations, and storytelling competitions.",
       "image": "https://apicms.thestar.com.my/uploads/images/2019/11/12/379918.jpg",
       "category": "cultural",
-      "detailedinfo": "The Literary Fest is a celebration of literature and the written word. The event features a range of activities including debates on contemporary topics, poetry recitations that highlight the beauty of language, and storytelling competitions that encourage creativity and narrative skills. This fest aims to foster a love for literature, enhance communication skills, and provide a platform for students to showcase their literary talents."
+      "detailedinfo": "The Literary Fest is a celebration of literature and the written word. The event features a range of activities including debates on contemporary topics, poetry recitations that highlight the beauty of language, and storytelling competitions that encourage creativity and narrative skills. This fest aims to foster a love for literature, enhance communication skills, and provide a platform for students to showcase their literary talents.",
+      "department": "Literature"
     },
     {
       "id": 10,
@@ -119,7 +128,8 @@
       "description": "A grand celebration of technology with exhibitions, keynote speeches, and interactive sessions.",
       "image": "https://blog.jobzmall.com/content/images/size/w2000/2019/08/NEWS_UGA_2017-GT-Career-Fair.jpeg",
       "category": "academic",
-      "detailedinfo": "TechGala 2025 is the ultimate celebration of innovation and technology, bringing together students, professionals, and industry leaders for a day filled with exhibitions, keynote speeches, panel discussions, and interactive sessions. Attendees will have the opportunity to explore cutting-edge tech projects, participate in hands-on workshops, and network with experts from various fields. The event will also feature startup showcases, product launches, and opportunities for collaboration. Whether you're passionate about AI, robotics, software development, or emerging technologies, TechGala 2025 offers something for everyone. Join us for an inspiring and engaging experience that highlights the future of technology!"
+      "detailedinfo": "TechGala 2025 is the ultimate celebration of innovation and technology, bringing together students, professionals, and industry leaders for a day filled with exhibitions, keynote speeches, panel discussions, and interactive sessions. Attendees will have the opportunity to explore cutting-edge tech projects, participate in hands-on workshops, and network with experts from various fields. The event will also feature startup showcases, product launches, and opportunities for collaboration. Whether you're passionate about AI, robotics, software development, or emerging technologies, TechGala 2025 offers something for everyone. Join us for an inspiring and engaging experience that highlights the future of technology!",
+      "department": "Information Technology"
     },
     {
       "id": 11,
@@ -130,7 +140,8 @@
       "description": "Screening of award-winning documentaries and short films.",
       "image": "https://deadline.com/wp-content/uploads/2019/11/2018-12-15_cl-hd-37.jpg?w=1024",
       "category": "cultural",
-      "detailedinfo": "The Film Screening event will showcase a selection of award-winning documentaries and short films that highlight important social issues, artistic expression, and innovative storytelling. Attendees will have the opportunity to engage with filmmakers during a Q&A session following the screenings, fostering a deeper understanding of the creative process and the themes explored in the films."
+      "detailedinfo": "The Film Screening event will showcase a selection of award-winning documentaries and short films that highlight important social issues, artistic expression, and innovative storytelling. Attendees will have the opportunity to engage with filmmakers during a Q&A session following the screenings, fostering a deeper understanding of the creative process and the themes explored in the films.",
+      "department": "Film Studies"
     },
     {
       "id": 12,
@@ -141,7 +152,8 @@
       "description": "Hands-on robotics session with AI and automation focus.",
       "image": "https://i.insider.com/5f6a7d0239ab3b001192c77e?width=2000&format=jpeg&auto=webp",
       "category": "academic",
-      "detailedinfo": "The Robotics Workshop is an interactive session designed for students to explore the exciting field of robotics. Participants will engage in hands-on activities that focus on AI and automation, learning about the latest technologies and their applications. This workshop aims to inspire creativity and innovation, providing students with valuable skills for the future."
+      "detailedinfo": "The Robotics Workshop is an interactive session designed for students to explore the exciting field of robotics. Participants will engage in hands-on activities that focus on AI and automation, learning about the latest technologies and their applications. This workshop aims to inspire creativity and innovation, providing students with valuable skills for the future.",
+      "department": "Mechanical Engineering"
     },
     {
       "id": 13,
@@ -152,7 +164,8 @@
       "description": "A food carnival with stalls offering global cuisines.",
       "image": "https://islamnews.ru/wp-content/uploads/2021/09/9c729d2fbf2e7a278000deec6b0309ad.png",
       "category": "cultural",
-      "detailedinfo": "The Food Festival is a vibrant celebration of global cuisines, featuring a variety of food stalls offering delicious dishes from around the world. Attendees can indulge in culinary delights, participate in cooking demonstrations, and enjoy live entertainment. This event aims to promote cultural exchange and appreciation through the universal language of food."
+      "detailedinfo": "The Food Festival is a vibrant celebration of global cuisines, featuring a variety of food stalls offering delicious dishes from around the world. Attendees can indulge in culinary delights, participate in cooking demonstrations, and enjoy live entertainment. This event aims to promote cultural exchange and appreciation through the universal language of food.",
+      "department": "Culinary Arts"
     },
     {
       "id": 14,
@@ -163,7 +176,8 @@
       "description": "An exhibition showcasing the best student photography.",
       "image": "https://petapixel.com/assets/uploads/2022/09/art-exhibition.jpg",
       "category": "cultural",
-      "detailedinfo": "The Photography Exhibition is a showcase of the best student photography, highlighting diverse perspectives and creative expression. The exhibition will feature a range of themes, from nature and landscapes to portraits and abstract art. Attendees can explore the visual narratives captured by students, engage with photographers, and appreciate the art of photography as a powerful medium of storytelling."
+      "detailedinfo": "The Photography Exhibition is a showcase of the best student photography, highlighting diverse perspectives and creative expression. The exhibition will feature a range of themes, from nature and landscapes to portraits and abstract art. Attendees can explore the visual narratives captured by students, engage with photographers, and appreciate the art of photography as a powerful medium of storytelling.",
+      "department": "Visual Arts"
     },
     {
       "id": 15,
@@ -174,18 +188,20 @@
       "description": "Stage performances by drama enthusiasts featuring classic and modern plays.",
       "image": "https://icebreakerideas.com/wp-content/uploads/2020/03/Drama-club-Activities.png",
       "category": "cultural",
-      "detailedinfo": "Drama Night is an exciting event that brings together drama enthusiasts to showcase their talents through stage performances. The event will feature a mix of classic and modern plays, providing a platform for students to express themselves creatively and engage with the audience. This night promises to be filled with captivating performances, emotional storytelling, and a celebration of the theatrical arts."
+      "detailedinfo": "Drama Night is an exciting event that brings together drama enthusiasts to showcase their talents through stage performances. The event will feature a mix of classic and modern plays, providing a platform for students to express themselves creatively and engage with the audience. This night promises to be filled with captivating performances, emotional storytelling, and a celebration of the theatrical arts.",
+      "department": "Theater Arts"
     },
     {
       "id": 16,
       "name": "Science Exhibition",
-      "date": "2025-10-05",
+      "date": "2024-10-05",
       "time": "9:00 AM – 3:00 PM",
       "venue": "Exhibition Hall",
       "description": "Innovative projects and experiments by students across various science disciplines.",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c9141e97894995.5ecfcb1fd91d7.jpg",
       "category": "academic",
-      "detailedinfo": "The Science Exhibition is a platform for students to showcase their innovative projects and experiments across various science disciplines. The exhibition will feature a diverse range of scientific concepts, from biology and chemistry to physics and environmental science. Attendees can explore interactive displays, engage with student researchers, and gain insights into the fascinating world of science and technology."
+      "detailedinfo": "The Science Exhibition is a platform for students to showcase their innovative projects and experiments across various science disciplines. The exhibition will feature a diverse range of scientific concepts, from biology and chemistry to physics and environmental science. Attendees can explore interactive displays, engage with student researchers, and gain insights into the fascinating world of science and technology.",
+      "department": "Science"
     },
     {
       "id": 17,
@@ -196,18 +212,20 @@
       "description": "Inter-departmental debate competition on current affairs and social issues.",
       "image": "https://debate.bard.edu/files/2021/07/Bard-Debate-Tournament-2019-scaled.jpeg",
       "category": "academic",
-      "detailedinfo": "The Debate Competition is an engaging event that brings together students from various departments to discuss and debate current affairs and social issues. Participants will have the opportunity to develop their public speaking, critical thinking, and argumentation skills in a competitive yet supportive environment. This event aims to foster intellectual growth, encourage diverse perspectives, and promote respectful discourse among students."
+      "detailedinfo": "The Debate Competition is an engaging event that brings together students from various departments to discuss and debate current affairs and social issues. Participants will have the opportunity to develop their public speaking, critical thinking, and argumentation skills in a competitive yet supportive environment. This event aims to foster intellectual growth, encourage diverse perspectives, and promote respectful discourse among students.",
+      "department": "Political Science"
     },
     {
       "id": 18,
       "name": "Teachers' Day Celebration",
-      "date": "2025-09-05",
+      "date": "2024-09-05",
       "time": "12:00 PM – 4:00 PM",
       "venue": "Main Auditorium",
       "description": "Special performances and felicitation ceremony dedicated to teachers.",
       "image": "https://www.adotrip.com/public/images/events/5f465986572e1-Teachers%20day%20Travel%20Plan.jpg",
       "category": "cultural",
-      "detailedinfo": "Teachers' Day Celebration is a heartfelt event dedicated to honoring and appreciating the contributions of teachers. The celebration will include special performances by students, a felicitation ceremony, and opportunities for students to express their gratitude. This event aims to create a warm and respectful atmosphere, highlighting the vital role teachers play in shaping the future."
+      "detailedinfo": "Teachers' Day Celebration is a heartfelt event dedicated to honoring and appreciating the contributions of teachers. The celebration will include special performances by students, a felicitation ceremony, and opportunities for students to express their gratitude. This event aims to create a warm and respectful atmosphere, highlighting the vital role teachers play in shaping the future.",
+      "department": "All Departments"
     },
     {
       "id": 19,
@@ -218,7 +236,8 @@
       "description": "Creative workshop on painting, origami, and crafts.",
       "image": "https://i0.wp.com/aspioneer.com/wp-content/uploads/2020/06/Pinspiration-Hottest-Franchises-2020-3.jpg?fit=1920%2C1282&ssl=1",
       "category": "cultural",
-      "detailedinfo": "The Art & Craft Workshop is a creative event that offers participants the opportunity to explore various art forms including painting, origami, and crafts. Led by experienced artists, the workshop will provide hands-on experience and guidance, allowing attendees to express their creativity and develop new skills. This event aims to foster artistic expression, encourage experimentation, and create a fun and inspiring environment for all participants."
+      "detailedinfo": "The Art & Craft Workshop is a creative event that offers participants the opportunity to explore various art forms including painting, origami, and crafts. Led by experienced artists, the workshop will provide hands-on experience and guidance, allowing attendees to express their creativity and develop new skills. This event aims to foster artistic expression, encourage experimentation, and create a fun and inspiring environment for all participants.",
+      "department": "Fine Arts"
     },
     {
       "id": 20,
@@ -229,18 +248,20 @@
       "description": "General knowledge and current affairs quiz for students.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/State_of_the_venue_of_the_quiz_competition_abcmorphous.jpg",
       "category": "academic",
-      "detailedinfo": "The Quiz Competition is an exciting event that tests students' general knowledge and awareness of current affairs. Participants will compete in teams, answering questions on a wide range of topics including history, science, sports, and pop culture. This event aims to promote learning, teamwork, and healthy competition among students, providing a fun and engaging way to enhance their knowledge."
+      "detailedinfo": "The Quiz Competition is an exciting event that tests students' general knowledge and awareness of current affairs. Participants will compete in teams, answering questions on a wide range of topics including history, science, sports, and pop culture. This event aims to promote learning, teamwork, and healthy competition among students, providing a fun and engaging way to enhance their knowledge.",
+      "department": "General Studies"
     },
     {
       "id": 21,
       "name": "Health Awareness Camp",
-      "date": "2025-08-18",
+      "date": "2024-08-18",
       "time": "9:00 AM – 2:00 PM",
       "venue": "Medical Center",
       "description": "Free medical check-up, blood donation drive, and health awareness talks.",
       "image": "https://godfatherstyle.com/wp-content/uploads/2020/04/3-5.jpg",
       "category": "academic",
-      "detailedinfo": "The Health Awareness Camp is a community-focused event aimed at promoting health and wellness among students. The camp will offer free medical check-ups, a blood donation drive, and informative talks on various health topics. This event seeks to raise awareness about important health issues, encourage preventive care, and foster a culture of health consciousness within the campus community."
+      "detailedinfo": "The Health Awareness Camp is a community-focused event aimed at promoting health and wellness among students. The camp will offer free medical check-ups, a blood donation drive, and informative talks on various health topics. This event seeks to raise awareness about important health issues, encourage preventive care, and foster a culture of health consciousness within the campus community.",
+      "department": "Health Sciences"
     },
     {
       "id": 22,
@@ -251,7 +272,8 @@
       "description": "Intensive coding sessions covering full-stack development.",
       "image": "https://www.codingbootcamp.cz/img/coding-bootcamp-praha-logo.jpg",
       "category": "departmental",
-      "detailedinfo": "The Coding Bootcamp is an immersive program designed to equip participants with the skills needed for full-stack development. Over the course of the bootcamp, attendees will engage in hands-on coding sessions, collaborative projects, and expert-led workshops. This event aims to foster a deep understanding of both front-end and back-end technologies, preparing participants for real-world development challenges."
+      "detailedinfo": "The Coding Bootcamp is an immersive program designed to equip participants with the skills needed for full-stack development. Over the course of the bootcamp, attendees will engage in hands-on coding sessions, collaborative projects, and expert-led workshops. This event aims to foster a deep understanding of both front-end and back-end technologies, preparing participants for real-world development challenges.",
+      "department": "Computer Science"
     },
     {
       "id": 23,
@@ -262,18 +284,20 @@
       "description": "Quiz on Olympic history, cricket, football, and sports personalities.",
       "image": "https://www.thesouthafrican.com/wp-content/uploads/2022/02/Sport-quiz.jpg.optimal.jpg",
       "category": "sports",
-      "detailedinfo": "The Sports Quiz is an engaging event that tests participants' knowledge of various sports, including Olympic history, cricket, football, and famous sports personalities. Teams will compete to answer questions and showcase their expertise in the world of sports. This event aims to promote sports awareness, teamwork, and friendly competition among students."
+      "detailedinfo": "The Sports Quiz is an engaging event that tests participants' knowledge of various sports, including Olympic history, cricket, football, and famous sports personalities. Teams will compete to answer questions and showcase their expertise in the world of sports. This event aims to promote sports awareness, teamwork, and friendly competition among students.",
+      "department": "Physical Education"
     },
     {
       "id": 24,
       "name": "Fashion Show",
-      "date": "2025-09-30",
+      "date": "2024-09-30",
       "time": "6:00 PM – 9:00 PM",
       "venue": "Auditorium",
       "description": "Students present their own designs in a themed fashion event.",
       "image": "https://s.yimg.com/ny/api/res/1.2/1Ct9Cmx5A8UCUlv_ZkzP4g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03MTU-/https://s.yimg.com/os/creatr-uploaded-images/2019-09/8119a200-d007-11e9-bf78-549c4503347e",
       "category": "cultural",
-      "detailedinfo": "The Fashion Show is a vibrant event where students showcase their creativity and design skills by presenting their own fashion creations. Participants will have the opportunity to design and model their outfits, with a focus on a specific theme. This event aims to celebrate individuality, promote self-expression, and provide a platform for aspiring designers to shine."
+      "detailedinfo": "The Fashion Show is a vibrant event where students showcase their creativity and design skills by presenting their own fashion creations. Participants will have the opportunity to design and model their outfits, with a focus on a specific theme. This event aims to celebrate individuality, promote self-expression, and provide a platform for aspiring designers to shine.",
+      "department": "Fashion Design"
     },
     {
       "id": 25,
@@ -284,7 +308,8 @@
       "description": "Challenging math problems for students across departments.",
       "image": "https://www.soinc.org/sites/default/files/uploaded_files/2018ChampsBSolonMiddleSchool.JPG",
       "category": "academic",
-      "detailedinfo": "The Mathematics Olympiad is a prestigious event that brings together the brightest minds in mathematics from various departments. Participants will tackle challenging math problems that test their analytical and problem-solving skills. This event aims to promote mathematical excellence, encourage collaboration among students, and provide a platform for showcasing mathematical talent."
+      "detailedinfo": "The Mathematics Olympiad is a prestigious event that brings together the brightest minds in mathematics from various departments. Participants will tackle challenging math problems that test their analytical and problem-solving skills. This event aims to promote mathematical excellence, encourage collaboration among students, and provide a platform for showcasing mathematical talent.",
+      "department": "Mathematics"
     },
     {
       "id": 26,
@@ -295,18 +320,20 @@
       "description": "Live photography contest with on-the-spot themes.",
       "image": "https://c1.35photo.pro/photos_temp/sizes/2270/11350584_1500n.jpg",
       "category": "cultural",
-      "detailedinfo": "The Photography Contest is an exciting event that challenges participants to capture stunning images based on on-the-spot themes. Photographers of all skill levels are invited to showcase their creativity and technical skills. This event aims to promote artistic expression, encourage exploration of different photography styles, and provide a platform for photographers to gain recognition for their work."
+      "detailedinfo": "The Photography Contest is an exciting event that challenges participants to capture stunning images based on on-the-spot themes. Photographers of all skill levels are invited to showcase their creativity and technical skills. This event aims to promote artistic expression, encourage exploration of different photography styles, and provide a platform for photographers to gain recognition for their work.",
+      "department": "Fine Arts"
     },
     {
       "id": 27,
       "name": "Coding Contest",
-      "date": "2025-08-08",
+      "date": "2024-08-08",
       "time": "10:00 AM – 4:00 PM",
       "venue": "Computer Lab",
       "description": "Competitive programming challenges for coders.",
       "image": "https://devby.io/storage/images/30/55/65/41/derived/7924290c4ad6d3ffe42fb79e6b90b72a.jpg",
       "category": "departmental",
-      "detailedinfo": "The Coding Contest is an exciting event that challenges participants to solve complex programming problems within a limited timeframe. Coders of all skill levels are invited to showcase their skills and compete for prizes. This event aims to promote coding excellence, encourage collaboration among participants, and provide a platform for networking within the tech community."
+      "detailedinfo": "The Coding Contest is an exciting event that challenges participants to solve complex programming problems within a limited timeframe. Coders of all skill levels are invited to showcase their skills and compete for prizes. This event aims to promote coding excellence, encourage collaboration among participants, and provide a platform for networking within the tech community.",
+      "department": "Computer Science"
     },
     {
       "id": 28,
@@ -317,7 +344,8 @@
       "description": "Inter-college dance face-off featuring solo and group performances.",
       "image": "https://cdn.culture.ru/images/7f6eaa51-be5f-58ae-ac2c-3eb39b76077b",
       "category": "cultural",
-      "detailedinfo": "The Dance Competition is an exhilarating event that showcases the diverse dance talents of students from various colleges. Participants can compete in solo or group categories, performing a wide range of dance styles. This event aims to celebrate creativity, promote cultural exchange, and provide a platform for dancers to shine."
+      "detailedinfo": "The Dance Competition is an exhilarating event that showcases the diverse dance talents of students from various colleges. Participants can compete in solo or group categories, performing a wide range of dance styles. This event aims to celebrate creativity, promote cultural exchange, and provide a platform for dancers to shine.",
+      "department": "Fine Arts"
     },
     {
       "id": 29,
@@ -328,7 +356,8 @@
       "description": "Students exhibit innovative projects and prototypes.",
       "image": "https://explore.neumann.edu/hubfs/19466-college-fair-2022.jpg",
       "category": "academic",
-      "detailedinfo": "The Innovation Fair is a platform for students to showcase their creative projects and prototypes. Participants will have the opportunity to present their work to a panel of judges and industry experts. This event aims to foster innovation, encourage collaboration, and provide valuable feedback to aspiring entrepreneurs."
+      "detailedinfo": "The Innovation Fair is a platform for students to showcase their creative projects and prototypes. Participants will have the opportunity to present their work to a panel of judges and industry experts. This event aims to foster innovation, encourage collaboration, and provide valuable feedback to aspiring entrepreneurs.",
+      "department": "Engineering"
     },
     {
       "id": 30,
@@ -339,7 +368,8 @@
       "description": "Knockout football matches between departments.",
       "image": "https://avatars.mds.yandex.net/i?id=765a9fd5495eabaf68f2dcc3eff30ca6_l-5246350-images-thumbs&ref=rim&n=13&w=1241&h=805",
       "category": "sports",
-      "detailedinfo": "The Inter-Department Football event is a thrilling knockout tournament where teams from different departments compete for glory on the football field. This event aims to promote teamwork, sportsmanship, and healthy competition among students."
+      "detailedinfo": "The Inter-Department Football event is a thrilling knockout tournament where teams from different departments compete for glory on the football field. This event aims to promote teamwork, sportsmanship, and healthy competition among students.",
+      "department": "Physical Education"
     },
     {
       "id": 31,
@@ -350,7 +380,8 @@
       "description": "Traditional dress parade showcasing diverse cultures.",
       "image": "https://thepeninsulaqatar.com/get/maximage/20250113_1736754763-228.jpg?1736754764",
       "category": "cultural",
-      "detailedinfo": "The Cultural Parade is a vibrant event that celebrates the rich diversity of cultures within our community. Participants are encouraged to wear traditional attire representing their heritage, and the parade will feature music, dance, and performances that highlight various cultural traditions. This event aims to promote inclusivity, understanding, and appreciation for different cultures."
+      "detailedinfo": "The Cultural Parade is a vibrant event that celebrates the rich diversity of cultures within our community. Participants are encouraged to wear traditional attire representing their heritage, and the parade will feature music, dance, and performances that highlight various cultural traditions. This event aims to promote inclusivity, understanding, and appreciation for different cultures.",
+      "department": "Cultural Studies"
     },
     {
       "id": 32,
@@ -361,7 +392,8 @@
       "description": "Workshop on stage acting and script writing.",
       "image": "https://www.aber.ac.uk/en/tfts/tfts-schools/tfts---workshop.jpg",
       "category": "cultural",
-      "detailedinfo": "The Drama Workshop is an interactive session designed for aspiring actors and playwrights. Participants will engage in various activities focused on stage acting techniques, character development, and script writing. This workshop aims to nurture creativity, enhance performance skills, and provide valuable insights into the world of drama."
+      "detailedinfo": "The Drama Workshop is an interactive session designed for aspiring actors and playwrights. Participants will engage in various activities focused on stage acting techniques, character development, and script writing. This workshop aims to nurture creativity, enhance performance skills, and provide valuable insights into the world of drama.",
+      "department": "Theater Arts"
     },
     {
       "id": 33,
@@ -372,7 +404,8 @@
       "description": "Inter-department chess championship.",
       "image": "https://avatars.mds.yandex.net/i?id=47d0fb1c2a73f090989551c819f0e6d1_l-4982359-images-thumbs&ref=rim&n=13&w=1920&h=1080",
       "category": "sports",
-      "detailedinfo": "The Chess Tournament is an exciting inter-department championship where students can showcase their strategic thinking and competitive spirit. Participants will compete in a series of matches, and the event aims to promote intellectual engagement and camaraderie among students."
+      "detailedinfo": "The Chess Tournament is an exciting inter-department championship where students can showcase their strategic thinking and competitive spirit. Participants will compete in a series of matches, and the event aims to promote intellectual engagement and camaraderie among students.",
+      "department": "Recreational Activities"
     },
     {
       "id": 34,
@@ -383,7 +416,8 @@
       "description": "Talk by industry expert on artificial intelligence trends.",
       "image": "https://live.staticflickr.com/6177/6265230291_b9ece89662_b.jpg",
       "category": "academic",
-      "detailedinfo": "The Guest Lecture on AI features a prominent industry expert who will share insights on the latest trends and advancements in artificial intelligence. Attendees will have the opportunity to learn about real-world applications of AI and engage in a Q&A session."
+      "detailedinfo": "The Guest Lecture on AI features a prominent industry expert who will share insights on the latest trends and advancements in artificial intelligence. Attendees will have the opportunity to learn about real-world applications of AI and engage in a Q&A session.",
+      "department": "Computer Science"
     },
     {
       "id": 35,
@@ -394,7 +428,8 @@
       "description": "Open mic poetry slam for budding poets.",
       "image": "https://static.standard.co.uk/s3fs-public/thumbnails/image/2017/01/24/10/caleb-femi-cre.jpg",
       "category": "academic",
-      "detailedinfo": "The Poetry Slam is an open mic event that provides a platform for budding poets to showcase their talent and creativity. Participants are encouraged to perform their original works in front of an audience, fostering a supportive and inspiring environment for artistic expression."
+      "detailedinfo": "The Poetry Slam is an open mic event that provides a platform for budding poets to showcase their talent and creativity. Participants are encouraged to perform their original works in front of an audience, fostering a supportive and inspiring environment for artistic expression.",
+      "department": "Literature"
     },
     {
       "id": 36,
@@ -405,7 +440,8 @@
       "description": "Students pitch their startup ideas to investors.",
       "image": "http://www.haraldlepisk.com/wp-content/uploads/2018/07/how-to-pitch-your-startup-idea.jpg",
       "category": "academic",
-      "detailedinfo": "The Startup Pitch event provides a platform for students to present their innovative startup ideas to a panel of investors and industry experts. Participants will receive valuable feedback and have the opportunity to network with potential investors."
+      "detailedinfo": "The Startup Pitch event provides a platform for students to present their innovative startup ideas to a panel of investors and industry experts. Participants will receive valuable feedback and have the opportunity to network with potential investors.",
+      "department": "Business Administration"
     },
     {
       "id": 37,
@@ -416,7 +452,8 @@
       "description": "Quiz competition based on science and technology.",
       "image": "https://d39l2hkdp2esp1.cloudfront.net/img/photo/125366/125366_00_2x.jpg?20180910142944",
       "category": "academic",
-      "detailedinfo": "The Science Quiz is an engaging competition that tests participants' knowledge in various fields of science and technology. Teams will compete in a series of challenging questions, promoting teamwork and intellectual curiosity."
+      "detailedinfo": "The Science Quiz is an engaging competition that tests participants' knowledge in various fields of science and technology. Teams will compete in a series of challenging questions, promoting teamwork and intellectual curiosity.",
+      "department": "Science"
     },
     {
       "id": 38,
@@ -427,7 +464,8 @@
       "description": "Dance performances representing various cultures.",
       "image": "https://sargamevents.com.au/wp-content/uploads/2022/08/Navratri-1.jpg",
       "category": "cultural",
-      "detailedinfo": "The Cultural Dance Night is a vibrant celebration of dance forms from various cultures. Participants are encouraged to showcase traditional dances, and the event will feature performances, workshops, and opportunities for audience participation."
+      "detailedinfo": "The Cultural Dance Night is a vibrant celebration of dance forms from various cultures. Participants are encouraged to showcase traditional dances, and the event will feature performances, workshops, and opportunities for audience participation.",
+      "department": "Performing Arts"
     },
     {
       "id": 39,
@@ -438,29 +476,32 @@
       "description": "Friendly cricket match between faculty and students.",
       "image": "https://images.saymedia-content.com/.image/t_share/MjAzNzQyMTkxMTI4OTQ2NTc4/learning-to-play-cricket-for-children-aged-5-and-above.jpg",
       "category": "sports",
-      "detailedinfo": "The Cricket Match is a friendly competition between faculty and students, promoting sportsmanship and camaraderie. Participants will enjoy a day of cricket, with opportunities for everyone to get involved, regardless of skill level."
+      "detailedinfo": "The Cricket Match is a friendly competition between faculty and students, promoting sportsmanship and camaraderie. Participants will enjoy a day of cricket, with opportunities for everyone to get involved, regardless of skill level.",
+      "department": "Physical Education"
     },
     {
       "id": 40,
       "name": "Women's Day Celebration",
-      "date": "2025-03-08",
+      "date": "2023-03-08",
       "time": "10:00 AM – 1:00 PM",
       "venue": "Auditorium",
       "description": "Special event celebrating women's achievements and contributions.",
       "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/03/07/17/Womens-Day-rex.jpeg",
       "category": "cultural",
-      "detailedinfo": "The Women's Day Celebration is a special event dedicated to honoring the achievements and contributions of women in various fields. The event will feature inspiring talks, performances, and opportunities for networking and collaboration."
+      "detailedinfo": "The Women's Day Celebration is a special event dedicated to honoring the achievements and contributions of women in various fields. The event will feature inspiring talks, performances, and opportunities for networking and collaboration.",
+      "department": "Gender Studies"
     },
     {
       "id": 41,
       "name": "Coding Hackathon",
-      "date": "2025-11-12",
+      "date": "2023-11-12",
       "time": "9:00 AM – 9:00 PM",
       "venue": "Computer Lab 1",
       "description": "24-hour coding hackathon with exciting problem statements.",
       "image": "https://www.bbva.com/wp-content/uploads/2018/09/BBVA-Compass-Hackathon-Participants-2018-1920x1078.jpg",
       "category": "departmental",
-      "detailedinfo": "The Coding Hackathon is a 24-hour event where participants will tackle exciting problem statements in a collaborative environment. Teams will have the opportunity to innovate and create solutions, with mentorship from industry experts."
+      "detailedinfo": "The Coding Hackathon is a 24-hour event where participants will tackle exciting problem statements in a collaborative environment. Teams will have the opportunity to innovate and create solutions, with mentorship from industry experts.",
+      "department": "Computer Science"
     },
     {
       "id": 42,
@@ -471,7 +512,80 @@
       "description": "Christmas celebration with games, food stalls, and music.",
       "image": "https://www.cathaypacific.com/content/dam/focal-point/cx/inspiration/2019/12/Hero_Photo-Credit-Icicle-TV-4-2.renditionimage.1700.1133.jpg",
       "category": "cultural",
-      "detailedinfo": "The Christmas Carnival is a festive celebration featuring games, food stalls, and live music. Attendees can enjoy a variety of activities, including traditional holiday performances and interactive booths, making it a fun-filled event for the whole family."
+      "detailedinfo": "The Christmas Carnival is a festive celebration featuring games, food stalls, and live music. Attendees can enjoy a variety of activities, including traditional holiday performances and interactive booths, making it a fun-filled event for the whole family.",
+      "department": "All Departments"
+    },
+    {
+      "id": 43,
+      "name": "TechGala 2023",
+      "date": "2023-12-07",
+      "time": "12:00 PM – 9:00 PM",
+      "venue": "Convention Center",
+      "description": "A grand celebration of technology with exhibitions, keynote speeches, and interactive sessions.",
+      "image": "https://blog.jobzmall.com/content/images/size/w2000/2019/08/NEWS_UGA_2017-GT-Career-Fair.jpeg",
+      "category": "academic",
+      "detailedinfo": "TechGala 2023 is the ultimate celebration of innovation and technology, bringing together students, professionals, and industry leaders for a day filled with exhibitions, keynote speeches, panel discussions, and interactive sessions. Attendees will have the opportunity to explore cutting-edge tech projects, participate in hands-on workshops, and network with experts from various fields. The event will also feature startup showcases, product launches, and opportunities for collaboration. Whether you're passionate about AI, robotics, software development, or emerging technologies, TechGala 2023 offers something for everyone. Join us for an inspiring and engaging experience that highlights the future of technology!",
+      "department": "Computer Science"
+    },
+    {
+      "id": 44,
+      "name": "TechGala 2024",
+      "date": "2024-12-20",
+      "time": "10:00 PM – 9:00 PM",
+      "venue": "Convention Center",
+      "description": "A grand celebration of technology with exhibitions, keynote speeches, and interactive sessions.",
+      "image": "https://blog.jobzmall.com/content/images/size/w2000/2019/08/NEWS_UGA_2017-GT-Career-Fair.jpeg",
+      "category": "academic",
+      "detailedinfo": "TechGala 2024 is the ultimate celebration of innovation and technology, bringing together students, professionals, and industry leaders for a day filled with exhibitions, keynote speeches, panel discussions, and interactive sessions. Attendees will have the opportunity to explore cutting-edge tech projects, participate in hands-on workshops, and network with experts from various fields. The event will also feature startup showcases, product launches, and opportunities for collaboration. Whether you're passionate about AI, robotics, software development, or emerging technologies, TechGala 2024 offers something for everyone. Join us for an inspiring and engaging experience that highlights the future of technology!",
+      "department": "Computer Science"
+    },
+    {
+      "id": 45,
+      "name": "TechGala 2022",
+      "date": "2022-12-15",
+      "time": "11:00 PM – 9:00 PM",
+      "venue": "Convention Center",
+      "description": "A grand celebration of technology with exhibitions, keynote speeches, and interactive sessions.",
+      "image": "https://blog.jobzmall.com/content/images/size/w2000/2019/08/NEWS_UGA_2017-GT-Career-Fair.jpeg",
+      "category": "academic",
+      "detailedinfo": "TechGala 2022 is the ultimate celebration of innovation and technology, bringing together students, professionals, and industry leaders for a day filled with exhibitions, keynote speeches, panel discussions, and interactive sessions. Attendees will have the opportunity to explore cutting-edge tech projects, participate in hands-on workshops, and network with experts from various fields. The event will also feature startup showcases, product launches, and opportunities for collaboration. Whether you're passionate about AI, robotics, software development, or emerging technologies, TechGala 2022 offers something for everyone. Join us for an inspiring and engaging experience that highlights the future of technology!",
+      "department": "Computer Science"
+    },
+    {
+      "id": 46,
+      "name": "TechFest 2022",
+      "date": "2022-09-20",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Main Auditorium",
+      "description": "An intercollegiate technical festival showcasing projects, coding contests, and workshops.",
+      "image": "https://alta.com.vn/wp-content/uploads/2020/11/IMG_2706-5-1.jpg",
+      "category": "academic",
+      "detailedinfo": "TechFest 2022 is the premier technical festival of the year, bringing together students, professionals, and enthusiasts from various fields of technology. The event will feature a range of activities including project exhibitions, coding competitions, hackathons, and hands-on workshops led by industry experts. Attendees will have the opportunity to network with like-minded individuals, learn about the latest technological advancements, and showcase their own innovations. Whether you're a student looking to gain practical experience or a professional seeking to stay updated with industry trends, TechFest 2022 has something for everyone. Don't miss out on this exciting event that promises to inspire and empower the tech community!",
+      "department": "Computer Science"
+    },
+    {
+      "id": 47,
+      "name": "TechFest 2023",
+      "date": "2023-09-20",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Main Auditorium",
+      "description": "An intercollegiate technical festival showcasing projects, coding contests, and workshops.",
+      "image": "https://alta.com.vn/wp-content/uploads/2020/11/IMG_2706-5-1.jpg",
+      "category": "academic",
+      "detailedinfo": "TechFest 2023 is the premier technical festival of the year, bringing together students, professionals, and enthusiasts from various fields of technology. The event will feature a range of activities including project exhibitions, coding competitions, hackathons, and hands-on workshops led by industry experts. Attendees will have the opportunity to network with like-minded individuals, learn about the latest technological advancements, and showcase their own innovations. Whether you're a student looking to gain practical experience or a professional seeking to stay updated with industry trends, TechFest 2023 has something for everyone. Don't miss out on this exciting event that promises to inspire and empower the tech community!",
+      "department": "Computer Science"
+    },
+    {
+      "id": 48,
+      "name": "TechFest 2024",
+      "date": "2024-09-20",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Main Auditorium",
+      "description": "An intercollegiate technical festival showcasing projects, coding contests, and workshops.",
+      "image": "https://alta.com.vn/wp-content/uploads/2020/11/IMG_2706-5-1.jpg",
+      "category": "academic",
+      "detailedinfo": "TechFest 2024 is the premier technical festival of the year, bringing together students, professionals, and enthusiasts from various fields of technology. The event will feature a range of activities including project exhibitions, coding competitions, hackathons, and hands-on workshops led by industry experts. Attendees will have the opportunity to network with like-minded individuals, learn about the latest technological advancements, and showcase their own innovations. Whether you're a student looking to gain practical experience or a professional seeking to stay updated with industry trends, TechFest 2024 has something for everyone. Don't miss out on this exciting event that promises to inspire and empower the tech community!",
+      "department": "Computer Science"
     }
   ]
 }

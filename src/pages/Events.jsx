@@ -67,7 +67,7 @@ const EventCatalog = () => {
     filtered.sort((a, b) => {
       switch (sortBy) {
         case "date":
-          return new Date(a.date) - new Date(b.date);
+          return new Date(b.date) - new Date(a.date);
         case "name":
           return a.name.localeCompare(b.name);
         case "category":

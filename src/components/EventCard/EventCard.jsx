@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bookmark, BookmarkCheck, Calendar, MapPin, Clock, Eye } from 'lucide-react';
+import { Bookmark, BookmarkCheck, Calendar, MapPin, Clock, Eye, Layers } from 'lucide-react';
 import { useBookmarks } from '../../context/BookmarkContext';
 
 const EventCard = ({ event, getCategoryColor, formatDate, onViewDetails }) => {
@@ -40,6 +40,10 @@ const EventCard = ({ event, getCategoryColor, formatDate, onViewDetails }) => {
           <div className="detail-item">
             <MapPin size={16} />
             <span>{event.venue}</span>
+          </div>
+          <div className="detail-item">
+            <Layers size={16} />
+            <span> {event.department}</span>
           </div>
         </div>
         
