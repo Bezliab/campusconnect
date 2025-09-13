@@ -4,9 +4,9 @@ import "./statcounter.css";
 
 const StatsCounter = () => {
   const stats = [
-    { end: 17, label: "Faculties" },
-    { end: 92, suffix: "+", label: "Departments" },
-    { end: 35468, suffix: "+", label: "Students" },
+    { end: 30, suffix: "+", label: "Events Held" },
+    { end: 10, suffix: "+", label: "Departments" },
+    { end: 5468, suffix: "+", label: "Students" },
   ];
 
   return (
