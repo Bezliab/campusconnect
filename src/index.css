@@ -101,13 +101,16 @@ textarea {
   width: 100%;
   outline: none;
 }
-/* input:focus,
-select:focus,
-textarea:focus {
-  box-shadow: 0 0 4px  #010536;
-} */
 
-/* Layout Helpers */
+.subheading {
+  max-width: 50rem;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-plain);
+}
+
 .container {
   width: 90%;
   max-width: 1200px;

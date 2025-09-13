@@ -26,13 +26,16 @@
 .contact-text {
   z-index: 900;
   margin: auto;
-  padding: 0 0.5rem;
 }
 
 .contact-text h1 {
   position: relative;
   z-index: 2;
   color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
 }
 .contact-content {
   padding-bottom: 3rem;

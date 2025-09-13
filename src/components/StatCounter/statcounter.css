@@ -36,3 +36,24 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .stats-grid {
+    display: flex;
+    gap: 2.8rem;
+    justify-content: center;
+  }
+  .stat-number {
+    font-size: 2.4rem;
+  }
+
+  .stat-label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    flex-direction: column;
+  }
+}

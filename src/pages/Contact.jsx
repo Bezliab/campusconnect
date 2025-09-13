@@ -26,7 +26,7 @@ function Contact() {
       <div className="contact-hero">
         <div className="contact-text">
           <h1>Contact Us</h1>
-          <p className="hero-event-info">
+          <p className="subheading">
             Get in touch with our faculty and student coordinators for any
             event-related queries.
           </p>
@@ -59,8 +59,8 @@ function Contact() {
                       <strong>Phone:</strong> {faculty.phone}
                     </p>
                     <p>
-                      <strong>Email:</strong>
-                      <a href={`mailto:${faculty.email}`}> {faculty.email}</a>
+                      <strong>Email: </strong>
+                      <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
                     </p>
                   </div>
                 </div>
