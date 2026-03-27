@@ -5,8 +5,8 @@ import "../../styles/home.css";
 const upcomingEvents = [
   {
     id: 1,
-    title: "TechFest 2025",
-    date: "20 Sept 2025",
+    title: "TechFest 2026",
+    date: "20 Sept 2026",
     description:
       "An intercollegiate technical festival showcasing projects, coding contests, and workshops.",
     img: "https://elearning.hse.ru/data/2020/07/20/1595955349/3iStock-669775712.jpg",
@@ -14,7 +14,7 @@ const upcomingEvents = [
   {
     id: 2,
     title: "Cultural Night",
-    date: "05 Oct 2025",
+    date: "05 Oct 2026",
     description:
       "An evening of music, dance, and drama, celebrating the diverse culture of our campus.",
     img: "https://media04.marktspiegel.de/article/2018/01/17/2/205782_XXL.jpg",
@@ -22,7 +22,7 @@ const upcomingEvents = [
   {
     id: 3,
     title: "Sports Meet",
-    date: "12 Oct 2025",
+    date: "12 Oct 2026",
     description:
       "Annual campus-wide sports competition bringing together teams across all departments.",
     img: "https://cdn.culture.ru/images/30a9dc7b-3987-5c7c-bd33-e1bda7277971",
