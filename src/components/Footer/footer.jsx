@@ -34,7 +34,7 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Contact Info</h4>
           <p>Email: info@campusconnect.edu</p>
-          <p>Phone: (+234) 802 593 8244</p>
+          <p>Phone: (+234) 812 215 6362</p>
           <p>
             Address: Idea Konsult Building, Mokola, Ibadan, Oyo State, Nigeria.
           </p>
@@ -58,7 +58,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; 2025 CampusConnect. All rights reserved. | CampusConnect
+          &copy; 2026 CampusConnect. All rights reserved. | CampusConnect
           Limited
         </p>
       </div>

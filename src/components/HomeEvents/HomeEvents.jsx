@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeEvents.css"; 
+import "./HomeEvents.css";
 import { Home } from "lucide-react";
 import "../../styles/home.css";
 
@@ -25,7 +25,7 @@ const offers = [
     title: "Easy Participation & Registration",
     description:
       "Quickly register for events through simple forms. Whether you’re a student, staff, or guest, participation is made easy with clear instructions and responsive design.",
-    img: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1vpMc3.img?w=2500&amp;h=1563&amp;m=4&amp;q=81",
+    img: "https://ambrose.edu/sites/default/files/2021-06/admissionsCounter.jpg",
     reverse: false,
   },
 ];

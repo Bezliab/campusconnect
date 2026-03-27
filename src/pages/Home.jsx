@@ -124,7 +124,11 @@ function Home() {
             <div className="icon">
               <IoMailOpenOutline />
             </div>
-            <input type="email" placeholder="boluwarin215@gmail.com" required />
+            <input
+              type="email"
+              placeholder="toluwalogolois@gmail.com"
+              required
+            />
           </form>
           <button className="feature-btn register-btn">Subscribe</button>
         </div>
