@@ -36,7 +36,8 @@ export default function Footer() {
           <p>Email: info@campusconnect.edu</p>
           <p>Phone: (+234) 812 215 6362</p>
           <p>
-            Address: Idea Konsult Building, Mokola, Ibadan, Oyo State, Nigeria.
+            Address: SQI College of ICT, Ogbomoso-Ilorin Road, Ogbomoso, Oyo
+            State
           </p>
         </div>
 
