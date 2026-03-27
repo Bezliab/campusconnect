@@ -95,7 +95,7 @@ function Home() {
 
       {/* COuntdown */}
       <div className="countdown-row">
-        <h3 className="title">Countdown to TechGala '25</h3>
+        <h3 className="title">Countdown to TechGala '26</h3>
         <div className="timer">
           {Object.entries(timeLeft).map(([key, value]) => (
             <div className="time-box" key={key}>
