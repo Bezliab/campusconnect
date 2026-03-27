@@ -78,15 +78,12 @@ function Home() {
         <div className="hero-container">
           <h1>Welcome to CampusConnect</h1>
           <p className="subheading">
-            CampusConnect, your go-to platform for all campus events.{" "}
-            <br>
-              Whether it's academic seminars, cultural festivals, sports events,
-              or social gatherings, we've got you covered.
-            </br>
-            <br>
-              With CampusConnect, you don't just attend Campus life... You
-              experience it
-            </br>
+            CampusConnect, your go-to platform for all campus events. <br />
+            Whether it's academic seminars, cultural festivals, sports events,
+            or social gatherings, we've got you covered.
+            <br />
+            With CampusConnect, you don't just attend Campus life... You
+            experience it
           </p>
           <div className="hero-btn">
             <Link to="/events" className="feature-btn primary-btn">
