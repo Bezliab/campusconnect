@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Camera, Calendar as CalendarIcon, X } from "lucide-react";
 import galleryData from "../data/gallery.json";
-import "../styles/Gallery.css";
+import "../styles/gallery.css";
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
@@ -38,7 +38,7 @@ const Gallery = () => {
 
     if (selectedCategory !== "All") {
       filtered = filtered.filter(
-        (image) => image.category === selectedCategory
+        (image) => image.category === selectedCategory,
       );
     }
     if (selectedYear !== "All") {
@@ -137,7 +137,7 @@ const Gallery = () => {
                   <div className="card-image-overlay"></div>
                   <span
                     className={`category-badge ${getCategoryColor(
-                      image.category
+                      image.category,
                     )}`}
                   >
                     {image.category}
