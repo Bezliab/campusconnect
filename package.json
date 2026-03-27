@@ -10,10 +10,11 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": "20.x"
+    "node": "18"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@swc/core": "^1.15.21",
     "lucide-react": "^0.543.0",
     "prop-types": "^15.8.1",
     "react": "^19.1.1",
